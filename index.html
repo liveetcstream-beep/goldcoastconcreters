@@ -17,7 +17,7 @@
       "@context": "https://schema.org",
       "@type": "ConcreteContractor",
       "name": "Gold Coast Concreters QLD - Pimpama Specialists",
-      "image": "https://goldcoastconcretersqld.com.au/assets/hero-bg.jpg",
+      "image": "https://goldcoastconcretersqld.com.au/assets/hero_bg.png",
       "@id": "https://goldcoastconcretersqld.com.au",
       "url": "https://goldcoastconcretersqld.com.au",
       "telephone": "+617XXXXXXX",
@@ -391,5 +391,88 @@
         </div>
     </footer>
 
+    <!-- AJAX Form Submission Script -->
+    <script>
+        const form = document.querySelector('.quote-form');
+        const formContainer = document.getElementById('quote-form');
+
+        if (form && formContainer) {
+            // Create the thank you message element dynamically
+            const successDiv = document.createElement('div');
+            successDiv.id = 'form-success-msg';
+            successDiv.style.display = 'none';
+            successDiv.style.textAlign = 'center';
+            successDiv.style.padding = '3rem 1.5rem';
+            successDiv.innerHTML = `
+                <div style="font-size: 4rem; color: #d97706; margin-bottom: 1.5rem; animation: pop 0.4s ease-out;">✓</div>
+                <h3 style="color: #0f172a; font-size: 1.75rem; font-weight: 800; margin-bottom: 1rem;">Thank You!</h3>
+                <p style="color: #334155; font-size: 1rem; line-height: 1.6; margin-bottom: 1.5rem;">Your quote request has been successfully submitted. Our local concreting team will contact you shortly for a site measure.</p>
+                <button id="reset-form-btn" style="background-color: #0f172a; color: #fff; border: none; padding: 0.6rem 1.2rem; border-radius: 6px; font-weight: 600; cursor: pointer; transition: background-color 0.2s;">Send another response</button>
+            `;
+            
+            // Add pop animation style
+            const style = document.createElement('style');
+            style.innerHTML = `
+                @keyframes pop {
+                    0% { transform: scale(0.6); opacity: 0; }
+                    100% { transform: scale(1); opacity: 1; }
+                }
+            `;
+            document.head.appendChild(style);
+            
+            formContainer.appendChild(successDiv);
+
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const submitBtn = form.querySelector('.submit-btn');
+                const originalBtnText = submitBtn.textContent;
+                submitBtn.textContent = 'Sending...';
+                submitBtn.disabled = true;
+                
+                const formData = new FormData(form);
+                
+                fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(async (response) => {
+                    let json = await response.json();
+                    if (response.status == 200) {
+                        // Hide all form children (h3, p, form)
+                        Array.from(formContainer.children).forEach(child => {
+                            if (child.id !== 'form-success-msg') {
+                                child.style.display = 'none';
+                            }
+                        });
+                        // Show success div
+                        successDiv.style.display = 'block';
+                    } else {
+                        console.log(response);
+                        alert(json.message || "Something went wrong. Please try again.");
+                        submitBtn.textContent = originalBtnText;
+                        submitBtn.disabled = false;
+                    }
+                })
+                .catch(error => {
+                    console.log(error);
+                    alert("Form submission failed. Please check your internet connection and try again.");
+                    submitBtn.textContent = originalBtnText;
+                    submitBtn.disabled = false;
+                });
+            });
+            
+            // Reset form handler
+            document.getElementById('reset-form-btn').addEventListener('click', function() {
+                form.reset();
+                successDiv.style.display = 'none';
+                Array.from(formContainer.children).forEach(child => {
+                    if (child.id !== 'form-success-msg') {
+                        child.style.display = '';
+                    }
+                });
+            });
+        }
+    </script>
 </body>
 </html>
