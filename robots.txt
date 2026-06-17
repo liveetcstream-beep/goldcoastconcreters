@@ -1,0 +1,8 @@
+# robots.txt - Gold Coast Concreters QLD
+# https://goldcoastconcretersqld.com.au
+
+User-agent: *
+Allow: /
+
+# Point crawlers to XML sitemap
+Sitemap: https://goldcoastconcretersqld.com.au/sitemap.xml
