@@ -146,7 +146,7 @@ h4 {
 /* Hero Section */
 .hero-section {
     position: relative;
-    background-image: linear-gradient(135deg, rgba(15, 23, 42, 0.88) 0%, rgba(30, 41, 59, 0.88) 100%), url('assets/hero_bg.png');
+    background-image: linear-gradient(135deg, rgba(15, 23, 42, 0.88) 0%, rgba(30, 41, 59, 0.88) 100%), url('assets/hero_bg.webp');
     background-size: cover;
     background-position: center;
     padding: 7rem 0 6rem 0;
@@ -375,25 +375,25 @@ h4 {
 }
 
 .driveway-img {
-    background-image: url('assets/concrete_pouring_work.png');
+    background-image: url('assets/concrete_pouring_work.webp');
     background-size: cover;
     background-position: center;
 }
 
 .aggregate-img {
-    background-image: url('assets/exposed_aggregate_driveway.png');
+    background-image: url('assets/exposed_aggregate_driveway.webp');
     background-size: cover;
     background-position: center;
 }
 
 .resurfacing-img {
-    background-image: url('assets/concrete_resurfacing_covercrete.png');
+    background-image: url('assets/concrete_resurfacing_covercrete.webp');
     background-size: cover;
     background-position: center;
 }
 
 .slabs-img {
-    background-image: url('assets/concrete_patios_paths.png');
+    background-image: url('assets/concrete_patios_paths.webp');
     background-size: cover;
     background-position: center;
 }
