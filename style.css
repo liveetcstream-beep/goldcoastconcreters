@@ -1165,16 +1165,27 @@ h4 {
 @media (max-width: 768px) {
     .hamburger-menu {
         display: block;
-        order: 1; /* Keep it on the right */
+        order: -1; /* Move to the left side */
+        margin-right: 0.25rem;
+        padding-left: 0;
     }
     .header-container {
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: flex-start; /* Align to left instead of space-between */
         align-items: center;
         flex-direction: row !important;
     }
+    .logo {
+        font-size: 1.05rem !important;
+        gap: 0.4rem !important;
+        white-space: nowrap;
+    }
+    .logo-img {
+        height: 30px !important;
+    }
     .header-cta {
-        display: none; /* Hide call button on very small screens in header if needed, but let's just make it full width */
+        display: flex !important; /* Make sure Call button shows */
+        justify-content: center;
         width: 100%;
         order: 3;
         margin-top: 1rem;
