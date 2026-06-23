@@ -1132,3 +1132,16 @@ h4 {
 .brisbane-logo { color: #1e3a8a; }
 .bris-icon { font-size: 1.8rem; margin-bottom: 2px; }
 .bris-text { font-family: 'Times New Roman', Times, serif; font-size: 1.2rem; font-weight: bold; }
+
+@media (max-width: 768px) {
+    .why-us-container {
+        grid-template-columns: 1fr;
+        gap: 3.5rem;
+    }
+    .why-us-grid {
+        grid-template-columns: 1fr;
+    }
+    .why-us-badge-area {
+        order: -1;
+    }
+}
