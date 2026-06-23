@@ -1052,3 +1052,75 @@ h4 {
     color: var(--accent);
     font-weight: 700;
 }
+/* --- Partners Section --- */
+.partners-section {
+    padding: 5rem 10%;
+    background-color: #f8fafc;
+    text-align: center;
+}
+.partners-section .section-title {
+    text-align: left;
+    margin-bottom: 3rem;
+}
+.partners-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.partner-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    width: 200px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+.partner-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Specific Logo Styles */
+.qbcc-logo { font-family: Arial, sans-serif; align-items: flex-start; padding-left: 1.5rem; }
+.qbcc-logo .logo-main { display: flex; align-items: baseline; line-height: 1; }
+.qbcc-logo .p-red { color: #b91c1c; font-size: 2.5rem; font-weight: 300; margin-right: 1px; }
+.qbcc-logo .p-blue { color: #0284c7; font-size: 2rem; font-weight: 800; letter-spacing: -1px; }
+.qbcc-logo small { font-size: 0.45rem; color: #b91c1c; text-transform: uppercase; text-align: left; margin-top: 2px; line-height: 1.1; font-weight: bold; }
+
+.lyndons-logo { padding: 0; }
+.lyndons-box { width: 85%; }
+.l-red { background-color: #dc2626; color: white; font-weight: 800; font-size: 0.9rem; padding: 4px 8px; text-align: right; border-bottom: 2px solid white; }
+.l-grey { background-color: #737373; color: white; font-size: 0.5rem; text-transform: uppercase; padding: 3px 8px; text-align: right; font-weight: bold; }
+
+.boral-logo { padding: 0; }
+.boral-box { border: 3px solid #171717; width: 100px; height: 60px; display: flex; flex-direction: column; }
+.b-text { background-color: white; color: #171717; font-weight: 900; font-size: 1.1rem; text-align: center; padding: 1px 0; border-bottom: 3px solid #171717; font-family: Arial, sans-serif; letter-spacing: 1px;}
+.b-colors { display: flex; flex-direction: column; flex: 1; }
+.b-yellow { background-color: #facc15; flex: 1; border-bottom: 3px solid #171717; }
+.b-green { background-color: #16a34a; flex: 1; }
+
+.riversands-logo { flex-direction: row; gap: 12px; }
+.r-icon { width: 28px; height: 28px; background-color: #0284c7; transform: rotate(45deg); display: flex; justify-content: center; align-items: center; }
+.r-icon span { transform: rotate(-45deg); color: white; font-weight: bold; font-family: Arial, sans-serif; font-size: 1.2rem;}
+.r-text-wrap { display: flex; align-items: center; font-family: Arial, sans-serif; color: #1e293b; }
+.r-main { font-weight: 900; font-size: 1.1rem; letter-spacing: -0.5px; border-bottom: 2px solid #0284c7;}
+.r-sub { font-size: 0.45rem; font-weight: bold; margin-left: 4px; line-height: 1.1; color: #64748b;}
+
+.ccs-logo { flex-direction: row; gap: 8px; }
+.c-icon { font-size: 2.2rem; font-weight: 900; color: #16a34a; letter-spacing: -3px; font-family: Arial, sans-serif;}
+.c-icon span { color: #0284c7; }
+.c-text-wrap { display: flex; flex-direction: column; }
+.c-text { font-size: 0.55rem; color: #1e293b; text-align: left; line-height: 1.1; font-weight: bold; font-family: Arial, sans-serif; }
+.c-tag { font-size: 0.4rem; color: #64748b; margin-top: 3px; }
+
+.brisbane-logo { color: #1e3a8a; }
+.bris-icon { font-size: 1.8rem; margin-bottom: 2px; }
+.bris-text { font-family: 'Times New Roman', Times, serif; font-size: 1.2rem; font-weight: bold; }
