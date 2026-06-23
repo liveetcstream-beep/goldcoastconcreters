@@ -60,9 +60,9 @@
     /* Deep slate/navy for text & dark backgrounds */
     --secondary: #1e293b;
     /* Slightly lighter slate for footers/headers */
-    --accent: #d97706;
+    --accent: #b45309;
     /* Dark gold/amber for core highlights and CTA button backgrounds */
-    --accent-hover: #b45309;
+    --accent-hover: #92400e;
     /* Rich amber hover */
     --light-bg: #f8fafc;
     /* Crisp off-white for alternative sections */
@@ -1272,8 +1272,8 @@ h4 {
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"></noscript>
     <link rel="icon" type="image/png" href="assets/gmb_logo.webp">
     <link rel="apple-touch-icon" href="assets/gmb_logo.webp">
 
@@ -1483,7 +1483,7 @@ h4 {
 
             <!-- Lead Capture Form -->
             <div class="hero-form-area" id="quote-form">
-                <h3>Request a Free Quote</h3>
+                <h2>Request a Free Quote</h2>
                 <p>Fill out the form below and our local team will contact you for a site measurement shortly.</p>
                 <form action="https://api.web3forms.com/submit" method="POST" class="quote-form">
                     <input type="hidden" name="access_key" value="0999b14e-cc4b-4980-a61d-956e7e476d88">
@@ -1606,7 +1606,7 @@ h4 {
                     <span class="gallery-badge">Exposed Aggregate</span>
                 </div>
                 <div class="gallery-info">
-                    <h4>Exposed Aggregate Driveway</h4>
+                    <h3>Exposed Aggregate Driveway</h3>
                     <p>Premium slip-resistant concrete driveway using local gold pebbles and charcoal base mix, sealed
                         for long-lasting sheen.</p>
                     <span class="gallery-meta">📍 Coomera, QLD</span>
@@ -1620,7 +1620,7 @@ h4 {
                     <span class="gallery-badge">Resurfacing</span>
                 </div>
                 <div class="gallery-info">
-                    <h4>Covercrete Resurfacing</h4>
+                    <h3>Covercrete Resurfacing</h3>
                     <p>Complete driveway restoration using polymer spray-on covercrete, slate border stencil patterns,
                         and double UV sealer.</p>
                     <span class="gallery-meta">📍 Pimpama, QLD</span>
@@ -1634,7 +1634,7 @@ h4 {
                     <span class="gallery-badge">Driveways & Crossovers</span>
                 </div>
                 <div class="gallery-info">
-                    <h4>Driveway Crossover (VXO)</h4>
+                    <h3>Driveway Crossover (VXO)</h3>
                     <p>Constructed concrete crossover conforming with City of Gold Coast specifications: N32 concrete
                         strength and SL82 reinforcement steel mesh.</p>
                     <span class="gallery-meta">📍 Ormeau, QLD</span>
@@ -1648,7 +1648,7 @@ h4 {
                     <span class="gallery-badge">Stencilled Concrete</span>
                 </div>
                 <div class="gallery-info">
-                    <h4>Stencilled Concrete</h4>
+                    <h3>Stencilled Concrete</h3>
                     <p>Custom slate and tile patterns stencilled into freshly laid concrete for a highly decorative finish.</p>
                     <span class="gallery-meta">📍 Pimpama, QLD</span>
                 </div>
@@ -1661,7 +1661,7 @@ h4 {
                     <span class="gallery-badge">Exposed Aggregate</span>
                 </div>
                 <div class="gallery-info">
-                    <h4>Coloured Exposed Concrete</h4>
+                    <h3>Coloured Exposed Concrete</h3>
                     <p>Vibrant coloured exposed aggregate mixes that bring warmth and texture to outdoor patio areas.</p>
                     <span class="gallery-meta">📍 Helensvale, QLD</span>
                 </div>
@@ -1674,7 +1674,7 @@ h4 {
                     <span class="gallery-badge">Stamped Concrete</span>
                 </div>
                 <div class="gallery-info">
-                    <h4>Stamped Concrete Pattern</h4>
+                    <h3>Stamped Concrete Pattern</h3>
                     <p>Textured stamped concrete providing the look of natural cobblestone with the durability of a solid slab.</p>
                     <span class="gallery-meta">📍 Upper Coomera, QLD</span>
                 </div>
@@ -1687,7 +1687,7 @@ h4 {
                     <span class="gallery-badge">Geometric Stencil</span>
                 </div>
                 <div class="gallery-info">
-                    <h4>Geometric Stencil Driveway</h4>
+                    <h3>Geometric Stencil Driveway</h3>
                     <p>Modern architectural geometric designs applied using precision concrete stencilling techniques.</p>
                     <span class="gallery-meta">📍 Hope Island, QLD</span>
                 </div>
@@ -1700,7 +1700,7 @@ h4 {
                     <span class="gallery-badge">Decorative Features</span>
                 </div>
                 <div class="gallery-info">
-                    <h4>Decoratively Cut Coloured</h4>
+                    <h3>Decoratively Cut Coloured</h3>
                     <p>Large format decorative cuts in seamless coloured concrete for an upscale, tiled appearance.</p>
                     <span class="gallery-meta">📍 Willow Vale, QLD</span>
                 </div>
@@ -1713,7 +1713,7 @@ h4 {
                     <span class="gallery-badge">Covercrete</span>
                 </div>
                 <div class="gallery-info">
-                    <h4>Covercrete with Fleck</h4>
+                    <h3>Covercrete with Fleck</h3>
                     <p>Durable covercrete finish enhanced with custom colour flecks for a premium terrazzo-style look.</p>
                     <span class="gallery-meta">📍 Yatala, QLD</span>
                 </div>
@@ -1732,22 +1732,22 @@ h4 {
 
             <div class="specs-grid">
                 <div class="spec-item">
-                    <h4>N32 Concrete — No Cracks in Driveway</h4>
+                    <h3>N32 Concrete — No Cracks in Driveway</h3>
                     <p>To prevent <strong>cracks in concrete driveways</strong>, we pour a minimum of <strong>N25 (25MPa)</strong> for paths and patios, and upgrade to <strong>N32 (32MPa)</strong> for all <strong>decorative concrete driveways</strong>, crossovers, and heavy-vehicle areas. Stronger concrete means fewer <strong>driveway crack repairs</strong> for you down the track.</p>
                 </div>
 
                 <div class="spec-item">
-                    <h4>Covercrete &amp; Stencil Concrete Surface Prep</h4>
+                    <h3>Covercrete &amp; Stencil Concrete Surface Prep</h3>
                     <p>For <strong>covercrete resurfacing</strong> and <strong>stencil concrete driveways</strong>, surface preparation is everything. We grind, clean, and prime the existing slab before applying polymer-modified <strong>covercrete</strong> base coat — ensuring the coating bonds correctly and the <strong>stencil concrete pattern</strong> looks crisp and sharp for years.</p>
                 </div>
 
                 <div class="spec-item">
-                    <h4>Exposed Aggregate Colours &amp; Mix Design</h4>
+                    <h3>Exposed Aggregate Colours &amp; Mix Design</h3>
                     <p>We offer one of the widest selections of <strong>exposed aggregate colours</strong> in South East Queensland — including charcoal, golden amber, ocean floor, red jasper, and mocha blends. Our <strong>aggregate concrete colours</strong> are matched to complement your home's facade and landscaping, with the most popular <strong>exposed aggregate colour</strong> being our Charcoal River Pebble mix.</p>
                 </div>
 
                 <div class="spec-item">
-                    <h4>UV Sealer — The Final Finish</h4>
+                    <h3>UV Sealer — The Final Finish</h3>
                     <p>Every <strong>decorative concrete</strong> job — whether <strong>stencil concrete</strong>, <strong>exposed aggregate</strong>, or <strong>covercrete driveway</strong> — is finished with two coats of high-build, UV-resistant solvent-based acrylic sealer. This protects the colour, enhances sheen, and dramatically extends the life of your <strong>textured concrete driveway</strong> surface.</p>
                 </div>
             </div>
@@ -1821,25 +1821,25 @@ h4 {
                 <div class="why-us-grid">
                     <div class="why-us-card">
                         <div class="why-us-icon">🛡️</div>
-                        <h4>Fully Licensed & QBCC Insured</h4>
+                        <h3>Fully Licensed & QBCC Insured</h3>
                         <p>We hold active QBCC building licenses and $10M public liability insurance for your peace of
                             mind.</p>
                     </div>
                     <div class="why-us-card">
                         <div class="why-us-icon">📏</div>
-                        <h4>Australian Standards (AS 3600)</h4>
+                        <h3>Australian Standards (AS 3600)</h3>
                         <p>We strictly follow AS 3600 (Concrete Structures) and AS 2870 (Residential Slabs), using
                             premium SL82 mesh and minimum N28/N32 concrete strength.</p>
                     </div>
                     <div class="why-us-card">
                         <div class="why-us-icon">🏗️</div>
-                        <h4>Full Crossover Permitting</h4>
+                        <h3>Full Crossover Permitting</h3>
                         <p>We handle all Council drawings, applications, and pre-pour inspections for vehicular
                             crossings (VXO).</p>
                     </div>
                     <div class="why-us-card">
                         <div class="why-us-icon">✨</div>
-                        <h4>Immaculate Site Clean-Up</h4>
+                        <h3>Immaculate Site Clean-Up</h3>
                         <p>We ensure no construction waste or concrete slurry is left behind. Your site is left gleaming
                             and clean.</p>
                     </div>
@@ -2028,7 +2028,7 @@ h4 {
                 <p>Your premier QBCC licensed <strong>decorative concrete contractors</strong> serving Pimpama, Coomera, Ormeau, and the northern Gold Coast corridor. Specialists in <strong>covercrete</strong> driveway resurfacing, <strong>stencil concrete</strong>, <strong>exposed aggregate driveways</strong>, stamped concrete, and concrete slab construction. We also service Brisbane southside suburbs for <strong>decorative concrete driveways</strong> and <strong>concrete driveway resurfacing</strong>.</p>
             </div>
             <div class="footer-links">
-                <h4>Our Decorative Concrete Services</h4>
+                <h3>Our Decorative Concrete Services</h3>
                 <a href="#services">Stencil Concrete Driveways</a>
                 <a href="#services">Covercrete Resurfacing</a>
                 <a href="#services">Exposed Aggregate Driveways</a>
@@ -2037,7 +2037,7 @@ h4 {
                 <a href="crossover-permit-guide">Council Crossovers (VXO)</a>
             </div>
             <div class="footer-contact">
-                <h4>Contact Info</h4>
+                <h3>Contact Info</h3>
                 <p>📍 Pimpama, QLD 4209 (Service Area Business)</p>
                 <p>📞 Phone: <a href="tel:+61411914157" style="color:inherit;">0411 914 157</a></p>
                 <p>✉ Email: <a href="mailto:support@goldcoastconcretersqld.com.au" style="color:inherit;">support@goldcoastconcretersqld.com.au</a></p>

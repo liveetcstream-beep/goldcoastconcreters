@@ -39,9 +39,9 @@
     /* Deep slate/navy for text & dark backgrounds */
     --secondary: #1e293b;
     /* Slightly lighter slate for footers/headers */
-    --accent: #d97706;
+    --accent: #b45309;
     /* Dark gold/amber for core highlights and CTA button backgrounds */
-    --accent-hover: #b45309;
+    --accent-hover: #92400e;
     /* Rich amber hover */
     --light-bg: #f8fafc;
     /* Crisp off-white for alternative sections */
@@ -1251,7 +1251,8 @@ h4 {
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"></noscript>
     <link rel="icon" type="image/png" href="assets/gmb_logo.webp">
     <link rel="apple-touch-icon" href="assets/gmb_logo.webp">
     
@@ -1345,7 +1346,7 @@ h4 {
             
             <!-- Lead Capture Form -->
             <div class="hero-form-area" id="quote-form">
-                <h3>Request a Free Quote</h3>
+                <h2>Request a Free Quote</h2>
                 <p>Fill out the form below and our local Coomera estimator will contact you for a site measurement shortly.</p>
                 <form action="https://api.web3forms.com/submit" method="POST" class="quote-form">
                     <input type="hidden" name="access_key" value="0999b14e-cc4b-4980-a61d-956e7e476d88">
@@ -1445,22 +1446,22 @@ h4 {
             
             <div class="specs-grid">
                 <div class="spec-item">
-                    <h4>N25 & N32 Concrete Strength</h4>
+                    <h3>N25 & N32 Concrete Strength</h3>
                     <p>We use N25 (25MPa) grade concrete for standard paths and shed slabs. For vehicle driveways and heavy traffic, we pour N32 (32MPa) concrete to ensure high load capacity and minimal wear.</p>
                 </div>
                 
                 <div class="spec-item">
-                    <h4>Premium Steel Reinforcement</h4>
+                    <h3>Premium Steel Reinforcement</h3>
                     <p>All of our slabs feature standard SL72 steel mesh laid on plastic bar chairs to ensure maximum structural reinforcement in the center of the concrete pour.</p>
                 </div>
                 
                 <div class="spec-item">
-                    <h4>Proper Subgrade Compaction</h4>
+                    <h3>Proper Subgrade Compaction</h3>
                     <p>We prevent shifting and cracking by compacting the subgrade and laying a 50mm compacted roadbase layer before installing steel mesh and pouring.</p>
                 </div>
 
                 <div class="spec-item">
-                    <h4>Expansion Control Joints</h4>
+                    <h3>Expansion Control Joints</h3>
                     <p>We cut control joints at precise intervals to prevent cracking and place flexible expansion joints where the new concrete meets the existing house slab or walls.</p>
                 </div>
             </div>
@@ -1652,7 +1653,7 @@ h4 {
                 <p>Your premier, QBCC licensed concrete contractors serving Coomera, Pimpama, Upper Coomera, and the northern Gold Coast corridor. Delivering quality concrete slabs, crossovers, and aggregate driveways built to last.</p>
             </div>
             <div class="footer-links">
-                <h4>Core Services</h4>
+                <h3>Core Services</h3>
                 <a href="#services">Concrete Driveways</a>
                 <a href="#services">Exposed Aggregate</a>
                 <a href="#services">Driveway Resurfacing</a>
@@ -1660,7 +1661,7 @@ h4 {
                 <a href="crossover-permit-guide.html">Council Crossovers</a>
             </div>
             <div class="footer-contact">
-                <h4>Contact Info</h4>
+                <h3>Contact Info</h3>
                 <p>📍 Coomera, QLD 4209 (Service Area Business)</p>
                 <p>📞 Phone: 0411 914 157</p>
                 <p>✉ Email: support@goldcoastconcretersqld.com.au</p>
