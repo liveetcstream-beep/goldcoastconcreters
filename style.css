@@ -804,9 +804,17 @@ h4 {
     }
 
     .nav-links {
-        gap: 1.25rem;
+        gap: 0.5rem 1rem;
         flex-wrap: wrap;
         justify-content: center;
+        width: 100%;
+    }
+    .nav-links a {
+        font-size: 0.85rem;
+        white-space: nowrap;
+    }
+    .why-us-grid {
+        grid-template-columns: 1fr;
     }
 
     .hero-text-area h1 {
