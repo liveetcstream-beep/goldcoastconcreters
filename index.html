@@ -3,12 +3,18 @@
 
 <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJDBPFFRCW"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-BJDBPFFRCW');
+        setTimeout(function() {
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = "https://www.googletagmanager.com/gtag/js?id=G-BJDBPFFRCW";
+            document.head.appendChild(script);
+
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-BJDBPFFRCW');
+        }, 3500);
     </script>
 
     <meta charset="UTF-8">
@@ -210,7 +216,7 @@
       "inLanguage": "en-AU"
     }
     </script>
-<link rel="preload" as="image" href="assets/hero_bg.webp">
+<link rel="preload" as="image" href="assets/hero_bg.webp" fetchpriority="high">
 </head>
 
 <body>
