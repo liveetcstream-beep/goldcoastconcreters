@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Concreters Pimpama QLD | Free Quotes | QBCC Licensed</title>
-    <meta name="description" content="Looking for top-rated concreters in Pimpama QLD 4209? Exposed aggregate driveways, patio slabs &amp; resurfacing. QBCC licensed. Call 0411 914 157 for a free quote!">
+    <meta name="description" content="Looking for top-rated concreters in Pimpama QLD 4209? Driveways, slabs &amp; decorative concrete specialists. QBCC licensed. Call 0411 914 157 for a free quote!">
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://goldcoastconcretersqld.com.au/pimpama">
@@ -13,8 +13,8 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://goldcoastconcretersqld.com.au/pimpama">
     <meta property="og:title" content="Concreters Pimpama QLD | Free Quotes | QBCC Licensed">
-    <meta property="og:description" content="Looking for top-rated concreters in Pimpama QLD 4209? Exposed aggregate driveways, patio slabs &amp; resurfacing. QBCC licensed. Call 0411 914 157 for a free quote!">
-    <meta property="og:image" content="https://goldcoastconcretersqld.com.au/assets/exposed_aggregate_driveway.webp">
+    <meta property="og:description" content="Looking for top-rated concreters in Pimpama QLD 4209? Driveways, slabs &amp; decorative concrete specialists. QBCC licensed. Call 0411 914 157 for a free quote!">
+    <meta property="og:image" content="https://goldcoastconcretersqld.com.au/assets/hero_bg.webp">
     <meta property="og:locale" content="en_AU">
     <meta property="og:site_name" content="Gold Coast Concreters QLD">
 
@@ -22,27 +22,33 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Concreters Pimpama QLD | Free Quotes | QBCC Licensed">
     <meta name="twitter:description" content="Looking for top-rated concreters in Pimpama QLD 4209? Driveways, slabs &amp; decorative concrete. Call 0411 914 157.">
-    <meta name="twitter:image" content="https://goldcoastconcretersqld.com.au/assets/exposed_aggregate_driveway.webp">
+    <meta name="twitter:image" content="https://goldcoastconcretersqld.com.au/assets/hero_bg.webp">
 
     <!-- Geo Meta -->
     <meta name="geo.region" content="AU-QLD">
     <meta name="geo.placename" content="Pimpama, Gold Coast, Queensland">
-    <meta name="geo.position" content="-27.8174;153.2842">
-    <meta name="ICBM" content="-27.8174, 153.2842">
 
     <style>
 /* ==========================================================================
    Gold Coast Concreters QLD - Premium CSS Stylesheet
    ========================================================================== */
 
+/* CSS Variables for design consistency (Harmonious Slate & Gold theme) */
 :root {
     --primary: #0f172a;
+    /* Deep slate/navy for text & dark backgrounds */
     --secondary: #1e293b;
+    /* Slightly lighter slate for footers/headers */
     --accent: #b45309;
+    /* Dark gold/amber for core highlights and CTA button backgrounds */
     --accent-hover: #92400e;
+    /* Rich amber hover */
     --light-bg: #f8fafc;
+    /* Crisp off-white for alternative sections */
     --text-main: #334155;
+    /* Slate grey for readable body text */
     --text-light: #475569;
+    /* Light slate grey for secondary text */
     --white: #ffffff;
     --border-color: #e2e8f0;
     --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
@@ -52,6 +58,7 @@
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -82,24 +89,33 @@ img {
     display: block;
 }
 
-h1, h2, h3, h4 {
+/* Typography Utility */
+h1,
+h2,
+h3,
+h4 {
     color: var(--primary);
     font-weight: 700;
     line-height: 1.25;
 }
 
-.site-header {
-    background-color: var(--white);
-    box-shadow: var(--shadow-sm);
+/* Header & Navigation */
+.main-header {
+    color: var(--white);
+    background-color: rgba(30, 41, 59, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 100;
+    padding: 1rem 0;
+    box-shadow: var(--shadow-sm);
 }
 
 .header-container {
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1rem 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -109,22 +125,28 @@ h1, h2, h3, h4 {
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     font-weight: 800;
-    color: var(--primary);
+    color: var(--white);
+    letter-spacing: -0.5px;
 }
 
-.logo span {
-    color: var(--accent);
+.logo-img {
+    height: 40px;
+    width: auto;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
 }
+
+.logo .highlight { color: #fbbf24; }
 
 .nav-links {
     display: flex;
     gap: 2rem;
-    align-items: center;
 }
 
 .nav-links a {
+    color: #cbd5e1;
     font-weight: 500;
     font-size: 0.95rem;
 }
@@ -157,11 +179,23 @@ h1, h2, h3, h4 {
     background-image: linear-gradient(135deg, rgba(15, 23, 42, 0.88) 0%, rgba(30, 41, 59, 0.88) 100%), url('assets/hero_bg.webp');
     background-size: cover;
     background-position: center;
-    padding: 6rem 0 5rem 0;
-    min-height: 80vh;
+    padding: 7rem 0 6rem 0;
+    min-height: 85vh;
     display: flex;
     align-items: center;
     color: var(--white);
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 80% 20%, rgba(217, 119, 6, 0.15) 0%, transparent 50%);
+    z-index: 1;
 }
 
 .hero-content {
@@ -206,157 +240,429 @@ h1, h2, h3, h4 {
     font-weight: 300;
 }
 
-.hero-form-container {
+.hero-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.feature-item {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #cbd5e1;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Lead Capture Form Styling */
+.hero-form-area {
     background-color: var(--white);
+    color: var(--primary);
     padding: 2.5rem;
     border-radius: 12px;
     box-shadow: var(--shadow-lg);
-    color: var(--text-main);
+    border: 1px solid var(--border-color);
 }
 
-.hero-form-container h3 {
+.hero-form-area h2 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
-    text-align: center;
+    font-weight: 700;
 }
 
-.hero-form-container p {
-    font-size: 0.9rem;
+.hero-form-area p {
     color: var(--text-light);
+    font-size: 0.9rem;
     margin-bottom: 1.5rem;
-    text-align: center;
 }
 
-.form-group {
-    margin-bottom: 1rem;
+.quote-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
 }
 
-.form-group label {
-    display: block;
-    font-size: 0.85rem;
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.input-group label {
     font-weight: 600;
-    margin-bottom: 0.35rem;
+    font-size: 0.85rem;
+    color: var(--primary);
 }
 
-.form-control {
-    width: 100%;
-    padding: 0.75rem;
-    border: 1px solid var(--border-color);
+.input-group input,
+.input-group select,
+.input-group textarea {
+    padding: 0.8rem 1rem;
+    border: 1.5px solid var(--border-color);
     border-radius: 6px;
-    font-family: inherit;
+    font-family: var(--font-sans);
     font-size: 0.95rem;
+    color: var(--primary);
+    background-color: var(--light-bg);
+    outline: none;
+    transition: var(--transition-smooth);
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+    border-color: var(--accent);
+    background-color: var(--white);
+    box-shadow: 0 0 0 4px rgba(217, 119, 6, 0.15);
 }
 
 .submit-btn {
-    width: 100%;
     background-color: var(--accent);
     color: var(--white);
+    padding: 1rem;
     border: none;
-    padding: 0.85rem;
     border-radius: 6px;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 1.05rem;
     cursor: pointer;
+    box-shadow: 0 4px 12px rgba(217, 119, 6, 0.25);
     transition: var(--transition-smooth);
-    margin-top: 0.5rem;
 }
 
 .submit-btn:hover {
     background-color: var(--accent-hover);
+    transform: translateY(-2px);
 }
 
-/* Local Content Sections */
-.content-section {
-    padding: 5rem 0;
-}
-
-.bg-light {
-    background-color: var(--light-bg);
-}
-
-.container {
-    max-width: 1200px;
-    width: 90%;
-    margin: 0 auto;
-}
-
+/* Common Section Layout */
 .section-title {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.section-title .accent-text {
+    color: var(--accent);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.section-title h2 {
     font-size: 2.25rem;
-    margin-bottom: 1.5rem;
-    text-align: center;
+    font-weight: 800;
 }
 
-.section-subtitle {
-    text-align: center;
-    color: var(--text-light);
-    max-width: 700px;
-    margin: -1rem auto 3rem auto;
-    font-size: 1.05rem;
+.divider {
+    height: 4px;
+    width: 60px;
+    background-color: var(--accent);
+    margin: 1rem auto 0 auto;
+    border-radius: 10px;
 }
 
-.grid-3 {
+/* Services Section */
+.services-section {
+    padding: 6rem 0;
+    background-color: var(--white);
+}
+
+.services-grid {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
 }
 
-.card {
-    background: var(--white);
+.service-card {
+    background-color: var(--white);
     border-radius: 10px;
-    padding: 2rem;
-    box-shadow: var(--shadow-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
     border: 1px solid var(--border-color);
+    transition: var(--transition-smooth);
+    display: flex;
+    flex-direction: column;
 }
 
-.card h3 {
-    font-size: 1.35rem;
-    margin-bottom: 1rem;
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--accent);
+}
+
+.card-image-placeholder {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.driveway-img {
+    background-image: url('assets/concrete_pouring_work.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.aggregate-img {
+    background-image: url('assets/exposed_aggregate_driveway.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.resurfacing-img {
+    background-image: url('assets/concrete_resurfacing_covercrete.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.slabs-img {
+    background-image: url('assets/concrete_patios_paths.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.card-content {
+    padding: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+}
+
+.card-content p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.card-link {
+    font-weight: 700;
+    color: var(--accent);
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.card-link:hover {
+    color: var(--accent-hover);
+    padding-left: 5px;
+}
+
+/* Specifications Section */
+.specifications-section {
+    padding: 6rem 0;
+    background-color: var(--light-bg);
+}
+
+.specifications-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.specs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.spec-item {
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    border-left: 4px solid var(--accent);
+}
+
+.spec-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
     color: var(--primary);
 }
 
-.card p {
+.spec-item p {
     color: var(--text-light);
     font-size: 0.95rem;
     line-height: 1.6;
 }
 
-.aeo-box {
-    background-color: #f0f9ff;
-    border-left: 4px solid #0284c7;
-    padding: 1.5rem;
-    border-radius: 0 8px 8px 0;
-    margin: 1.5rem 0;
+/* Process Section */
+.process-section {
+    padding: 6rem 0;
+    background-color: var(--white);
 }
 
-.aeo-box h4 {
-    color: #0369a1;
-    font-size: 1.1rem;
+.process-timeline {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    position: relative;
+}
+
+.process-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 25px;
+    width: 2px;
+    background-color: var(--border-color);
+    z-index: 1;
+}
+
+.process-step {
+    display: flex;
+    gap: 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.step-num {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: var(--white);
+    border: 3px solid var(--accent);
+    color: var(--accent);
+    font-weight: 800;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: var(--shadow-md);
+}
+
+.step-content {
+    background-color: var(--light-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+    flex-grow: 1;
+}
+
+.step-content h3 {
+    font-size: 1.35rem;
     margin-bottom: 0.5rem;
 }
 
-.aeo-box p {
+.step-content p {
+    color: var(--text-light);
     font-size: 0.95rem;
-    color: #334155;
 }
 
-/* FAQ Accordion */
-.faq-grid {
-    display: grid;
-    gap: 1.5rem;
+/* Crossover Callout Banner */
+.crossover-banner {
+    background-color: #f1f5f9;
+    padding: 5rem 0;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.crossover-content {
+    width: 90%;
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.crossover-content h2 {
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+}
+
+.crossover-content p {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+/* Service Areas Section */
+.areas-section {
+    padding: 6rem 0;
+    background-color: var(--white);
+}
+
+.areas-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+    color: var(--text-light);
+    font-size: 1.05rem;
+}
+
+.areas-list {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.area-tag {
+    background-color: var(--light-bg);
+    border: 1px solid var(--border-color);
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    color: var(--primary);
+    font-size: 0.95rem;
+    transition: var(--transition-smooth);
+}
+
+.area-tag:hover {
+    background-color: var(--accent);
+    color: var(--white);
+    border-color: var(--accent);
+    transform: translateY(-2px);
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 6rem 0;
+    background-color: var(--light-bg);
+}
+
+.faq-container {
+    width: 90%;
     max-width: 900px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 .faq-item {
-    background: var(--white);
+    background-color: var(--white);
     border: 1px solid var(--border-color);
+    padding: 2rem;
     border-radius: 8px;
-    padding: 1.5rem;
     box-shadow: var(--shadow-sm);
 }
 
-.faq-item h4 {
-    font-size: 1.15rem;
+.faq-item h3 {
+    font-size: 1.25rem;
     margin-bottom: 0.75rem;
     color: var(--primary);
 }
@@ -364,253 +670,741 @@ h1, h2, h3, h4 {
 .faq-item p {
     color: var(--text-light);
     font-size: 0.95rem;
+    line-height: 1.6;
 }
 
-/* Footer */
-.site-footer {
-    background-color: var(--primary);
-    color: #94a3b8;
-    padding: 4rem 0 2rem 0;
-    font-size: 0.9rem;
+/* Partners Section */
+.partners-section {
+    padding: 4rem 0;
+    background-color: var(--white);
+    border-top: 1px solid var(--border-color);
 }
 
-.footer-grid {
+.partners-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 3rem;
-    margin-bottom: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 2rem;
+    align-items: center;
+    justify-items: center;
+    width: 90%;
 }
 
-.footer-col h4 {
+.partner-card {
+    padding: 1rem;
+    text-align: center;
+}
+
+.qbcc-logo .p-red { color: #e11d48; font-weight: 900; font-size: 1.8rem; }
+.qbcc-logo .p-blue { color: #0284c7; font-weight: 900; font-size: 1.8rem; }
+.lyndons-logo .l-red { color: #dc2626; font-weight: 800; font-size: 1.1rem; }
+.lyndons-logo .l-grey { color: #64748b; font-size: 0.75rem; }
+.boral-box .b-text { color: #0f172a; font-weight: 900; font-size: 1.4rem; letter-spacing: 2px; }
+.boral-box .b-colors { display: flex; height: 6px; margin-top: 2px; }
+.boral-box .b-yellow { background: #eab308; flex: 1; }
+.boral-box .b-green { background: #16a34a; flex: 1; }
+
+/* Call to Action Banner */
+.cta-banner {
+    background-color: var(--primary);
     color: var(--white);
-    margin-bottom: 1.25rem;
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.cta-banner h2 {
+    color: var(--white);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta-banner p {
+    color: #cbd5e1;
+    font-size: 1.15rem;
+    margin-bottom: 2.5rem;
+}
+
+.cta-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.phone-btn-large {
+    background-color: var(--accent);
+    color: var(--white);
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    font-weight: 800;
     font-size: 1.1rem;
+    box-shadow: 0 4px 15px rgba(217, 119, 6, 0.3);
 }
 
-.footer-col ul {
-    list-style: none;
+.phone-btn-large:hover {
+    background-color: var(--accent-hover);
+    transform: translateY(-3px);
 }
 
-.footer-col ul li {
-    margin-bottom: 0.6rem;
+.form-btn-secondary {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: var(--white);
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border: 1.5px solid rgba(255, 255, 255, 0.2);
+}
+
+.form-btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: var(--white);
+}
+
+/* Footer Section */
+.main-footer {
+    background-color: #0f172a;
+    color: #94a3b8;
+    padding: 5rem 0 2rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr 1fr;
+    gap: 4rem;
+    margin-bottom: 4rem;
+}
+
+.footer-info h3,
+.footer-links h3,
+.footer-contact h3 {
+    color: var(--white);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.footer-info p {
+    line-height: 1.7;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links a {
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+}
+
+.footer-links a:hover {
+    color: var(--accent);
+}
+
+.footer-contact p {
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
 }
 
 .footer-bottom {
-    text-align: center;
-    border-top: 1px solid #334155;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
     padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: center;
+    font-size: 0.85rem;
 }
 
-@media (max-width: 992px) {
+/* Responsive Styles & Mobile Navigation */
+.hamburger-menu {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
     .hero-content {
         grid-template-columns: 1fr;
-    }
-    .hero-text-area h1 {
-        font-size: 2.5rem;
+        gap: 3rem;
     }
 }
-    </style>
+
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+        order: 2;
+    }
+    .header-container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-cta {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        order: 3;
+        margin-top: 1rem;
+    }
+    .nav-links {
+        display: none;
+        width: 100%;
+        order: 4;
+        flex-direction: column;
+        align-items: center;
+        background: var(--primary);
+        padding: 1rem 0;
+        margin-top: 1rem;
+        border-radius: 8px;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .nav-links a {
+        font-size: 1rem;
+        padding: 0.5rem 0;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .hero-text-area h1 {
+        font-size: 2.25rem;
+    }
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+}
+</style>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&amp;display=swap"></noscript>
+    <link rel="icon" type="image/png" href="assets/gmb_logo.webp">
+    <link rel="apple-touch-icon" href="assets/gmb_logo.webp">
+
+    <!-- JSON-LD Local Business Schema Markup for Pimpama Page -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ConcreteContractor",
+      "name": "Gold Coast Concreters QLD - Pimpama",
+      "image": "https://goldcoastconcretersqld.com.au/assets/hero_bg.webp",
+      "@id": "https://goldcoastconcretersqld.com.au/pimpama",
+      "url": "https://goldcoastconcretersqld.com.au/pimpama",
+      "telephone": "+61411914157",
+      "priceRange": "$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pimpama",
+        "addressRegion": "QLD",
+        "postalCode": "4209",
+        "addressCountry": "AU"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-27.8174",
+        "longitude": "153.2842"
+      },
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Pimpama"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Gainsborough Greens"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Coomera"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Ormeau"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Gold Coast"
+        }
+      ]
+    }
+    </script>
+    <link rel="preload" as="image" href="assets/hero_bg.webp" fetchpriority="high">
 </head>
 <body>
 
-    <!-- Header -->
-    <header class="site-header">
+    <!-- Header Navigation -->
+    <header class="main-header">
         <div class="header-container">
             <a href="/" class="logo">
-                Gold Coast <span>Concreters QLD</span>
+                <img src="assets/gmb_logo.webp" alt="Gold Coast Concreters QLD Logo" class="logo-img" width="49" height="49">
+                <span class="highlight">Gold Coast</span> Concreters QLD
             </a>
+            <button class="hamburger-menu" aria-label="Toggle navigation">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
             <nav class="nav-links">
-                <a href="/">Home</a>
-                <a href="/ormeau">Ormeau</a>
-                <a href="/coomera">Coomera</a>
-                <a href="/pimpama" style="color: var(--accent);">Pimpama</a>
-                <a href="/crossover-permit-guide">Crossover Guide</a>
+                <a href="#services">Our Services</a>
+                <a href="#specifications">Specs &amp; Standards</a>
+                <a href="#process">Our Process</a>
+                <a href="#areas">Areas Served</a>
+                <a href="#faq">FAQ</a>
             </nav>
-            <a href="tel:0411914157" class="phone-btn">
-                📞 0411 914 157
-            </a>
+            <div class="header-cta">
+                <a href="tel:+61411914157" class="phone-btn">
+                    <span class="phone-icon">📞</span> Call Now: 0411 914 157
+                </a>
+            </div>
         </div>
     </header>
 
     <!-- Hero Section -->
+    <main>
     <section class="hero-section">
+        <div class="overlay"></div>
         <div class="hero-content">
             <div class="hero-text-area">
-                <span class="sub-badge">Local Pimpama (4209) Concreting Specialists</span>
-                <h1>Concreters Pimpama QLD — Driveways, Slabs &amp; Decorative Concrete</h1>
-                <p class="lead-text">QBCC Licensed (#15299707) concreters servicing Pimpama, Gainsborough Greens, Ormeau &amp; Northern Gold Coast. Engineered for local reactive clay soils &amp; GCCC crossover specs.</p>
-                <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
-                    <span>✅ <strong>N32/N25 Strength Mixes</strong></span>
-                    <span>✅ <strong>SL82 Mesh Steel</strong></span>
-                    <span>✅ <strong>Free On-Site Quotes</strong></span>
+                <span class="sub-badge">Licensed QBCC Concreting | Pimpama (4209) Specialists</span>
+                <h1>Professional Concreting &amp; Driveways Pimpama QLD</h1>
+                <p class="lead-text">Need a trusted local concreter in Pimpama? We pour highly durable <a href="/#services" style="color:var(--accent); font-weight:600; text-decoration:underline;">concrete driveways</a>, <a href="/#services" style="color:var(--accent); font-weight:600; text-decoration:underline;">exposed aggregate</a> pool surrounds, stencilled pathways, and engineered shed slabs. Complying strictly with QBCC licensing and Australian Standards (AS 3600 &amp; AS 2870) for Pimpama's reactive clay soils.</p>
+                <div class="hero-features">
+                    <div class="feature-item">✓ QBCC Licensed &amp; Insured</div>
+                    <div class="feature-item">✓ Servicing Pimpama &amp; Gainsborough Greens</div>
+                    <div class="feature-item">✓ Free On-Site Consultation &amp; Quote</div>
                 </div>
             </div>
-            <div class="hero-form-container">
-                <h3>Get Your Free Quote</h3>
-                <p>Fast, transparent quotes for Pimpama homeowners &amp; builders.</p>
-                <form id="pimpama-quote-form" action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
-                    <input type="hidden" name="subject" value="New Concrete Quote Request - Pimpama Page">
-                    <input type="hidden" name="from_name" value="Gold Coast Concreters QLD">
-                    <div class="form-group">
-                        <label>Your Name *</label>
-                        <input type="text" name="name" class="form-control" placeholder="John Smith" required>
+            
+            <!-- Lead Capture Form -->
+            <div class="hero-form-area" id="quote-form">
+                <h2>Request a Free Quote</h2>
+                <p>Fill out the form below and our local Pimpama team will contact you for a site measurement shortly.</p>
+                <form action="https://api.web3forms.com/submit" method="POST" class="quote-form">
+                    <input type="hidden" name="access_key" value="0999b14e-cc4b-4980-a61d-956e7e476d88">
+                    <input type="hidden" name="subject" value="New Lead - Gold Coast Concreters QLD (Pimpama)">
+                    <input type="hidden" name="from_name" value="Gold Coast Concreters Website">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                    <div class="input-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
                     </div>
-                    <div class="form-group">
-                        <label>Phone Number *</label>
-                        <input type="tel" name="phone" class="form-control" placeholder="04XX XXX XXX" required>
+                    <div class="input-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="04XX XXX XXX" required>
                     </div>
-                    <div class="form-group">
-                        <label>Suburb</label>
-                        <input type="text" name="suburb" class="form-control" value="Pimpama (4209)" readonly>
+                    <div class="input-group">
+                        <label for="suburb">Suburb (e.g. Pimpama 4209)</label>
+                        <input type="text" id="suburb" name="suburb" placeholder="Pimpama QLD" value="Pimpama 4209" required>
                     </div>
-                    <div class="form-group">
-                        <label>Concrete Service Needed</label>
-                        <select name="service" class="form-control" required>
-                            <option value="">Select Service...</option>
-                            <option value="Exposed Aggregate Driveway">Exposed Aggregate Driveway</option>
-                            <option value="Coloured / Stamped Concrete">Coloured / Stamped Concrete</option>
-                            <option value="Covercrete Resurfacing">Covercrete Resurfacing</option>
-                            <option value="Patio or Shed Slab">Patio or Shed Slab</option>
-                            <option value="Council Crossover (VXO)">Council Crossover (VXO)</option>
+                    <div class="input-group">
+                        <label for="service">Required Service</label>
+                        <select id="service" name="service" required>
+                            <option value="" disabled selected>Select service needed</option>
+                            <option value="driveway">Exposed Aggregate Driveway</option>
+                            <option value="resurfacing">Decorative Resurfacing (Covercrete)</option>
+                            <option value="stencil">Stencil &amp; Stamped Concrete</option>
+                            <option value="slabs">House Slabs &amp; Shed Slabs</option>
+                            <option value="paths">Patios &amp; Garden Pathways</option>
+                            <option value="crossover">Pimpama Driveway Crossover (VXO)</option>
                         </select>
                     </div>
-                    <div class="form-group">
-                        <label>Project Details / Dimensions</label>
-                        <textarea name="message" class="form-control" rows="3" placeholder="Approx. dimensions (e.g. 5m x 4m patio slab)"></textarea>
+                    <div class="input-group">
+                        <label for="message">Project Details</label>
+                        <textarea id="message" name="message" rows="3" placeholder="Please specify approximate size (sqm), current surface type, and accessibility details." required></textarea>
                     </div>
-                    <button type="submit" class="submit-btn">Request Free Quote Today</button>
+                    <button type="submit" class="submit-btn">Send Quote Request</button>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- Section 1: Local Pimpama Expertise & Soil Factors -->
-    <section class="content-section">
-        <div class="container">
-            <h2 class="section-title">Local Concreting Built for Pimpama Soil &amp; Climate</h2>
-            <p class="section-subtitle">Pimpama (Postcode 4209) is one of the fastest-growing residential hubs on the Gold Coast, from new estates in Gainsborough Greens to established homes near Pimpama City Centre and Pimpama State Secondary College.</p>
+    <!-- Core Services Section -->
+    <section id="services" class="services-section">
+        <div class="section-title">
+            <span class="accent-text">Pimpama Services</span>
+            <h2>Our Concreting Services in Pimpama</h2>
+            <div class="divider"></div>
+        </div>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="card-image-placeholder driveway-img"></div>
+                <div class="card-content">
+                    <h3>Pimpama Driveways &amp; Crossovers</h3>
+                    <p>Plain concrete, color oxide driveways, or custom stencils. We construct crossovers matching the City of Gold Coast standard drawings for vehicle crossings in Pimpama.</p>
+                    <a href="#quote-form" class="card-link">Get a Quote →</a>
+                </div>
+            </div>
             
-            <div class="grid-3">
-                <div class="card">
-                    <h3>Handling Pimpama's Reactive Clay Soil</h3>
-                    <p>Pimpama features heavy black reactive clay soil that expands dramatically during summer downpours and shrinks during dry spells. Without proper sub-grade compaction, 100mm-125mm slab thickness, and heavy <strong>SL82 steel mesh reinforcement</strong>, concrete slabs will crack. We engineer every pour with proper base preparation to withstand soil movement.</p>
-                </div>
-                <div class="card">
-                    <h3>GCCC Crossover (VXO) Permits</h3>
-                    <p>Installing a new driveway crossover in Pimpama requires compliance with Gold Coast City Council (GCCC) Vehicular Crossover guidelines. We pour compliant 125mm thick N32 concrete crossovers with SL82 mesh, ensuring you avoid council inspection delays and fines.</p>
-                </div>
-                <div class="card">
-                    <h3>UV &amp; Stormwater Protection</h3>
-                    <p>Queensland’s intense UV rays and sudden heavy rain events cause unsealed concrete to fade and erode. We apply commercial-grade anti-fade acrylic sealers to all exposed aggregate and coloured concrete driveways to lock in color and prevent oil staining.</p>
+            <div class="service-card">
+                <div class="card-image-placeholder aggregate-img"></div>
+                <div class="card-content">
+                    <h3>Exposed Aggregate Finishes</h3>
+                    <p>A premium textured concrete finish utilizing natural QLD river pebbles. Ideal for Pimpama's modern estates like Gainsborough Greens, pool decks, paths, and outdoor patios.</p>
+                    <a href="#quote-form" class="card-link">Get a Quote →</a>
                 </div>
             </div>
-
-            <!-- AEO Direct Answer Block -->
-            <div class="aeo-box">
-                <h4>💡 Quick Answer: How much does concreting cost per m² in Pimpama QLD?</h4>
-                <p>Standard plain concrete slabs in Pimpama start from <strong>$75 - $95 per m²</strong>, while decorative exposed aggregate and stamped concrete range between <strong>$110 - $160 per m²</strong> depending on site excavation, steel reinforcement, and sealer selection.</p>
+            
+            <div class="service-card">
+                <div class="card-image-placeholder resurfacing-img"></div>
+                <div class="card-content">
+                    <h3>Concrete Resurfacing (Covercrete)</h3>
+                    <p>Upgrade your existing driveway. Our spray-on concrete resurfacing adds texture and strength to old concrete using custom patterns and weather-resistant sealers.</p>
+                    <a href="#quote-form" class="card-link">Get a Quote →</a>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Section 2: Core Concreting Services -->
-    <section class="content-section bg-light">
-        <div class="container">
-            <h2 class="section-title">Concreting Services in Pimpama &amp; Surrounding Estates</h2>
-            <div class="grid-3">
-                <div class="card">
-                    <h3>Exposed Aggregate Driveways</h3>
-                    <p>Pimpama’s most popular driveway choice. Combining natural Gold Coast stone pebbles with premium N32 strength concrete for a non-slip, stylish finish that boosts home curb appeal in estates like Gainsborough Greens.</p>
-                </div>
-                <div class="card">
-                    <h3>Patio, Shed &amp; Extension Slabs</h3>
-                    <p>Precision-poured 100mm shed and patio concrete slabs designed to support heavy equipment, outdoor living spaces, and pergola structures with correct fall for storm water runoff.</p>
-                </div>
-                <div class="card">
-                    <h3>Covercrete Concrete Resurfacing</h3>
-                    <p>Transform faded, dull, or stained plain concrete driveways into high-end decorative surfaces using polymer-modified covercrete in slate, charcoal, or sandstone patterns.</p>
+            
+            <div class="service-card">
+                <div class="card-image-placeholder slabs-img"></div>
+                <div class="card-content">
+                    <h3>Shed Slabs &amp; Patio Extensions</h3>
+                    <p>Precision formwork and SL82 steel reinforcing for shed slabs, house extensions, patio expansions, and durable concrete garden paths across Pimpama properties.</p>
+                    <a href="#quote-form" class="card-link">Get a Quote →</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section 3: Local FAQs -->
-    <section class="content-section">
-        <div class="container">
-            <h2 class="section-title">Pimpama Concreting FAQs</h2>
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <h4>Do I need a Gold Coast City Council permit for a driveway in Pimpama?</h4>
-                    <p>You only need a GCCC Vehicular Crossover (VXO) permit for the section of your driveway extending from your property boundary to the kerb line over council land. Regular driveways within your property boundary do not require council permits.</p>
+    <!-- Specifications Section -->
+    <section id="specifications" class="specifications-section">
+        <div class="specifications-container">
+            <div class="section-title">
+                <span class="accent-text">Quality Standards</span>
+                <h2>Pimpama Engineering &amp; Pour Specifications</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="specs-grid">
+                <div class="spec-item">
+                    <h3>N25 &amp; N32 Concrete Strength</h3>
+                    <p>We pour N25 (25MPa) grade concrete for garden paths and shed slabs. For vehicle driveways and heavy traffic in Pimpama, we use N32 (32MPa) concrete to ensure high load capacity and long-term durability.</p>
                 </div>
-                <div class="faq-item">
-                    <h4>What concrete mix strength do you use for Pimpama driveways?</h4>
-                    <p>We use minimum <strong>N25 concrete mix</strong> for residential slabs and upgraded <strong>N32 high-strength concrete mix</strong> for all driveways and heavy crossover areas to guarantee maximum durability.</p>
+                
+                <div class="spec-item">
+                    <h3>SL82 Steel Mesh Reinforcement</h3>
+                    <p>Pimpama features reactive black clay soils. All of our slabs feature heavy SL82 steel mesh laid on plastic bar chairs to ensure maximum structural reinforcement in the center of the pour.</p>
                 </div>
-                <div class="faq-item">
-                    <h4>How long before I can park my car on a new concrete driveway in Pimpama?</h4>
-                    <p>Foot traffic is safe after 24–48 hours. However, we recommend waiting a full 7 days before driving or parking passenger vehicles on your new concrete slab to allow proper curing.</p>
+                
+                <div class="spec-item">
+                    <h3>Proper Subgrade Compaction</h3>
+                    <p>We prevent shifting and cracking by excavating to depth, compacting the subgrade, and laying a 50mm compacted roadbase foundation before installing steel mesh and pouring concrete.</p>
                 </div>
-                <div class="faq-item">
-                    <h4>What steel mesh reinforcement is best for Pimpama's clay soil?</h4>
-                    <p>We install <strong>SL82 steel reinforcement mesh</strong> elevated on plastic chairs to ensure the steel sits dead in the middle of the concrete pour, giving maximum tensile strength against clay movement.</p>
-                </div>
-                <div class="faq-item">
-                    <h4>Are your concreting contractors QBCC licensed?</h4>
-                    <p>Yes. All work is carried out by fully qualified, QBCC licensed, and insured concreters in compliance with Australian Standard AS 3600.</p>
+
+                <div class="spec-item">
+                    <h3>Expansion &amp; Control Joints</h3>
+                    <p>We cut control joints at precise intervals to prevent cracking from QLD heat expansion and place flexible expansion joints where new concrete meets house slabs or walls.</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Detailed Process Section -->
+    <section id="process" class="process-section">
+        <div class="section-title">
+            <span class="accent-text">Professional Execution</span>
+            <h2>Our Concreting Process: Excavation to Sealing</h2>
+            <div class="divider"></div>
+        </div>
+        
+        <div class="process-timeline">
+            <div class="process-step">
+                <div class="step-num">01</div>
+                <div class="step-content">
+                    <h3>Excavation &amp; Base Prep</h3>
+                    <p>We excavate to required depth, remove roots and organic soil, compact subgrade with a plate compactor, and lay a compacted roadbase or crusher dust foundation.</p>
+                </div>
+            </div>
+            
+            <div class="process-step">
+                <div class="step-num">02</div>
+                <div class="step-content">
+                    <h3>Formwork &amp; Steel Laying</h3>
+                    <p>We set up straight timber formwork to define slab edges, lay plastic moisture underlay if required, and position SL82 reinforcement mesh on plastic support chairs.</p>
+                </div>
+            </div>
+            
+            <div class="process-step">
+                <div class="step-num">03</div>
+                <div class="step-content">
+                    <h3>Concrete Pouring &amp; Finishing</h3>
+                    <p>We pour N32/N25 concrete mix, level with a screed bar, and apply the final finish—whether it's heavy broom (for crossovers), exposed aggregate wash, or stenciling.</p>
+                </div>
+            </div>
+
+            <div class="process-step">
+                <div class="step-num">04</div>
+                <div class="step-content">
+                    <h3>Cutting &amp; Sealing</h3>
+                    <p>We cut concrete control joints to manage expansion stress and apply two coats of UV-stable solvent acrylic concrete sealer to protect the slab from dirt and stains.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pimpama Council Crossover Information -->
+    <section class="crossover-banner">
+        <div class="crossover-content">
+            <span class="accent-text">Pimpama Permits</span>
+            <h2>Vehicular Crossovers in Pimpama</h2>
+            <p>Every driveway crossover built on the council road reserve in Pimpama requires a <strong>Vehicular Crossing (VXO) permit</strong> from the City of Gold Coast. Our team handles the drawings, application forms, pre-pour inspections, and compliance checks, ensuring a hassle-free, approved installation.</p>
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-top: 1.5rem;">
+                <a href="tel:+61411914157" class="phone-btn">Call About Pimpama Crossover Approvals</a>
+                <a href="crossover-permit-guide" class="phone-btn" style="background-color: transparent; border: 2px solid var(--accent); color: var(--accent);">Read Crossover Permit Guide</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas -->
+    <section id="areas" class="areas-section">
+        <div class="section-title">
+            <span class="accent-text">Service Suburbs</span>
+            <h2>Concreting Service Areas in Northern Gold Coast</h2>
+            <div class="divider"></div>
+        </div>
+        <p class="areas-intro">We serve homeowners and builders across Pimpama and surrounding areas. Our contractors are active near local landmarks like <strong>Pimpama City Centre</strong>, <strong>Gainsborough Greens</strong>, <strong>Pimpama State Secondary College</strong>, and the M1 corridor.</p>
+        
+        <div class="areas-list">
+            <a href="pimpama" class="area-tag">Pimpama (4209)</a>
+            <a href="coomera" class="area-tag">Coomera &amp; Upper Coomera (4209)</a>
+            <a href="ormeau" class="area-tag">Ormeau &amp; Ormeau Hills (4208)</a>
+            <a href="/" class="area-tag">Willow Vale (4209)</a>
+            <a href="/" class="area-tag">Kingsholme (4208)</a>
+            <a href="/" class="area-tag">Yatala (4207)</a>
+            <a href="/" class="area-tag">Helensvale (4212)</a>
+            <a href="/" class="area-tag">Hope Island (4212)</a>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="section-title">
+            <span class="accent-text">FAQ</span>
+            <h2>Frequently Asked Questions - Pimpama Concreting</h2>
+            <div class="divider"></div>
+        </div>
+        
+        <div class="faq-container">
+            <div class="faq-item">
+                <h3>Q: What is the cost per m2 for concreting in Pimpama (4209)?</h3>
+                <p>A: <strong>Exposed aggregate driveways</strong> in Pimpama typically cost between $90-$140 per square metre. Plain concrete slabs start from $75-$95/m², while <strong>Covercrete resurfacing</strong> ranges from $45-$85/m². Prices depend on excavation depth, site access, and steel mesh selection. We provide free, transparent quotes with no hidden fees.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q: How do you handle Pimpama's reactive clay soil for driveways?</h3>
+                <p>A: Pimpama features heavy black clay soil that expands when wet and contracts when dry. We engineer all Pimpama driveways with 50mm compacted roadbase, minimum 100mm-125mm slab depth, and elevated <strong>SL82 steel reinforcement mesh</strong> to prevent cracking and structural sinking.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q: Do I need a permit for a new driveway crossover in Pimpama?</h3>
+                <p>A: Yes. Any driveway crossing built on public road reserves requires a Vehicular Crossing (VXO) permit from the Gold Coast City Council. We handle the design drawings and compliance inspection processes for you.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Q: What concrete strength do you use for Pimpama driveways?</h3>
+                <p>A: We use high-strength N32 (32MPa) concrete for residential driveways and crossovers to prevent cracking, whereas standard garden paths are poured at N25 (25MPa) strength.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q: Are your concreters fully QBCC licensed in Queensland?</h3>
+                <p>A: Yes. All our work is carried out by fully QBCC licensed (#15299707) and insured concreting specialists adhering strictly to Australian Standards AS 3600 and AS 2870.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted Partners Section -->
+    <section class="partners-section">
+        <div class="section-title" style="text-align: left; max-width: 1200px; margin: 0 auto 3rem auto;">
+            <span class="accent-text" style="margin-left: 0;">Trusted Partners</span>
+            <h2 style="text-align: left;">Our Partners</h2>
+        </div>
+        <div class="partners-grid" style="max-width: 1200px; margin: 0 auto;">
+            <!-- QBCC -->
+            <div class="partner-card qbcc-logo">
+                <div class="logo-main"><span class="p-red">q</span><span class="p-blue">bcc</span></div>
+                <small>queensland building<br>and construction commission</small>
+            </div>
+            <!-- Lyndons -->
+            <div class="partner-card lyndons-logo">
+                <div class="lyndons-box">
+                    <div class="l-red">LYNDONS Pty. Ltd.</div>
+                    <div class="l-grey">The Tradesman's Warehouse</div>
+                </div>
+            </div>
+            <!-- Boral -->
+            <div class="partner-card boral-logo">
+                <div class="boral-box">
+                    <div class="b-text">BORAL</div>
+                    <div class="b-colors">
+                        <div class="b-yellow"></div>
+                        <div class="b-green"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- River Sands -->
+            <div class="partner-card riversands-logo">
+                <div class="r-icon"><span>N</span></div>
+                <div class="r-text-wrap">
+                    <div class="r-main">RIVER SANDS</div>
+                    <div class="r-sub">PTY<br>LTD</div>
+                </div>
+            </div>
+            <!-- Concrete Colour Systems -->
+            <div class="partner-card ccs-logo">
+                <div class="c-icon">C<span>S</span></div>
+                <div class="c-text-wrap">
+                    <div class="c-text">CONCRETE<br>COLOUR<br>SYSTEMS</div>
+                    <div class="c-tag">Better colours and coatings</div>
+                </div>
+            </div>
+            <!-- Brisbane -->
+            <div class="partner-card brisbane-logo">
+                <div class="bris-icon">🏛️</div>
+                <div class="bris-text">Brisbane</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="cta-banner">
+        <h2>Ready to pour concrete at your Pimpama home?</h2>
+        <p>Contact our local team today for an obligation-free site measure and quote.</p>
+        <div class="cta-actions">
+            <a href="tel:+61411914157" class="phone-btn-large">📞 Call 0411 914 157</a>
+            <a href="#quote-form" class="form-btn-secondary">Request Online Quote</a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h4>Gold Coast Concreters QLD</h4>
-                    <p>Your local QBCC licensed concrete specialists in Pimpama (4209), Ormeau, Coomera &amp; Northern Gold Coast.</p>
-                </div>
-                <div class="footer-col">
-                    <h4>Service Suburbs</h4>
-                    <ul>
-                        <li><a href="/pimpama">Pimpama (4209)</a></li>
-                        <li><a href="/ormeau">Ormeau (4208)</a></li>
-                        <li><a href="/coomera">Coomera (4209)</a></li>
-                        <li><a href="/">Gold Coast Wide</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Contact Us</h4>
-                    <p>📍 Pimpama QLD 4209</p>
-                    <p>📞 Phone: <a href="tel:0411914157" style="color: var(--accent);">0411 914 157</a></p>
-                    <p>⏱️ Hours: Mon - Sat: 6:30am - 5:30pm</p>
-                </div>
+    </main>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Gold Coast Concreters QLD</h3>
+                <p>Your premier, QBCC licensed concrete contractors serving Pimpama (4209), Ormeau, Upper Coomera, and the northern Gold Coast corridor. Delivering quality concrete slabs, crossovers, and aggregate driveways built to last.</p>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Gold Coast Concreters QLD. QBCC Licensed &amp; Fully Insured. All Rights Reserved.</p>
+            <div class="footer-links">
+                <h3>Core Services</h3>
+                <a href="#services">Concrete Driveways</a>
+                <a href="#services">Exposed Aggregate</a>
+                <a href="#services">Driveway Resurfacing</a>
+                <a href="#services">Patios &amp; Pathways</a>
+                <a href="crossover-permit-guide">Council Crossovers</a>
             </div>
+            <div class="footer-contact">
+                <h3>Contact Info</h3>
+                <p>📍 Pimpama, QLD 4209 (Service Area Business)</p>
+                <p>📞 Phone: 0411 914 157</p>
+                <p>✉ Email: support@goldcoastconcretersqld.com.au</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Gold Coast Concreters QLD. All rights reserved. QBCC Licensed Contractor. Compliant with AS 3600 &amp; AS 2870.</p>
         </div>
     </footer>
 
-    <!-- Local Schema Markup -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Gold Coast Concreters QLD - Pimpama",
-      "url": "https://goldcoastconcretersqld.com.au/pimpama",
-      "telephone": "+61411914157",
-      "areaServed": {
-        "@type": "City",
-        "name": "Pimpama",
-        "postalCode": "4209",
-        "containedInPlace": "Gold Coast, QLD"
-      },
-      "description": "QBCC licensed concreters in Pimpama QLD 4209. Driveways, exposed aggregate, slabs & covercrete resurfacing."
-    }
-    </script>
+    <!-- AJAX Form Submission Script -->
+    <script>
+        const form = document.querySelector('.quote-form');
+        const formContainer = document.getElementById('quote-form');
 
+        if (form && formContainer) {
+            // Create the thank you message element dynamically
+            const successDiv = document.createElement('div');
+            successDiv.id = 'form-success-msg';
+            successDiv.style.display = 'none';
+            successDiv.style.textAlign = 'center';
+            successDiv.style.padding = '3rem 1.5rem';
+            successDiv.innerHTML = `
+                <div style="font-size: 4rem; color: #d97706; margin-bottom: 1.5rem; animation: pop 0.4s ease-out;">✓</div>
+                <h3 style="color: #0f172a; font-size: 1.75rem; font-weight: 800; margin-bottom: 1rem;">Thank You!</h3>
+                <p style="color: #334155; font-size: 1rem; line-height: 1.6; margin-bottom: 1.5rem;">Your quote request has been successfully submitted. Our local concreting team will contact you shortly for a site measure.</p>
+                <button id="reset-form-btn" style="background-color: #0f172a; color: #fff; border: none; padding: 0.6rem 1.2rem; border-radius: 6px; font-weight: 600; cursor: pointer; transition: background-color 0.2s;">Send another response</button>
+            `;
+            
+            // Add pop animation style
+            const style = document.createElement('style');
+            style.innerHTML = `
+                @keyframes pop {
+                    0% { transform: scale(0.6); opacity: 0; }
+                    100% { transform: scale(1); opacity: 1; }
+                }
+            `;
+            document.head.appendChild(style);
+            
+            formContainer.appendChild(successDiv);
+
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const submitBtn = form.querySelector('.submit-btn');
+                const originalBtnText = submitBtn.textContent;
+                submitBtn.textContent = 'Sending...';
+                submitBtn.disabled = true;
+                
+                const formData = new FormData(form);
+                
+                fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(async (response) => {
+                    let json = await response.json();
+                    if (response.status == 200) {
+                        // Hide all form children (h3, p, form)
+                        Array.from(formContainer.children).forEach(child => {
+                            if (child.id !== 'form-success-msg') {
+                                child.style.display = 'none';
+                            }
+                        });
+                        // Show success div
+                        successDiv.style.display = 'block';
+                    } else {
+                        console.log(response);
+                        alert(json.message || "Something went wrong. Please try again.");
+                        submitBtn.textContent = originalBtnText;
+                        submitBtn.disabled = false;
+                    }
+                })
+                .catch(error => {
+                    console.log(error);
+                    alert("Form submission failed. Please check your internet connection and try again.");
+                    submitBtn.textContent = originalBtnText;
+                    submitBtn.disabled = false;
+                });
+            });
+            
+            // Reset form handler
+            document.getElementById('reset-form-btn').addEventListener('click', function() {
+                form.reset();
+                successDiv.style.display = 'none';
+                Array.from(formContainer.children).forEach(child => {
+                    if (child.id !== 'form-success-msg') {
+                        child.style.display = '';
+                    }
+                });
+            });
+        }
+    </script>
 </body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const hamburger = document.querySelector('.hamburger-menu');
+        const navLinks = document.querySelector('.nav-links');
+        if(hamburger) {
+            hamburger.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+            });
+        }
+    });
+</script>
 </html>
