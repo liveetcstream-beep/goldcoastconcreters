@@ -685,6 +685,80 @@ h4 {
     line-height: 1.7;
 }
 
+/* Trusted Partners Section Styling */
+.partners-section {
+    padding: 5rem 0;
+    background-color: var(--light-bg);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 1.5rem;
+    align-items: center;
+    justify-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.partner-card {
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.25rem 1rem;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    width: 100%;
+    transition: var(--transition-smooth);
+}
+
+.partner-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--accent);
+}
+
+.qbcc-logo .logo-main {
+    font-size: 1.6rem;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+.qbcc-logo .p-red { color: #e11d48; }
+.qbcc-logo .p-blue { color: #0284c7; }
+.qbcc-logo small { font-size: 0.65rem; color: var(--text-light); text-transform: lowercase; line-height: 1.1; display: block; margin-top: 2px; }
+
+.lyndons-logo .l-red { color: #dc2626; font-weight: 800; font-size: 1rem; letter-spacing: 0.5px; }
+.lyndons-logo .l-grey { color: #64748b; font-size: 0.7rem; font-weight: 600; margin-top: 2px; }
+
+.boral-box .b-text { font-weight: 900; font-size: 1.3rem; letter-spacing: 2px; color: var(--primary); }
+.boral-box .b-colors { display: flex; height: 5px; margin-top: 4px; border-radius: 2px; overflow: hidden; }
+.boral-box .b-yellow { background: #eab308; flex: 1; }
+.boral-box .b-green { background: #16a34a; flex: 1; }
+
+.riversands-logo { display: flex; flex-direction: row; gap: 0.5rem; align-items: center; }
+.riversands-logo .r-icon { background: #0284c7; color: white; width: 28px; height: 28px; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 0.9rem; }
+.riversands-logo .r-text-wrap { text-align: left; }
+.riversands-logo .r-main { font-weight: 800; font-size: 0.85rem; color: var(--primary); line-height: 1; }
+.riversands-logo .r-sub { font-size: 0.6rem; color: var(--text-light); line-height: 1; margin-top: 2px; }
+
+.ccs-logo { display: flex; flex-direction: row; gap: 0.5rem; align-items: center; }
+.ccs-logo .c-icon { font-weight: 900; font-size: 1.1rem; color: var(--accent); }
+.ccs-logo .c-text-wrap { text-align: left; }
+.ccs-logo .c-text { font-weight: 800; font-size: 0.75rem; color: var(--primary); line-height: 1.1; }
+.ccs-logo .c-tag { font-size: 0.6rem; color: var(--text-light); }
+
+.brisbane-logo { display: flex; flex-direction: row; gap: 0.5rem; align-items: center; }
+.brisbane-logo .bris-icon { font-size: 1.5rem; }
+.brisbane-logo .bris-text { font-weight: 800; font-size: 1rem; color: var(--primary); }
+
 /* Call to Action Banner */
 .cta-banner {
     background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
