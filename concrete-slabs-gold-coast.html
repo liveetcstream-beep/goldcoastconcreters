@@ -45,66 +45,94 @@
 </head>
 <body>
 
-    <!-- Header / Navigation -->
-    <header class="navbar">
-        <div class="nav-container">
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="header-container">
             <a href="/" class="logo">
-                <span class="logo-accent">Gold Coast</span> Concreters QLD
+                <img src="assets/gmb_logo.webp" alt="Gold Coast Concreters QLD Logo" class="logo-img" width="49" height="49">
+                <span class="highlight">Gold Coast</span> Concreters QLD
             </a>
+            <button class="hamburger-menu" aria-label="Toggle navigation">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
             <nav class="nav-links">
                 <a href="/">Home</a>
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#areas">Suburbs</a>
+                <a href="/#services">Services</a>
+                <a href="/#areas">Suburbs</a>
                 <a href="#faq">FAQ</a>
-                <a href="tel:+61411914157" class="nav-phone">📞 0411 914 157</a>
             </nav>
+            <div class="header-cta">
+                <a href="tel:+61411914157" class="phone-btn">
+                    <span class="phone-icon">📞</span> Call Now: 0411 914 157
+                </a>
+            </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" style="background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('assets/concrete_pouring_work.webp');">
-        <div class="hero-container">
-            <div class="hero-text">
-                <span class="badge">QBCC Licensed #15299707</span>
+    <main>
+    <section class="hero-section" style="background-image: linear-gradient(135deg, rgba(15, 23, 42, 0.88) 0%, rgba(30, 41, 59, 0.88) 100%), url('assets/concrete_pouring_work.webp');">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text-area">
+                <span class="sub-badge">QBCC Licensed #15299707</span>
                 <h1>Concrete Slabs &amp; Foundations Gold Coast</h1>
-                <p>Planning a new machinery shed, house extension, garage floor, or water tank pad? Building on unreinforced or poorly compacted ground risks permanent structural cracking and floor failure. Our QBCC-licensed team pours engineered <strong>concrete slabs Gold Coast</strong> wide, complying strictly with <strong>AS 2870 (Residential Slabs &amp; Footings) &amp; AS 3600</strong>.</p>
-                <div class="hero-cta">
-                    <a href="tel:+61411914157" class="btn-primary">Call 0411 914 157 for Free Quote</a>
-                    <a href="#quote-form" class="btn-secondary">Request On-Site Measure</a>
+                <p class="lead-text">Planning a new machinery shed, house extension, garage floor, or water tank pad? Building on unreinforced or poorly compacted ground risks permanent structural cracking and floor failure. Our QBCC-licensed team pours engineered <strong>concrete slabs Gold Coast</strong> wide, complying strictly with <strong>AS 2870 (Residential Slabs &amp; Footings) &amp; AS 3600</strong>.</p>
+                <div class="hero-features">
+                    <div class="feature-item">✓ QBCC Licensed &amp; Insured</div>
+                    <div class="feature-item">✓ Compliant with AS 2870 &amp; AS 3600</div>
+                    <div class="feature-item">✓ Free On-Site Measure &amp; Quote</div>
                 </div>
             </div>
             
             <!-- Lead Capture Form -->
-            <div id="quote-form" class="hero-form-container">
-                <h3>Get a Free Concrete Slab Quote</h3>
-                <p>Zero obligation. Fast local response across Gold Coast.</p>
-                <form class="quote-form">
+            <div class="hero-form-area" id="quote-form">
+                <h2>Request a Free Quote</h2>
+                <p>Fill out the form below and our local team will contact you for a site measurement shortly.</p>
+                <form action="https://api.web3forms.com/submit" method="POST" class="quote-form">
                     <input type="hidden" name="access_key" value="0999b14e-cc4b-4980-a61d-956e7e476d88">
                     <input type="hidden" name="subject" value="New Concrete Slab Lead - Gold Coast">
-                    <input type="text" name="botcheck" style="display: none;">
+                    <input type="hidden" name="from_name" value="Gold Coast Concreters Website">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                     
-                    <div class="form-group">
-                        <input type="text" name="name" placeholder="Your Name *" required>
+                    <div class="input-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
                     </div>
-                    <div class="form-group">
-                        <input type="tel" name="phone" placeholder="Phone Number *" required>
+                    <div class="input-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="04XX XXX XXX" required>
                     </div>
-                    <div class="form-group">
-                        <input type="text" name="suburb" placeholder="Suburb (e.g. Yatala, Kingsholme)" required>
+                    <div class="input-group">
+                        <label for="suburb">Suburb</label>
+                        <input type="text" id="suburb" name="suburb" placeholder="e.g. Yatala, Kingsholme" required>
                     </div>
-                    <div class="form-group">
-                        <select name="service" required>
-                            <option value="" disabled selected>Select Service *</option>
-                            <option value="Shed Concrete Slab">Shed / Workshop Slab</option>
+                    <div class="input-group">
+                        <label for="service">Required Service</label>
+                        <select id="service" name="service" required>
+                            <option value="Shed Concrete Slab" selected>Shed / Workshop Slab</option>
                             <option value="House Extension Slab">House Extension Slab</option>
                             <option value="Industrial Concrete Slab">Industrial Heavy-Load Slab</option>
                             <option value="Patio Concrete Slab">Patio / Alfresco Slab</option>
                         </select>
                     </div>
-                    <button type="submit" class="submit-btn">Get Free Quote Now</button>
+                    <div class="input-group">
+                        <label for="message">Project Details</label>
+                        <textarea id="message" name="message" rows="3" placeholder="Specify slab dimensions or site details..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Quote Request</button>
                 </form>
             </div>
+        </div>
+    </section>
+
+    <!-- Credentials / Trust Bar -->
+    <section class="credentials-bar">
+        <div class="credentials-container">
+            <div class="credential-badge"><span>✓</span> QBCC LICENSED &amp; INSURED</div>
+            <div class="credential-badge"><span>✓</span> AS 3600 COMPLIANT</div>
+            <div class="credential-badge"><span>✓</span> HIA MEMBER</div>
+            <div class="credential-badge"><span>✓</span> GCCC DRAWINGS APPROVED</div>
         </div>
     </section>
 
@@ -121,11 +149,11 @@
 
             <div class="specs-grid" style="margin-top: 2rem;">
                 <div class="spec-item">
-                    <h3>Residential Shed &amp; Garage Slabs</h3>
+                    <h4>Residential Shed &amp; Garage Slabs</h4>
                     <p>100mm–125mm slab depth, 50mm compacted roadbase foundation, SL82 steel mesh on bar chairs, poured at N32 concrete strength with perimeter edge beams.</p>
                 </div>
                 <div class="spec-item">
-                    <h3>Heavy Commercial &amp; Industrial Slabs</h3>
+                    <h4>Heavy Commercial &amp; Industrial Slabs</h4>
                     <p>125mm–150mm depth, 150mm compacted roadbase, double SL82/SL92 steel mesh, poured at high-capacity N40 strength with helicopter power-trowel finish for forklift and truck loads.</p>
                 </div>
             </div>
@@ -144,11 +172,11 @@
             </p>
             <div class="specs-grid">
                 <div class="spec-item">
-                    <h3>1. Skipping Mechanical Needle Vibration</h3>
+                    <h4>1. Skipping Mechanical Needle Vibration</h4>
                     <p>Pouring deep footings without mechanical needle vibration leaves air pockets (honeycombing) that drastically weaken load-bearing capacity. We needle-vibrate all trench footings.</p>
                 </div>
                 <div class="spec-item">
-                    <h3>2. Omitting Plastic Moisture Underlay</h3>
+                    <h4>2. Omitting Plastic Moisture Underlay</h4>
                     <p>Failing to lay 0.2mm plastic vapor barrier under the slab allows ground moisture to wick into the concrete, causing damp garage floors and rusting internal steel mesh.</p>
                 </div>
             </div>
@@ -216,6 +244,7 @@
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Embedded JSON-LD FAQPage Schema -->
     <script type="application/ld+json">
@@ -252,28 +281,25 @@
     </script>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="main-footer">
         <div class="footer-container">
-            <div class="footer-col">
+            <div class="footer-info">
                 <h3>Gold Coast Concreters QLD</h3>
                 <p>QBCC Licensed #15299707. Premier concrete contractors specializing in exposed aggregate, covercrete resurfacing, house slabs, and driveway crossovers.</p>
                 <p><strong>Call Us:</strong> <a href="tel:+61411914157" style="color: var(--accent);">0411 914 157</a></p>
             </div>
-            <div class="footer-col">
-                <h3>Services</h3>
-                <p><a href="exposed-aggregate-gold-coast">Exposed Aggregate</a></p>
-                <p><a href="covercrete-resurfacing-gold-coast">Covercrete Resurfacing</a></p>
-                <p><a href="stencil-stamped-concrete-gold-coast">Stencil &amp; Stamped</a></p>
-                <p><a href="concrete-slabs-gold-coast">Concrete Slabs</a></p>
-                <p><a href="retaining-walls-gold-coast">Retaining Walls</a></p>
+            <div class="footer-links">
+                <h3>Our Decorative Concrete Services</h3>
+                <a href="exposed-aggregate-gold-coast">Exposed Aggregate Driveways</a>
+                <a href="covercrete-resurfacing-gold-coast">Covercrete Resurfacing</a>
+                <a href="stencil-stamped-concrete-gold-coast">Stencil &amp; Stamped Concrete</a>
+                <a href="concrete-slabs-gold-coast">Concrete Slabs &amp; Shed Foundations</a>
+                <a href="retaining-walls-gold-coast">Concrete Retaining Walls</a>
             </div>
-            <div class="footer-col">
-                <h3>Popular Suburbs</h3>
-                <p><a href="ormeau">Ormeau Concreters</a></p>
-                <p><a href="coomera">Coomera Concreters</a></p>
-                <p><a href="pimpama">Pimpama Concreters</a></p>
-                <p><a href="hope-island">Hope Island Concreters</a></p>
-                <p><a href="helensvale">Helensvale Concreters</a></p>
+            <div class="footer-contact">
+                <h3>Contact Info</h3>
+                <p>📍 Pimpama, QLD 4209 (Service Area Business)</p>
+                <p>📞 Phone: <a href="tel:+61411914157" style="color:inherit;">0411 914 157</a></p>
             </div>
         </div>
         <div class="footer-bottom">
@@ -281,5 +307,16 @@
         </div>
     </footer>
 
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        const hamburger = document.querySelector('.hamburger-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (hamburger) {
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
+    </script>
 </body>
 </html>

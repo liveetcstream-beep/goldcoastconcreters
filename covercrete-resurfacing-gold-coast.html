@@ -45,66 +45,94 @@
 </head>
 <body>
 
-    <!-- Header / Navigation -->
-    <header class="navbar">
-        <div class="nav-container">
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="header-container">
             <a href="/" class="logo">
-                <span class="logo-accent">Gold Coast</span> Concreters QLD
+                <img src="assets/gmb_logo.webp" alt="Gold Coast Concreters QLD Logo" class="logo-img" width="49" height="49">
+                <span class="highlight">Gold Coast</span> Concreters QLD
             </a>
+            <button class="hamburger-menu" aria-label="Toggle navigation">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
             <nav class="nav-links">
                 <a href="/">Home</a>
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#areas">Suburbs</a>
+                <a href="/#services">Services</a>
+                <a href="/#areas">Suburbs</a>
                 <a href="#faq">FAQ</a>
-                <a href="tel:+61411914157" class="nav-phone">📞 0411 914 157</a>
             </nav>
+            <div class="header-cta">
+                <a href="tel:+61411914157" class="phone-btn">
+                    <span class="phone-icon">📞</span> Call Now: 0411 914 157
+                </a>
+            </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" style="background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('assets/concrete_resurfacing_covercrete.webp');">
-        <div class="hero-container">
-            <div class="hero-text">
-                <span class="badge">QBCC Licensed #15299707</span>
+    <main>
+    <section class="hero-section" style="background-image: linear-gradient(135deg, rgba(15, 23, 42, 0.88) 0%, rgba(30, 41, 59, 0.88) 100%), url('assets/concrete_resurfacing_covercrete.webp');">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text-area">
+                <span class="sub-badge">QBCC Licensed #15299707</span>
                 <h1>Covercrete &amp; Concrete Resurfacing Gold Coast</h1>
-                <p>Is your existing driveway cracked, oil-stained, or lowering your home's kerb appeal? You don't need the massive noise, mess, and expense of jackhammering a full slab replacement. Our QBCC-licensed team specializes in commercial <strong>diamond grinding</strong>, resin crack injection, and high-durability polymer <strong>Covercrete spray-on resurfacing</strong> that transforms plain concrete into a brand-new decorative finish.</p>
-                <div class="hero-cta">
-                    <a href="tel:+61411914157" class="btn-primary">Call 0411 914 157 for Free Quote</a>
-                    <a href="#quote-form" class="btn-secondary">Request On-Site Measure</a>
+                <p class="lead-text">Is your existing driveway cracked, oil-stained, or lowering your home's kerb appeal? You don't need the massive noise, mess, and expense of jackhammering a full slab replacement. Our QBCC-licensed team specializes in commercial <strong>diamond grinding</strong>, resin crack injection, and high-durability polymer <strong>Covercrete spray-on resurfacing</strong> that transforms plain concrete into a brand-new decorative finish.</p>
+                <div class="hero-features">
+                    <div class="feature-item">✓ QBCC Licensed &amp; Insured</div>
+                    <div class="feature-item">✓ Diamond Grinding Surface Prep</div>
+                    <div class="feature-item">✓ Free On-Site Measure &amp; Quote</div>
                 </div>
             </div>
             
             <!-- Lead Capture Form -->
-            <div id="quote-form" class="hero-form-container">
-                <h3>Get a Free Resurfacing Quote</h3>
-                <p>Zero obligation. Fast local response across Gold Coast.</p>
-                <form class="quote-form">
+            <div class="hero-form-area" id="quote-form">
+                <h2>Request a Free Quote</h2>
+                <p>Fill out the form below and our local team will contact you for a site measurement shortly.</p>
+                <form action="https://api.web3forms.com/submit" method="POST" class="quote-form">
                     <input type="hidden" name="access_key" value="0999b14e-cc4b-4980-a61d-956e7e476d88">
                     <input type="hidden" name="subject" value="New Covercrete Lead - Gold Coast">
-                    <input type="text" name="botcheck" style="display: none;">
+                    <input type="hidden" name="from_name" value="Gold Coast Concreters Website">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                     
-                    <div class="form-group">
-                        <input type="text" name="name" placeholder="Your Name *" required>
+                    <div class="input-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
                     </div>
-                    <div class="form-group">
-                        <input type="tel" name="phone" placeholder="Phone Number *" required>
+                    <div class="input-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="04XX XXX XXX" required>
                     </div>
-                    <div class="form-group">
-                        <input type="text" name="suburb" placeholder="Suburb (e.g. Oxenford, Ormeau)" required>
+                    <div class="input-group">
+                        <label for="suburb">Suburb</label>
+                        <input type="text" id="suburb" name="suburb" placeholder="e.g. Oxenford, Ormeau" required>
                     </div>
-                    <div class="form-group">
-                        <select name="service" required>
-                            <option value="" disabled selected>Select Service *</option>
-                            <option value="Covercrete Resurfacing">Covercrete Spray Resurfacing</option>
+                    <div class="input-group">
+                        <label for="service">Required Service</label>
+                        <select id="service" name="service" required>
+                            <option value="Covercrete Resurfacing" selected>Covercrete Spray Resurfacing</option>
                             <option value="Driveway Crack Repair">Driveway Crack Repair &amp; Grind</option>
                             <option value="Exposed Aggregate Driveway">Exposed Aggregate Driveway</option>
                             <option value="Concrete Slab">House / Shed Concrete Slab</option>
                         </select>
                     </div>
-                    <button type="submit" class="submit-btn">Get Free Quote Now</button>
+                    <div class="input-group">
+                        <label for="message">Project Details</label>
+                        <textarea id="message" name="message" rows="3" placeholder="Specify approximate size (sqm) or current slab condition..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Quote Request</button>
                 </form>
             </div>
+        </div>
+    </section>
+
+    <!-- Credentials / Trust Bar -->
+    <section class="credentials-bar">
+        <div class="credentials-container">
+            <div class="credential-badge"><span>✓</span> QBCC LICENSED &amp; INSURED</div>
+            <div class="credential-badge"><span>✓</span> AS 3600 COMPLIANT</div>
+            <div class="credential-badge"><span>✓</span> HIA MEMBER</div>
+            <div class="credential-badge"><span>✓</span> GCCC DRAWINGS APPROVED</div>
         </div>
     </section>
 
@@ -121,11 +149,11 @@
 
             <div class="specs-grid" style="margin-top: 2rem;">
                 <div class="spec-item">
-                    <h3>Covercrete Resurfacing vs. Full Replacement</h3>
+                    <h4>Covercrete Resurfacing vs. Full Replacement</h4>
                     <p>Jackhammering out an existing 50m² concrete slab creates heavy noise, disposal waste, and property disruption lasting 5+ days. Covercrete resurfacing achieves the same visual impact in just 1–2 days without damaging surrounding turf or garden beds.</p>
                 </div>
                 <div class="spec-item">
-                    <h3>Covercrete vs. Concrete Paint</h3>
+                    <h4>Covercrete vs. Concrete Paint</h4>
                     <p>Hardware store concrete paint coats the surface like plastic film and peels off under hot car tires within months. Covercrete is a mineral-polymer cement compound that becomes part of the slab, engineered for vehicle traffic.</p>
                 </div>
             </div>
@@ -157,15 +185,15 @@
             </p>
             <div class="specs-grid">
                 <div class="spec-item">
-                    <h3>1. Skipping Industrial Diamond Grinding</h3>
+                    <h4>1. Skipping Industrial Diamond Grinding</h4>
                     <p>Pressure washing alone leaves invisible oil films and smooth glaze. Without mechanical diamond grinding, the new coating cannot bond and will peel off in sheets under vehicle tires. We diamond-grind 100% of every slab surface to CSP-2 profile.</p>
                 </div>
                 <div class="spec-item">
-                    <h3>2. Spraying Over Un-repaired Cracks</h3>
+                    <h4>2. Spraying Over Un-repaired Cracks</h4>
                     <p>Simply spraying Covercrete over raw cracks guarantees the cracks will mirror straight through the new coating within weeks. We route out cracks, inject structural polymer resin fillers, and grind smooth before priming.</p>
                 </div>
                 <div class="spec-item">
-                    <h3>3. Bridging Expansion Control Joints</h3>
+                    <h4>3. Bridging Expansion Control Joints</h4>
                     <p>Spraying over expansion joints creates rigid bridges that snap as the slab expands under summer heat. We recut and clear all control joints immediately after spraying.</p>
                 </div>
             </div>
@@ -241,6 +269,7 @@
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Embedded JSON-LD FAQPage Schema -->
     <script type="application/ld+json">
@@ -285,28 +314,25 @@
     </script>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="main-footer">
         <div class="footer-container">
-            <div class="footer-col">
+            <div class="footer-info">
                 <h3>Gold Coast Concreters QLD</h3>
                 <p>QBCC Licensed #15299707. Premier concrete contractors specializing in exposed aggregate, covercrete resurfacing, house slabs, and driveway crossovers.</p>
                 <p><strong>Call Us:</strong> <a href="tel:+61411914157" style="color: var(--accent);">0411 914 157</a></p>
             </div>
-            <div class="footer-col">
-                <h3>Services</h3>
-                <p><a href="exposed-aggregate-gold-coast">Exposed Aggregate</a></p>
-                <p><a href="covercrete-resurfacing-gold-coast">Covercrete Resurfacing</a></p>
-                <p><a href="stencil-stamped-concrete-gold-coast">Stencil &amp; Stamped</a></p>
-                <p><a href="concrete-slabs-gold-coast">Concrete Slabs</a></p>
-                <p><a href="retaining-walls-gold-coast">Retaining Walls</a></p>
+            <div class="footer-links">
+                <h3>Our Decorative Concrete Services</h3>
+                <a href="exposed-aggregate-gold-coast">Exposed Aggregate Driveways</a>
+                <a href="covercrete-resurfacing-gold-coast">Covercrete Resurfacing</a>
+                <a href="stencil-stamped-concrete-gold-coast">Stencil &amp; Stamped Concrete</a>
+                <a href="concrete-slabs-gold-coast">Concrete Slabs &amp; Shed Foundations</a>
+                <a href="retaining-walls-gold-coast">Concrete Retaining Walls</a>
             </div>
-            <div class="footer-col">
-                <h3>Popular Suburbs</h3>
-                <p><a href="ormeau">Ormeau Concreters</a></p>
-                <p><a href="coomera">Coomera Concreters</a></p>
-                <p><a href="pimpama">Pimpama Concreters</a></p>
-                <p><a href="hope-island">Hope Island Concreters</a></p>
-                <p><a href="helensvale">Helensvale Concreters</a></p>
+            <div class="footer-contact">
+                <h3>Contact Info</h3>
+                <p>📍 Pimpama, QLD 4209 (Service Area Business)</p>
+                <p>📞 Phone: <a href="tel:+61411914157" style="color:inherit;">0411 914 157</a></p>
             </div>
         </div>
         <div class="footer-bottom">
@@ -314,5 +340,16 @@
         </div>
     </footer>
 
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        const hamburger = document.querySelector('.hamburger-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (hamburger) {
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
+    </script>
 </body>
 </html>

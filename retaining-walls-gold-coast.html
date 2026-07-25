@@ -44,66 +44,94 @@
 </head>
 <body>
 
-    <!-- Header / Navigation -->
-    <header class="navbar">
-        <div class="nav-container">
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="header-container">
             <a href="/" class="logo">
-                <span class="logo-accent">Gold Coast</span> Concreters QLD
+                <img src="assets/gmb_logo.webp" alt="Gold Coast Concreters QLD Logo" class="logo-img" width="49" height="49">
+                <span class="highlight">Gold Coast</span> Concreters QLD
             </a>
+            <button class="hamburger-menu" aria-label="Toggle navigation">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
             <nav class="nav-links">
                 <a href="/">Home</a>
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#areas">Suburbs</a>
+                <a href="/#services">Services</a>
+                <a href="/#areas">Suburbs</a>
                 <a href="#faq">FAQ</a>
-                <a href="tel:+61411914157" class="nav-phone">📞 0411 914 157</a>
             </nav>
+            <div class="header-cta">
+                <a href="tel:+61411914157" class="phone-btn">
+                    <span class="phone-icon">📞</span> Call Now: 0411 914 157
+                </a>
+            </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" style="background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('assets/hero_bg.webp');">
-        <div class="hero-container">
-            <div class="hero-text">
-                <span class="badge">QBCC Licensed #15299707</span>
+    <main>
+    <section class="hero-section" style="background-image: linear-gradient(135deg, rgba(15, 23, 42, 0.88) 0%, rgba(30, 41, 59, 0.88) 100%), url('assets/hero_bg.webp');">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text-area">
+                <span class="sub-badge">QBCC Licensed #15299707</span>
                 <h1>Concrete Retaining Walls Gold Coast</h1>
-                <p>Struggling with a sloping block, soil erosion, or unusable hillside yard space? Poorly built timber retaining walls rot, attract termites, and collapse under heavy Queensland summer rain pressure. Our QBCC-licensed team designs and constructs heavy-duty 50MPa <strong>concrete sleeper retaining walls</strong> and cored concrete block walls engineered for lifetime hillside stability.</p>
-                <div class="hero-cta">
-                    <a href="tel:+61411914157" class="btn-primary">Call 0411 914 157 for Free Quote</a>
-                    <a href="#quote-form" class="btn-secondary">Request On-Site Measure</a>
+                <p class="lead-text">Struggling with a sloping block, soil erosion, or unusable hillside yard space? Poorly built timber retaining walls rot, attract termites, and collapse under heavy Queensland summer rain pressure. Our QBCC-licensed team designs and constructs heavy-duty 50MPa <strong>concrete sleeper retaining walls</strong> and cored concrete block walls engineered for lifetime hillside stability.</p>
+                <div class="hero-features">
+                    <div class="feature-item">✓ QBCC Licensed &amp; Insured</div>
+                    <div class="feature-item">✓ 50MPa Concrete Sleeper Walls</div>
+                    <div class="feature-item">✓ Free On-Site Measure &amp; Quote</div>
                 </div>
             </div>
             
             <!-- Lead Capture Form -->
-            <div id="quote-form" class="hero-form-container">
-                <h3>Get a Free Retaining Wall Quote</h3>
-                <p>Zero obligation. Fast local response across Gold Coast.</p>
-                <form class="quote-form">
+            <div class="hero-form-area" id="quote-form">
+                <h2>Request a Free Quote</h2>
+                <p>Fill out the form below and our local team will contact you for a site measurement shortly.</p>
+                <form action="https://api.web3forms.com/submit" method="POST" class="quote-form">
                     <input type="hidden" name="access_key" value="0999b14e-cc4b-4980-a61d-956e7e476d88">
                     <input type="hidden" name="subject" value="New Retaining Wall Lead - Gold Coast">
-                    <input type="text" name="botcheck" style="display: none;">
+                    <input type="hidden" name="from_name" value="Gold Coast Concreters Website">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                     
-                    <div class="form-group">
-                        <input type="text" name="name" placeholder="Your Name *" required>
+                    <div class="input-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
                     </div>
-                    <div class="form-group">
-                        <input type="tel" name="phone" placeholder="Phone Number *" required>
+                    <div class="input-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="04XX XXX XXX" required>
                     </div>
-                    <div class="form-group">
-                        <input type="text" name="suburb" placeholder="Suburb (e.g. Pacific Pines, Kingsholme)" required>
+                    <div class="input-group">
+                        <label for="suburb">Suburb</label>
+                        <input type="text" id="suburb" name="suburb" placeholder="e.g. Pacific Pines, Kingsholme" required>
                     </div>
-                    <div class="form-group">
-                        <select name="service" required>
-                            <option value="" disabled selected>Select Service *</option>
-                            <option value="Concrete Sleeper Wall">Concrete Sleeper Retaining Wall</option>
+                    <div class="input-group">
+                        <label for="service">Required Service</label>
+                        <select id="service" name="service" required>
+                            <option value="Concrete Sleeper Wall" selected>Concrete Sleeper Retaining Wall</option>
                             <option value="Concrete Block Wall">Concrete Block Retaining Wall</option>
                             <option value="Exposed Aggregate Driveway">Exposed Aggregate Driveway</option>
                             <option value="Concrete Slab">House / Shed Concrete Slab</option>
                         </select>
                     </div>
-                    <button type="submit" class="submit-btn">Get Free Quote Now</button>
+                    <div class="input-group">
+                        <label for="message">Project Details</label>
+                        <textarea id="message" name="message" rows="3" placeholder="Specify wall height/length or site access details..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Quote Request</button>
                 </form>
             </div>
+        </div>
+    </section>
+
+    <!-- Credentials / Trust Bar -->
+    <section class="credentials-bar">
+        <div class="credentials-container">
+            <div class="credential-badge"><span>✓</span> QBCC LICENSED &amp; INSURED</div>
+            <div class="credential-badge"><span>✓</span> AS 3600 COMPLIANT</div>
+            <div class="credential-badge"><span>✓</span> HIA MEMBER</div>
+            <div class="credential-badge"><span>✓</span> GCCC DRAWINGS APPROVED</div>
         </div>
     </section>
 
@@ -120,11 +148,11 @@
 
             <div class="specs-grid" style="margin-top: 2rem;">
                 <div class="spec-item">
-                    <h3>Concrete Sleeper Walls (H-Beam Posts)</h3>
+                    <h4>Concrete Sleeper Walls (H-Beam Posts)</h4>
                     <p>Heavy steel H-beams embedded 1m–1.5m deep into solid rock footings filled with N32 concrete, holding 50MPa steel-reinforced concrete sleepers. Zero timber rotting, zero termite risk, 50+ year lifespan.</p>
                 </div>
                 <div class="spec-item">
-                    <h3>Core-Filled Concrete Block Walls</h3>
+                    <h4>Core-Filled Concrete Block Walls</h4>
                     <p>Concrete Boral blocks laid on steel-reinforced trench footings, steel N12 rebar vertical reinforcement, and core-filled with liquid concrete grout for massive load-bearing walls.</p>
                 </div>
             </div>
@@ -143,11 +171,11 @@
             </p>
             <div class="specs-grid">
                 <div class="spec-item">
-                    <h3>1. Omitting Drainage Gravel &amp; Ag-Pipe</h3>
+                    <h4>1. Omitting Drainage Gravel &amp; Ag-Pipe</h4>
                     <p>Backfilling directly with clay soil creates hydrostatic water buildup during summer downpours. The trapped water weight pushes walls forward until they collapse. We install 65mm slotted ag-pipe encased in geotextile fabric and backfill with clean 20mm aggregate gravel.</p>
                 </div>
                 <div class="spec-item">
-                    <h3>2. Shallow Steel Post Footings</h3>
+                    <h4>2. Shallow Steel Post Footings</h4>
                     <p>Drilling post holes only 500mm deep allows the wall to lean forward under soil load. We drill 1000mm–1500mm deep post footings into solid subgrade before pouring concrete.</p>
                 </div>
             </div>
@@ -215,6 +243,7 @@
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Embedded JSON-LD FAQPage Schema -->
     <script type="application/ld+json">
@@ -251,28 +280,25 @@
     </script>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="main-footer">
         <div class="footer-container">
-            <div class="footer-col">
+            <div class="footer-info">
                 <h3>Gold Coast Concreters QLD</h3>
                 <p>QBCC Licensed #15299707. Premier concrete contractors specializing in exposed aggregate, covercrete resurfacing, house slabs, and driveway crossovers.</p>
                 <p><strong>Call Us:</strong> <a href="tel:+61411914157" style="color: var(--accent);">0411 914 157</a></p>
             </div>
-            <div class="footer-col">
-                <h3>Services</h3>
-                <p><a href="exposed-aggregate-gold-coast">Exposed Aggregate</a></p>
-                <p><a href="covercrete-resurfacing-gold-coast">Covercrete Resurfacing</a></p>
-                <p><a href="stencil-stamped-concrete-gold-coast">Stencil &amp; Stamped</a></p>
-                <p><a href="concrete-slabs-gold-coast">Concrete Slabs</a></p>
-                <p><a href="retaining-walls-gold-coast">Retaining Walls</a></p>
+            <div class="footer-links">
+                <h3>Our Decorative Concrete Services</h3>
+                <a href="exposed-aggregate-gold-coast">Exposed Aggregate Driveways</a>
+                <a href="covercrete-resurfacing-gold-coast">Covercrete Resurfacing</a>
+                <a href="stencil-stamped-concrete-gold-coast">Stencil &amp; Stamped Concrete</a>
+                <a href="concrete-slabs-gold-coast">Concrete Slabs &amp; Shed Foundations</a>
+                <a href="retaining-walls-gold-coast">Concrete Retaining Walls</a>
             </div>
-            <div class="footer-col">
-                <h3>Popular Suburbs</h3>
-                <p><a href="ormeau">Ormeau Concreters</a></p>
-                <p><a href="coomera">Coomera Concreters</a></p>
-                <p><a href="pimpama">Pimpama Concreters</a></p>
-                <p><a href="hope-island">Hope Island Concreters</a></p>
-                <p><a href="helensvale">Helensvale Concreters</a></p>
+            <div class="footer-contact">
+                <h3>Contact Info</h3>
+                <p>📍 Pimpama, QLD 4209 (Service Area Business)</p>
+                <p>📞 Phone: <a href="tel:+61411914157" style="color:inherit;">0411 914 157</a></p>
             </div>
         </div>
         <div class="footer-bottom">
@@ -280,5 +306,16 @@
         </div>
     </footer>
 
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        const hamburger = document.querySelector('.hamburger-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (hamburger) {
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
+    </script>
 </body>
 </html>
