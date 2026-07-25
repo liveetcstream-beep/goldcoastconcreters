@@ -52,6 +52,22 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Suburb Page: Yatala -->
+  <url>
+    <loc>https://goldcoastconcretersqld.com.au/yatala</loc>
+    <lastmod>2026-07-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Suburb Page: Kingsholme -->
+  <url>
+    <loc>https://goldcoastconcretersqld.com.au/kingsholme</loc>
+    <lastmod>2026-07-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Informational Blog: Crossover Permit Guide -->
   <url>
     <loc>https://goldcoastconcretersqld.com.au/crossover-permit-guide</loc>
