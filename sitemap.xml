@@ -100,4 +100,44 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Service Page: Exposed Aggregate -->
+  <url>
+    <loc>https://goldcoastconcretersqld.com.au/exposed-aggregate-gold-coast</loc>
+    <lastmod>2026-07-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Service Page: Covercrete Resurfacing -->
+  <url>
+    <loc>https://goldcoastconcretersqld.com.au/covercrete-resurfacing-gold-coast</loc>
+    <lastmod>2026-07-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Service Page: Stencil & Stamped Concrete -->
+  <url>
+    <loc>https://goldcoastconcretersqld.com.au/stencil-stamped-concrete-gold-coast</loc>
+    <lastmod>2026-07-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Service Page: Concrete Slabs -->
+  <url>
+    <loc>https://goldcoastconcretersqld.com.au/concrete-slabs-gold-coast</loc>
+    <lastmod>2026-07-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Service Page: Retaining Walls -->
+  <url>
+    <loc>https://goldcoastconcretersqld.com.au/retaining-walls-gold-coast</loc>
+    <lastmod>2026-07-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
 </urlset>
