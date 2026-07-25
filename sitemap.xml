@@ -36,6 +36,22 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Suburb Page: Helensvale -->
+  <url>
+    <loc>https://goldcoastconcretersqld.com.au/helensvale</loc>
+    <lastmod>2026-07-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Suburb Page: Hope Island -->
+  <url>
+    <loc>https://goldcoastconcretersqld.com.au/hope-island</loc>
+    <lastmod>2026-07-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Informational Blog: Crossover Permit Guide -->
   <url>
     <loc>https://goldcoastconcretersqld.com.au/crossover-permit-guide</loc>
