@@ -367,7 +367,18 @@ h4 {
     border-color: var(--accent);
 }
 
-/* Image Placeholders with beautiful gradients */
+.service-card-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    transition: var(--transition-smooth);
+}
+
+.service-card:hover .service-card-img {
+    transform: scale(1.04);
+}
+
 .card-image-placeholder {
     height: 200px;
     background-size: cover;
@@ -1215,3 +1226,113 @@ h4 {
         border-bottom: none;
     }
 }
+
+/* Guide Page Layout & Content Styling */
+.guide-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 4rem auto;
+    display: grid;
+    grid-template-columns: 1.4fr 0.8fr;
+    gap: 4rem;
+}
+.guide-content h1 {
+    font-size: 2.75rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+}
+.guide-content h2 {
+    font-size: 2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary);
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.5rem;
+}
+.guide-content h3 {
+    font-size: 1.35rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--secondary);
+}
+.guide-content p {
+    margin-bottom: 1.5rem;
+    color: var(--text-main);
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+.guide-content ul, .guide-content ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-main);
+}
+.guide-content li {
+    margin-bottom: 0.5rem;
+    font-size: 1.05rem;
+}
+.highlight-box {
+    background-color: var(--light-bg);
+    border-left: 4px solid var(--accent);
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-radius: 0 8px 8px 0;
+}
+.highlight-box h4 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+.highlight-box p {
+    margin-bottom: 0;
+    font-size: 0.95rem;
+}
+.spec-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-size: 0.95rem;
+}
+.spec-table th, .spec-table td {
+    border: 1px solid #cbd5e1;
+    padding: 0.75rem 1rem;
+    text-align: left;
+}
+.spec-table th {
+    background-color: var(--primary);
+    color: var(--white);
+}
+.spec-table tr:nth-child(even) {
+    background-color: var(--light-bg);
+}
+.guide-sidebar {
+    position: sticky;
+    top: 6rem;
+    height: fit-content;
+}
+.guide-form-container {
+    background-color: var(--secondary);
+    color: var(--white);
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow-md);
+}
+.guide-form-container h3 {
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.guide-form-container p {
+    color: #cbd5e1;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+@media (max-width: 968px) {
+    .guide-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .guide-sidebar {
+        position: static;
+    }
+}
+

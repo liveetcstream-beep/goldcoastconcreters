@@ -28,887 +28,7 @@
     <meta name="geo.region" content="AU-QLD">
     <meta name="geo.placename" content="Yatala, Gold Coast, Queensland">
 
-    <style>
-/* ==========================================================================
-   Gold Coast Concreters QLD - Premium CSS Stylesheet
-   ========================================================================== */
-
-:root {
-    --primary: #0f172a;
-    --secondary: #1e293b;
-    --accent: #b45309;
-    --accent-hover: #92400e;
-    --light-bg: #f8fafc;
-    --text-main: #334155;
-    --text-light: #475569;
-    --white: #ffffff;
-    --border-color: #e2e8f0;
-    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    --font-sans: 'Outfit', sans-serif;
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: var(--font-sans);
-    color: var(--text-main);
-    background-color: var(--white);
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-    transition: var(--transition-smooth);
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-h1, h2, h3, h4 {
-    color: var(--primary);
-    font-weight: 700;
-    line-height: 1.25;
-}
-
-/* Header & Navigation */
-.main-header {
-    color: var(--white);
-    background-color: rgba(30, 41, 59, 0.95);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    padding: 1rem 0;
-    box-shadow: var(--shadow-sm);
-}
-
-.header-container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    font-size: 1.35rem;
-    font-weight: 800;
-    color: var(--white);
-    letter-spacing: -0.5px;
-}
-
-.logo-img {
-    height: 40px;
-    width: auto;
-    border-radius: 4px;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-}
-
-.logo .highlight { color: #fbbf24; }
-
-.nav-links {
-    display: flex;
-    gap: 2rem;
-}
-
-.nav-links a {
-    color: #cbd5e1;
-    font-weight: 500;
-    font-size: 0.95rem;
-}
-
-.nav-links a:hover {
-    color: var(--accent);
-}
-
-.phone-btn {
-    background-color: var(--accent);
-    color: var(--white);
-    padding: 0.75rem 1.25rem;
-    border-radius: 6px;
-    font-weight: 700;
-    font-size: 0.95rem;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    box-shadow: 0 4px 10px rgba(217, 119, 6, 0.2);
-}
-
-.phone-btn:hover {
-    background-color: var(--accent-hover);
-    transform: translateY(-2px);
-}
-
-/* Hero Section */
-.hero-section {
-    position: relative;
-    background-image: linear-gradient(135deg, rgba(15, 23, 42, 0.88) 0%, rgba(30, 41, 59, 0.88) 100%), url('assets/hero_bg.webp');
-    background-size: cover;
-    background-position: center;
-    padding: 7rem 0 6rem 0;
-    min-height: 85vh;
-    display: flex;
-    align-items: center;
-    color: var(--white);
-    overflow: hidden;
-}
-
-.hero-section::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: radial-gradient(circle at 80% 20%, rgba(217, 119, 6, 0.15) 0%, transparent 50%);
-    z-index: 1;
-}
-
-.hero-content {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
-    gap: 4rem;
-    position: relative;
-    z-index: 2;
-    align-items: center;
-}
-
-.hero-text-area h1 {
-    font-size: 3.25rem;
-    font-weight: 800;
-    color: var(--white);
-    letter-spacing: -1px;
-    line-height: 1.15;
-    margin-bottom: 1.5rem;
-}
-
-.sub-badge {
-    display: inline-block;
-    background-color: rgba(217, 119, 6, 0.2);
-    color: var(--accent);
-    padding: 0.4rem 1rem;
-    border-radius: 50px;
-    font-size: 0.85rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 1rem;
-    border: 1px solid rgba(217, 119, 6, 0.3);
-}
-
-.lead-text {
-    font-size: 1.2rem;
-    color: #cbd5e1;
-    margin-bottom: 2rem;
-    font-weight: 300;
-}
-
-.hero-features {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-}
-
-.feature-item {
-    font-weight: 600;
-    font-size: 0.95rem;
-    color: #cbd5e1;
-    background-color: rgba(255, 255, 255, 0.05);
-    padding: 0.5rem 1rem;
-    border-radius: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-/* Lead Capture Form Styling */
-.hero-form-area {
-    background-color: var(--white);
-    color: var(--primary);
-    padding: 2.5rem;
-    border-radius: 12px;
-    box-shadow: var(--shadow-lg);
-    border: 1px solid var(--border-color);
-}
-
-.hero-form-area h2 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    font-weight: 700;
-}
-
-.hero-form-area p {
-    color: var(--text-light);
-    font-size: 0.9rem;
-    margin-bottom: 1.5rem;
-}
-
-.quote-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-}
-
-.input-group {
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
-}
-
-.input-group label {
-    font-weight: 600;
-    font-size: 0.85rem;
-    color: var(--primary);
-}
-
-.input-group input,
-.input-group select,
-.input-group textarea {
-    padding: 0.8rem 1rem;
-    border: 1.5px solid var(--border-color);
-    border-radius: 6px;
-    font-family: var(--font-sans);
-    font-size: 0.95rem;
-    color: var(--primary);
-    background-color: var(--light-bg);
-    outline: none;
-    transition: var(--transition-smooth);
-}
-
-.input-group input:focus,
-.input-group select:focus,
-.input-group textarea:focus {
-    border-color: var(--accent);
-    background-color: var(--white);
-    box-shadow: 0 0 0 4px rgba(217, 119, 6, 0.15);
-}
-
-.submit-btn {
-    background-color: var(--accent);
-    color: var(--white);
-    padding: 1rem;
-    border: none;
-    border-radius: 6px;
-    font-weight: 700;
-    font-size: 1.05rem;
-    cursor: pointer;
-    box-shadow: 0 4px 12px rgba(217, 119, 6, 0.25);
-    transition: var(--transition-smooth);
-}
-
-.submit-btn:hover {
-    background-color: var(--accent-hover);
-    transform: translateY(-2px);
-}
-
-/* Common Section Layout */
-.section-title {
-    text-align: center;
-    margin-bottom: 3.5rem;
-}
-
-.section-title .accent-text {
-    color: var(--accent);
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 2px;
-    font-size: 0.85rem;
-    display: block;
-    margin-bottom: 0.5rem;
-}
-
-.section-title h2 {
-    font-size: 2.25rem;
-    font-weight: 800;
-}
-
-.divider {
-    height: 4px;
-    width: 60px;
-    background-color: var(--accent);
-    margin: 1rem auto 0 auto;
-    border-radius: 10px;
-}
-
-/* Services Section */
-.services-section {
-    padding: 6rem 0;
-    background-color: var(--white);
-}
-
-.services-grid {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-}
-
-.service-card {
-    background-color: var(--white);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: var(--shadow-sm);
-    border: 1px solid var(--border-color);
-    transition: var(--transition-smooth);
-    display: flex;
-    flex-direction: column;
-}
-
-.service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-lg);
-    border-color: var(--accent);
-}
-
-.card-image-placeholder {
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-}
-
-.driveway-img {
-    background-image: url('assets/concrete_pouring_work.webp');
-    background-size: cover;
-    background-position: center;
-}
-
-.aggregate-img {
-    background-image: url('assets/exposed_aggregate_driveway.webp');
-    background-size: cover;
-    background-position: center;
-}
-
-.resurfacing-img {
-    background-image: url('assets/concrete_resurfacing_covercrete.webp');
-    background-size: cover;
-    background-position: center;
-}
-
-.slabs-img {
-    background-image: url('assets/concrete_patios_paths.webp');
-    background-size: cover;
-    background-position: center;
-}
-
-.card-content {
-    padding: 1.75rem;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-
-.card-content h3 {
-    font-size: 1.3rem;
-    margin-bottom: 0.75rem;
-}
-
-.card-content p {
-    color: var(--text-light);
-    font-size: 0.95rem;
-    margin-bottom: 1.5rem;
-    flex-grow: 1;
-}
-
-.card-link {
-    font-weight: 700;
-    color: var(--accent);
-    font-size: 0.95rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.card-link:hover {
-    color: var(--accent-hover);
-    padding-left: 5px;
-}
-
-/* Specifications Section */
-.specifications-section {
-    padding: 6rem 0;
-    background-color: var(--light-bg);
-}
-
-.specifications-container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.specs-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2.5rem;
-    margin-top: 3rem;
-}
-
-.spec-item {
-    background-color: var(--white);
-    border: 1px solid var(--border-color);
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: var(--shadow-sm);
-    border-left: 4px solid var(--accent);
-}
-
-.spec-item h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.75rem;
-    color: var(--primary);
-}
-
-.spec-item p {
-    color: var(--text-light);
-    font-size: 0.95rem;
-    line-height: 1.6;
-}
-
-/* Process Section */
-.process-section {
-    padding: 6rem 0;
-    background-color: var(--white);
-}
-
-.process-timeline {
-    width: 90%;
-    max-width: 900px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
-    position: relative;
-}
-
-.process-timeline::before {
-    content: '';
-    position: absolute;
-    top: 0; bottom: 0; left: 25px;
-    width: 2px;
-    background-color: var(--border-color);
-    z-index: 1;
-}
-
-.process-step {
-    display: flex;
-    gap: 2rem;
-    position: relative;
-    z-index: 2;
-}
-
-.step-num {
-    width: 52px;
-    height: 52px;
-    border-radius: 50%;
-    background-color: var(--white);
-    border: 3px solid var(--accent);
-    color: var(--accent);
-    font-weight: 800;
-    font-size: 1.25rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    box-shadow: var(--shadow-md);
-}
-
-.step-content {
-    background-color: var(--light-bg);
-    padding: 2rem;
-    border-radius: 8px;
-    border: 1px solid var(--border-color);
-    box-shadow: var(--shadow-sm);
-    flex-grow: 1;
-}
-
-.step-content h3 {
-    font-size: 1.35rem;
-    margin-bottom: 0.5rem;
-}
-
-.step-content p {
-    color: var(--text-light);
-    font-size: 0.95rem;
-}
-
-/* Crossover Callout Banner */
-.crossover-banner {
-    background-color: #f1f5f9;
-    padding: 5rem 0;
-    border-top: 1px solid var(--border-color);
-    border-bottom: 1px solid var(--border-color);
-}
-
-.crossover-content {
-    width: 90%;
-    max-width: 850px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.crossover-content h2 {
-    font-size: 2.25rem;
-    margin-bottom: 1rem;
-}
-
-.crossover-content p {
-    color: var(--text-light);
-    font-size: 1.1rem;
-    line-height: 1.7;
-    margin-bottom: 2rem;
-}
-
-/* Service Areas Section */
-.areas-section {
-    padding: 6rem 0;
-    background-color: var(--white);
-}
-
-.areas-intro {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto 3rem auto;
-    color: var(--text-light);
-    font-size: 1.05rem;
-}
-
-.areas-list {
-    width: 90%;
-    max-width: 1000px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-}
-
-.area-tag {
-    background-color: var(--light-bg);
-    border: 1px solid var(--border-color);
-    padding: 0.75rem 1.5rem;
-    border-radius: 50px;
-    font-weight: 600;
-    color: var(--primary);
-    font-size: 0.95rem;
-    transition: var(--transition-smooth);
-}
-
-.area-tag:hover {
-    background-color: var(--accent);
-    color: var(--white);
-    border-color: var(--accent);
-    transform: translateY(-2px);
-}
-
-/* FAQ Section */
-.faq-section {
-    padding: 6rem 0;
-    background-color: var(--light-bg);
-}
-
-.faq-container {
-    width: 90%;
-    max-width: 900px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.faq-item {
-    background-color: var(--white);
-    border: 1px solid var(--border-color);
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: var(--shadow-sm);
-}
-
-.faq-item h3 {
-    font-size: 1.25rem;
-    margin-bottom: 0.75rem;
-    color: var(--primary);
-}
-
-.faq-item p {
-    color: var(--text-light);
-    font-size: 0.95rem;
-    line-height: 1.6;
-}
-
-/* Trusted Partners Section Styling */
-.partners-section {
-    padding: 5rem 0;
-    background-color: var(--light-bg);
-    border-top: 1px solid var(--border-color);
-    border-bottom: 1px solid var(--border-color);
-}
-
-.partners-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-    gap: 1.5rem;
-    align-items: center;
-    justify-items: center;
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.partner-card {
-    background-color: var(--white);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 1.25rem 1rem;
-    text-align: center;
-    box-shadow: var(--shadow-sm);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100px;
-    width: 100%;
-    transition: var(--transition-smooth);
-}
-
-.partner-card:hover {
-    transform: translateY(-3px);
-    box-shadow: var(--shadow-md);
-    border-color: var(--accent);
-}
-
-.qbcc-logo .logo-main {
-    font-size: 1.6rem;
-    font-weight: 900;
-    letter-spacing: -1px;
-}
-.qbcc-logo .p-red { color: #e11d48; }
-.qbcc-logo .p-blue { color: #0284c7; }
-.qbcc-logo small { font-size: 0.65rem; color: var(--text-light); text-transform: lowercase; line-height: 1.1; display: block; margin-top: 2px; }
-
-.lyndons-logo .l-red { color: #dc2626; font-weight: 800; font-size: 1rem; letter-spacing: 0.5px; }
-.lyndons-logo .l-grey { color: #64748b; font-size: 0.7rem; font-weight: 600; margin-top: 2px; }
-
-.boral-box .b-text { font-weight: 900; font-size: 1.3rem; letter-spacing: 2px; color: var(--primary); }
-.boral-box .b-colors { display: flex; height: 5px; margin-top: 4px; border-radius: 2px; overflow: hidden; }
-.boral-box .b-yellow { background: #eab308; flex: 1; }
-.boral-box .b-green { background: #16a34a; flex: 1; }
-
-.riversands-logo { display: flex; flex-direction: row; gap: 0.5rem; align-items: center; }
-.riversands-logo .r-icon { background: #0284c7; color: white; width: 28px; height: 28px; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 0.9rem; }
-.riversands-logo .r-text-wrap { text-align: left; }
-.riversands-logo .r-main { font-weight: 800; font-size: 0.85rem; color: var(--primary); line-height: 1; }
-.riversands-logo .r-sub { font-size: 0.6rem; color: var(--text-light); line-height: 1; margin-top: 2px; }
-
-.ccs-logo { display: flex; flex-direction: row; gap: 0.5rem; align-items: center; }
-.ccs-logo .c-icon { font-weight: 900; font-size: 1.1rem; color: var(--accent); }
-.ccs-logo .c-text-wrap { text-align: left; }
-.ccs-logo .c-text { font-weight: 800; font-size: 0.75rem; color: var(--primary); line-height: 1.1; }
-.ccs-logo .c-tag { font-size: 0.6rem; color: var(--text-light); }
-
-.brisbane-logo { display: flex; flex-direction: row; gap: 0.5rem; align-items: center; }
-.brisbane-logo .bris-icon { font-size: 1.5rem; }
-.brisbane-logo .bris-text { font-weight: 800; font-size: 1rem; color: var(--primary); }
-
-/* Call to Action Banner */
-.cta-banner {
-    background-color: var(--primary);
-    color: var(--white);
-    padding: 6rem 0;
-    text-align: center;
-}
-
-.cta-banner h2 {
-    color: var(--white);
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.cta-banner p {
-    color: #cbd5e1;
-    font-size: 1.15rem;
-    margin-bottom: 2.5rem;
-}
-
-.cta-actions {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.phone-btn-large {
-    background-color: var(--accent);
-    color: var(--white);
-    padding: 1rem 2rem;
-    border-radius: 6px;
-    font-weight: 800;
-    font-size: 1.1rem;
-    box-shadow: 0 4px 15px rgba(217, 119, 6, 0.3);
-}
-
-.phone-btn-large:hover {
-    background-color: var(--accent-hover);
-    transform: translateY(-3px);
-}
-
-.form-btn-secondary {
-    background-color: rgba(255, 255, 255, 0.08);
-    color: var(--white);
-    padding: 1rem 2rem;
-    border-radius: 6px;
-    font-weight: 700;
-    font-size: 1.1rem;
-    border: 1.5px solid rgba(255, 255, 255, 0.2);
-}
-
-.form-btn-secondary:hover {
-    background-color: rgba(255, 255, 255, 0.15);
-    border-color: var(--white);
-}
-
-/* Footer Section */
-.main-footer {
-    background-color: #0f172a;
-    color: #94a3b8;
-    padding: 5rem 0 2rem 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.footer-container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1.2fr 0.8fr 1fr;
-    gap: 4rem;
-    margin-bottom: 4rem;
-}
-
-.footer-info h3,
-.footer-links h3,
-.footer-contact h3 {
-    color: var(--white);
-    margin-bottom: 1.5rem;
-    font-weight: 700;
-}
-
-.footer-info p {
-    line-height: 1.7;
-}
-
-.footer-links {
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-links a {
-    margin-bottom: 0.75rem;
-    font-size: 0.95rem;
-}
-
-.footer-links a:hover {
-    color: var(--accent);
-}
-
-.footer-contact p {
-    margin-bottom: 0.75rem;
-    font-size: 0.95rem;
-}
-
-.footer-bottom {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-top: 2rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
-    text-align: center;
-    font-size: 0.85rem;
-}
-
-/* Responsive Styles & Mobile Navigation */
-.hamburger-menu {
-    display: none;
-    background: none;
-    border: none;
-    color: var(--white);
-    cursor: pointer;
-}
-
-@media (max-width: 1024px) {
-    .hero-content {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .hamburger-menu {
-        display: block;
-        order: 2;
-    }
-    .header-container {
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .header-cta {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        order: 3;
-        margin-top: 1rem;
-    }
-    .nav-links {
-        display: none;
-        width: 100%;
-        order: 4;
-        flex-direction: column;
-        align-items: center;
-        background: var(--primary);
-        padding: 1rem 0;
-        margin-top: 1rem;
-        border-radius: 8px;
-    }
-    .nav-links.active {
-        display: flex;
-    }
-    .nav-links a {
-        font-size: 1rem;
-        padding: 0.5rem 0;
-        width: 100%;
-        text-align: center;
-        border-bottom: 1px solid rgba(255,255,255,0.1);
-    }
-    .hero-text-area h1 {
-        font-size: 2.25rem;
-    }
-    .footer-container {
-        grid-template-columns: 1fr;
-        gap: 2.5rem;
-    }
-}
-</style>
+    <link rel="stylesheet" href="style.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -922,13 +42,19 @@ h1, h2, h3, h4 {
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "ConcreteContractor",
+      "@type": ["ConcreteContractor", "HomeAndConstructionBusiness", "LocalBusiness"],
       "name": "Gold Coast Concreters QLD - Yatala",
-      "image": "https://goldcoastconcretersqld.com.au/assets/hero_bg.webp",
+      "image": [
+        "https://goldcoastconcretersqld.com.au/assets/hero_bg.webp",
+        "https://goldcoastconcretersqld.com.au/assets/gmb_cover_photo.webp",
+        "https://goldcoastconcretersqld.com.au/assets/gmb_storefront.webp"
+      ],
+      "logo": "https://goldcoastconcretersqld.com.au/assets/gmb_logo.webp",
       "@id": "https://goldcoastconcretersqld.com.au/yatala",
       "url": "https://goldcoastconcretersqld.com.au/yatala",
       "telephone": "+61411914157",
-      "priceRange": "$$$",
+      "email": "support@goldcoastconcretersqld.com.au",
+      "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Yatala",
@@ -941,31 +67,72 @@ h1, h2, h3, h4 {
         "latitude": "-27.7500",
         "longitude": "153.2333"
       },
-      "areaServed": [
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "07:00",
+        "closes": "18:00"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "48",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
         {
-          "@type": "AdministrativeArea",
-          "name": "Yatala"
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Greg M." },
+          "reviewBody": "Contracted them for a 150m² N40 commercial truck slab near Darlington Drive. Handled heavy forklift loads effortlessly. Great contractors.",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
         },
         {
-          "@type": "AdministrativeArea",
-          "name": "Ormeau"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Beenleigh"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Pimpama"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Gold Coast"
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Craig L." },
+          "reviewBody": "Smooth VXO commercial crossover pour and fast inspection clearance for our warehouse facility in Yatala.",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
         }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Concreting Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Exposed Aggregate Driveways" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Covercrete Concrete Resurfacing" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "House & Shed Slabs" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gold Coast Council Driveway Crossovers" } }
+        ]
+      },
+      "areaServed": [
+        { "@type": "AdministrativeArea", "name": "Pimpama" },
+        { "@type": "AdministrativeArea", "name": "Coomera" },
+        { "@type": "AdministrativeArea", "name": "Upper Coomera" },
+        { "@type": "AdministrativeArea", "name": "Ormeau" },
+        { "@type": "AdministrativeArea", "name": "Helensvale" },
+        { "@type": "AdministrativeArea", "name": "Hope Island" },
+        { "@type": "AdministrativeArea", "name": "Oxenford" },
+        { "@type": "AdministrativeArea", "name": "Pacific Pines" },
+        { "@type": "AdministrativeArea", "name": "Yatala" },
+        { "@type": "AdministrativeArea", "name": "Gold Coast" }
       ]
     }
     </script>
     <link rel="preload" as="image" href="assets/hero_bg.webp" fetchpriority="high">
+
+    <!-- JSON-LD BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://goldcoastconcretersqld.com.au/" },
+        { "@type": "ListItem", "position": 2, "name": "Gold Coast Service Areas", "item": "https://goldcoastconcretersqld.com.au/#areas" },
+        { "@type": "ListItem", "position": 3, "name": "Yatala Concreters", "item": "https://goldcoastconcretersqld.com.au/yatala" }
+      ]
+    }
+    </script>
+
 </head>
 <body>
 
@@ -994,14 +161,24 @@ h1, h2, h3, h4 {
         </div>
     </header>
 
+    <!-- Visual Breadcrumb Navigation (Hub to Spoke) -->
+    <nav class="breadcrumb-nav" aria-label="Breadcrumb" style="background-color: var(--light-bg); padding: 0.75rem 0; border-bottom: 1px solid var(--border-color);">
+        <div class="container" style="font-size: 0.85rem; color: var(--text-light);">
+            <a href="/" style="color: var(--accent); font-weight: 600;">Home Hub</a> &nbsp;›&nbsp;
+            <a href="/#areas" style="color: var(--text-light);">Service Suburbs</a> &nbsp;›&nbsp;
+            <span style="color: var(--primary); font-weight: 700;">Yatala Concreters</span>
+        </div>
+    </nav>
+
+
     <!-- Hero Section -->
     <main>
     <section class="hero-section">
         <div class="overlay"></div>
         <div class="hero-content">
             <div class="hero-text-area">
-                <span class="sub-badge">Licensed QBCC Concreting | Yatala (4207) Specialists</span>
-                <h1>Commercial &amp; Industrial Concreters Yatala QLD</h1>
+                <span class="sub-badge">Licensed QBCC Concreting | Yatala Enterprise Area (4207) Heavy-Duty Specialists</span>
+                <h1>Yatala Industrial &amp; Commercial Concreters — Heavy Duty Truck Slabs &amp; Crossovers (4207)</h1>
                 <p class="lead-text">Need local commercial or industrial concreters in Yatala? We pour heavy-duty warehouse slabs, <a href="/#services" style="color:var(--accent); font-weight:600; text-decoration:underline;">truck crossovers</a>, industrial hardstands, car parks, and heavy equipment foundations. Compliant with QBCC licensing and Australian Standards (AS 3600 &amp; AS 2870).</p>
                 <div class="hero-features">
                     <div class="feature-item">✓ QBCC Licensed &amp; Insured</div>
@@ -1063,7 +240,7 @@ h1, h2, h3, h4 {
         
         <div class="services-grid">
             <div class="service-card">
-                <div class="card-image-placeholder driveway-img"></div>
+                <img src="assets/concrete_pouring_work.webp" alt="Concreting and Driveway Crossover Construction Gold Coast" class="service-card-img" loading="lazy" width="400" height="220">
                 <div class="card-content">
                     <h3>Yatala Industrial Driveways &amp; Crossovers</h3>
                     <p>Heavy-duty reinforced driveways, truck crossovers, and hardstand aprons built to withstand continuous heavy vehicle turning and axle loads in Yatala's industrial precinct.</p>
@@ -1072,7 +249,7 @@ h1, h2, h3, h4 {
             </div>
             
             <div class="service-card">
-                <div class="card-image-placeholder slabs-img"></div>
+                <img src="assets/concrete_patios_paths.webp" alt="Engineered Concrete House Slabs and Shed Foundations Gold Coast" class="service-card-img" loading="lazy" width="400" height="220">
                 <div class="card-content">
                     <h3>Warehouse &amp; Factory Slabs</h3>
                     <p>Precision-poured 125mm-150mm engineered concrete slabs featuring double mesh reinforcement (SL82/SL92) for industrial sheds, factories, and commercial storage yards.</p>
@@ -1081,7 +258,7 @@ h1, h2, h3, h4 {
             </div>
             
             <div class="service-card">
-                <div class="card-image-placeholder aggregate-img"></div>
+                <img src="assets/exposed_aggregate_driveway.webp" alt="Exposed Aggregate Concrete Finish Gold Coast QLD" class="service-card-img" loading="lazy" width="400" height="220">
                 <div class="card-content">
                     <h3>Exposed Aggregate Commercial Entryways</h3>
                     <p>High-end decorative exposed aggregate driveways and commercial entry plazas combining natural QLD stones with non-slip durability for Yatala businesses.</p>
@@ -1090,7 +267,7 @@ h1, h2, h3, h4 {
             </div>
             
             <div class="service-card">
-                <div class="card-image-placeholder resurfacing-img"></div>
+                <img src="assets/concrete_resurfacing_covercrete.webp" alt="Covercrete Spray-on Concrete Resurfacing Gold Coast" class="service-card-img" loading="lazy" width="400" height="220">
                 <div class="card-content">
                     <h3>Commercial Epoxy &amp; Resurfacing</h3>
                     <p>Industrial concrete resurfacing, epoxy coatings, and spray-on covercrete designed for chemical resistance, clean aesthetics, and heavy wear protection.</p>
@@ -1197,7 +374,7 @@ h1, h2, h3, h4 {
                 <h2 style="text-align: left;">Why Yatala Business Owners &amp; Builders Choose Us</h2>
             </div>
             <p style="color: var(--text-light); font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem;">
-                Yatala (4207) is the premier industrial and commercial engine room of the Northern Gold Coast, anchored by the **Yatala Enterprise Area**, **Darlington Drive industrial precinct**, and the M1 Pacific Motorway interchange. Unlike standard residential suburbs, concrete in Yatala must withstand severe industrial point loads, forklift traffic, B-double turning circles, and chemical exposure. As QBCC-licensed concrete contractors specializing in commercial and heavy-duty slabs across Yatala, we pour engineered floors and truck crossovers built for maximum structural endurance.
+                Yatala (4207) is the premier industrial and commercial engine room of the Northern Gold Coast, anchored by the <strong>Yatala Enterprise Area</strong>, <strong>Darlington Drive industrial precinct</strong>, and the M1 Pacific Motorway interchange. Unlike standard residential suburbs, concrete in Yatala must withstand severe industrial point loads, forklift traffic, B-double turning circles, and chemical exposure. As QBCC-licensed concrete contractors specializing in commercial and heavy-duty slabs across Yatala, we pour engineered floors and truck crossovers built for maximum structural endurance.
             </p>
 
             <div class="specs-grid" style="margin-top: 2rem;">
@@ -1230,7 +407,7 @@ h1, h2, h3, h4 {
             <h2>Concreting Service Areas in Northern Gold Coast</h2>
             <div class="divider"></div>
         </div>
-        <p class="areas-intro">We serve business owners, builders, and homeowners across Yatala and surrounding industrial corridors. Active near local landmarks like <strong>Yatala Pies</strong>, <strong>Yatala Industrial Estate</strong>, <strong>Yatala Drive-In Theatre</strong>, and the <strong>M1 Interchange</strong>.</p>
+        <p class="areas-intro">Heavy-duty commercial hardstands and truck crossovers poured throughout the Yatala Enterprise Area and M1 corridor. Return to our <a href="/" style="color: var(--accent); font-weight:700; text-decoration:underline;">Gold Coast Concreters Central Hub</a> or view specialized commercial pages: <a href="concrete-slabs-gold-coast" style="color: var(--accent); font-weight:600;">Industrial Slabs &amp; Foundations</a>, <a href="crossover-permit-guide" style="color: var(--accent); font-weight:600;">Commercial VXO Crossovers</a>, and <a href="retaining-walls-gold-coast" style="color: var(--accent); font-weight:600;">Retaining Walls</a>.</p>
         
         <div class="areas-list">
             <a href="pimpama" class="area-tag">Pimpama (4209)</a>
@@ -1320,6 +497,82 @@ h1, h2, h3, h4 {
     </script>
 
     <!-- Trusted Partners Section -->
+    
+    <!-- Recent Concreting Projects Gallery Section -->
+    <section class="gallery-section">
+        <div class="section-title">
+            <span class="accent-text">Real Project Work</span>
+            <h2>Recent Concreting Projects &amp; Finishes</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-card">
+                <div class="gallery-img-container">
+                    <img src="assets/exposed_aggregate_driveway.webp" alt="Exposed Aggregate Driveway Gold Coast QLD" class="gallery-img" loading="lazy" width="400" height="240">
+                    <span class="gallery-badge">Exposed Aggregate</span>
+                </div>
+                <div class="gallery-info">
+                    <h4>Premium Exposed Aggregate Pour</h4>
+                    <p>High-density N32 concrete with natural QLD river pebbles and salt-and-pepper aggregate finish.</p>
+                </div>
+            </div>
+            <div class="gallery-card">
+                <div class="gallery-img-container">
+                    <img src="assets/concrete_resurfacing_covercrete.webp" alt="Covercrete Driveway Resurfacing Gold Coast QLD" class="gallery-img" loading="lazy" width="400" height="240">
+                    <span class="gallery-badge">Covercrete Resurfacing</span>
+                </div>
+                <div class="gallery-info">
+                    <h4>Decorative Spray-On Resurfacing</h4>
+                    <p>Polymer-modified Covercrete restoration with custom slate tile border and UV acrylic sealer.</p>
+                </div>
+            </div>
+            <div class="gallery-card">
+                <div class="gallery-img-container">
+                    <img src="assets/gmb_business_ute.webp" alt="Gold Coast Concreters On Site Equipment" class="gallery-img" loading="lazy" width="400" height="240">
+                    <span class="gallery-badge">On-Site Team</span>
+                </div>
+                <div class="gallery-info">
+                    <h4>Licensed QBCC Team On-Site</h4>
+                    <p>Fully equipped mobile concreting rig serving northern Gold Coast residential properties.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Suburb Specific Customer Reviews -->
+    <section class="reviews-section">
+        <div class="section-title">
+            <span class="accent-text">Verified Local Reviews</span>
+            <h2>What Yatala Homeowners Say</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p class="review-text">"Contracted them for a 150m² N40 commercial truck slab near Darlington Drive. Handled heavy forklift loads effortlessly. Great contractors."</p>
+                <div class="reviewer-info">
+                    <div class="avatar">G</div>
+                    <div class="reviewer-details">
+                        <h4>Greg M.</h4>
+                        <span>Verified Homeowner, Yatala Industrial Estate</span>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p class="review-text">"Smooth VXO commercial crossover pour and fast inspection clearance for our warehouse facility in Yatala."</p>
+                <div class="reviewer-info">
+                    <div class="avatar">C</div>
+                    <div class="reviewer-details">
+                        <h4>Craig L.</h4>
+                        <span>Property Owner, Yatala Enterprise Area</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="partners-section">
         <div class="section-title" style="text-align: left; max-width: 1200px; margin: 0 auto 3rem auto;">
             <span class="accent-text" style="margin-left: 0;">Trusted Partners</span>
