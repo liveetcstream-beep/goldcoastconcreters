@@ -30,6 +30,7 @@
 
     <link rel="stylesheet" href="style.css">
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -37,6 +38,7 @@
     <link rel="icon" type="image/png" href="assets/gmb_logo.webp">
     <link rel="apple-touch-icon" href="assets/gmb_logo.webp">
 
+    <!-- JSON-LD Local Business Schema Markup for Oxenford Page -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -130,10 +132,10 @@
       ]
     }
     </script>
-
 </head>
 <body>
 
+    <!-- Header Navigation -->
     <header class="main-header">
         <div class="header-container">
             <a href="/" class="logo">
@@ -143,7 +145,7 @@
             <button class="hamburger-menu" aria-label="Toggle navigation">
                 <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
             </button>
-                                    <nav class="nav-links">
+            <nav class="nav-links">
                 <a href="/">Home</a>
                 <a href="#services">Services</a>
                 <a href="#specifications">Specs &amp; Standards</a>
@@ -160,17 +162,18 @@
     </header>
 
     <!-- Visual Breadcrumb Navigation (Hub to Spoke) -->
-    <nav class="breadcrumb-nav" aria-label="Breadcrumb" style="background-color: var(--light-bg); padding: 0.75rem 0; border-bottom: 1px solid var(--border-color);">
-        <div class="container" style="font-size: 0.85rem; color: var(--text-light);">
-            <a href="/" style="color: var(--accent); font-weight: 600;">Home Hub</a> &nbsp;›&nbsp;
+    <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+        <div class="container">
+            <a href="/">Home Hub</a> &nbsp;›&nbsp;
             <a href="/#areas" style="color: var(--text-light);">Service Suburbs</a> &nbsp;›&nbsp;
-            <span style="color: var(--primary); font-weight: 700;">Oxenford Concreters</span>
+            <span>Oxenford Concreters</span>
         </div>
     </nav>
 
-
+    <!-- Main Content Area -->
     <main>
 
+    <!-- 1. HERO SECTION & LEAD CAPTURE FORM -->
     <section class="hero-section">
         <div class="overlay"></div>
         <div class="hero-content">
@@ -228,10 +231,17 @@
         </div>
     </section>
 
-    <div class="credentials-bar">
+    <!-- 2. CREDENTIALS / TRUST BAR -->
+    <section class="credentials-bar">
         <div class="credentials-container">
-            <div class="credential-badge">🛡️ QBCC Licensed &amp; Insured (#15389201)</div>
+            <div class="credential-badge"><span>✓</span> QBCC LICENSED &amp; INSURED</div>
+            <div class="credential-badge"><span>✓</span> AS 3600 CONCRETE STRUCTURES</div>
+            <div class="credential-badge"><span>✓</span> 100% FIXED-PRICE QUOTES</div>
+            <div class="credential-badge"><span>✓</span> GCCC PERMIT COMPLIANT</div>
+        </div>
+    </section>
 
+    <!-- 3. SERVICES CARDS -->
     <section id="services" class="services-section">
         <div class="section-title">
             <span class="accent-text">Oxenford Services</span>
@@ -278,6 +288,7 @@
         </div>
     </section>
 
+    <!-- 4. TECHNICAL SPECS -->
     <section id="specifications" class="specifications-section">
         <div class="specifications-container">
             <div class="section-title">
@@ -285,7 +296,6 @@
                 <h2>Oxenford Engineering &amp; Pour Specifications</h2>
                 <div class="divider"></div>
             </div>
-            
             
             <div class="specs-grid">
                 <div class="spec-item">
@@ -308,6 +318,7 @@
         </div>
     </section>
 
+    <!-- 5. OUR PROCESS -->
     <section id="process" class="process-section">
         <div class="section-title">
             <span class="accent-text">Professional Execution</span>
@@ -350,6 +361,7 @@
         </div>
     </section>
 
+    <!-- 6. CROSSOVER / PERMITS BANNER -->
     <section class="crossover-banner">
         <div class="crossover-content">
             <span class="accent-text">Oxenford Permits</span>
@@ -362,6 +374,7 @@
         </div>
     </section>
 
+    <!-- 7. PHOTO GALLERY -->
     <section class="gallery-section">
         <div class="section-title">
             <span class="accent-text">Real Project Work</span>
@@ -402,6 +415,7 @@
         </div>
     </section>
 
+    <!-- 8. TESTIMONIALS / REVIEWS -->
     <section class="reviews-section">
         <div class="section-title">
             <span class="accent-text">Verified Local Reviews</span>
@@ -434,7 +448,7 @@
         </div>
     </section>
 
-    <!-- Hyper-Local Deep Content Section -->
+    <!-- 9. LOCAL DEEP CONTENT -->
     <section id="local-expertise" class="specifications-section" style="background-color: var(--white); border-top: 1px solid var(--border-color);">
         <div class="specifications-container">
             <div class="section-title" style="text-align: left; margin-bottom: 2rem;">
@@ -479,6 +493,7 @@
         </div>
     </section>
 
+    <!-- 10. SERVICE AREAS GRID -->
     <section id="areas" class="areas-section">
         <div class="section-title">
             <span class="accent-text">Service Suburbs</span>
@@ -501,47 +516,38 @@
         </div>
     </section>
 
+    <!-- 11. FAQ SECTION -->
     <section id="faq" class="faq-section">
         <div class="section-title">
             <span class="accent-text">FAQ</span>
-            <h2>Frequently Asked Questions - Oxenford Concreting</h2>
+            <h2>Frequently Asked Questions — Oxenford Concreting</h2>
             <div class="divider"></div>
         </div>
         
         <div class="faq-container">
             <div class="faq-item">
                 <h3>Q: How much does a concrete driveway cost in Oxenford?</h3>
-                <p>A: Driveway concreting costs depend on total square meterage, chosen finish (plain broom, exposed aggregate, or Covercrete resurfacing), ground slope, and excavation requirements. Because every site in Oxenford is unique, we do not provide generic online estimates. Call us on <strong>0411 914 157</strong> or submit our form for a free, exact, no-obligation on-site quote.</p>
+                <p>A: Concrete driveway costs depend on square metres, selected finish (exposed aggregate, plain concrete, or Covercrete resurfacing), excavation depth, and site access. Because every site is unique, we do not provide fixed online estimates. Call us on <strong>0411 914 157</strong> for a free, accurate on-site quote.</p>
             </div>
 
             <div class="faq-item">
-                <h3>Q: Can old discolored driveways in Studio Village be resurfaced?</h3>
-                <p>A: Yes! As long as the existing concrete slab is structurally sound, we grind away old dirt and oil stains, patch minor cracks, and apply polymer-modified Covercrete spray-on resurfacing with custom border patterns for a fraction of full replacement cost.</p>
+                <h3>Q: Do I need a council permit for a driveway crossover in Oxenford?</h3>
+                <p>A: Yes. Any driveway crossing constructed between your property boundary and the kerb requires a Vehicular Crossing (VXO) permit from the City of Gold Coast. We manage all site plans and council applications for you.</p>
             </div>
 
             <div class="faq-item">
-                <h3>Q: Do I need a Gold Coast City Council permit for a driveway crossover in Oxenford?</h3>
-                <p>A: You need a Gold Coast City Council Vehicular Crossing (VXO) permit for the crossover portion extending across council land from your property boundary to the road kerb. Our licensed team manages all drawings, council applications, and pre-pour inspections for you.</p>
+                <h3>Q: Can old cracked Studio Village driveways be resurfaced?</h3>
+                <p>A: Yes! Provided the underlying concrete slab is structurally sound, we repair surface cracks and apply high-durability Covercrete polymer spray resurfacing with UV acrylic sealers at a fraction of full replacement cost.</p>
             </div>
 
             <div class="faq-item">
-                <h3>Q: How do you handle steep sloping driveways in Oxenford's elevated areas?</h3>
-                <p>A: For steep slopes near the Tamborine foothills, we pour N32 strength concrete with heavily textured exposed aggregate or broom finishes for superior tire grip. We also integrate trench drains and cut extra control joints to manage runoff and slab stress.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>Q: What concrete thickness is required for heavy caravans or boats in Oxenford?</h3>
-                <p>A: Standard car driveways use 100mm thick concrete. For heavy caravans, boats, or work trucks, we recommend a 125mm-150mm thick pour using N32 grade concrete with heavy SL82 steel mesh reinforcement to prevent cracking under high axle loads.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>Q: What neighboring Gold Coast suburbs do you service around Oxenford?</h3>
-                <p>A: Alongside Oxenford (4210), we regularly pour concrete in Studio Village, Helensvale (4212), Pacific Pines (4211), Coomera (4209), Hope Island (4212), and Ormeau (4208).</p>
+                <h3>Q: What is the best concrete finish for steep sloping blocks near Tamborine foothills?</h3>
+                <p>A: We strongly recommend high-grip exposed aggregate finishes. The exposed natural stones provide superior non-slip vehicle and foot traction during heavy summer rains.</p>
             </div>
         </div>
     </section>
 
-    <!-- Embedded JSON-LD FAQPage Schema for Oxenford -->
+    <!-- Embedded JSON-LD FAQPage Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -552,120 +558,123 @@
           "name": "How much does a concrete driveway cost in Oxenford?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Driveway concreting costs depend on total square meterage, chosen finish (plain broom, exposed aggregate, or Covercrete resurfacing), ground slope, and excavation requirements. Because every site in Oxenford is unique, we do not provide generic online estimates. Call us on 0411 914 157 or submit our form for a free, exact, no-obligation on-site quote."
+            "text": "Concrete driveway costs depend on square metres, selected finish (exposed aggregate, plain concrete, or Covercrete resurfacing), excavation depth, and site access. Because every site is unique, we do not provide fixed online estimates. Call us on 0411 914 157 for a free, accurate on-site quote."
           }
         },
         {
           "@type": "Question",
-          "name": "Can old discolored driveways in Studio Village be resurfaced?",
+          "name": "Do I need a council permit for a driveway crossover in Oxenford?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes! As long as the existing concrete slab is structurally sound, we grind away old dirt and oil stains, patch minor cracks, and apply polymer-modified Covercrete spray-on resurfacing with custom border patterns for a fraction of full replacement cost."
+            "text": "Yes. Any driveway crossing constructed between your property boundary and the kerb requires a Vehicular Crossing (VXO) permit from the City of Gold Coast. We manage all site plans and council applications for you."
           }
         },
         {
           "@type": "Question",
-          "name": "Do I need a Gold Coast City Council permit for a driveway crossover in Oxenford?",
+          "name": "Can old cracked Studio Village driveways be resurfaced?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "You need a Gold Coast City Council Vehicular Crossing (VXO) permit for the crossover portion extending across council land from your property boundary to the road kerb. Our licensed team manages all drawings, council applications, and pre-pour inspections for you."
+            "text": "Yes! Provided the underlying concrete slab is structurally sound, we repair surface cracks and apply high-durability Covercrete polymer spray resurfacing with UV acrylic sealers at a fraction of full replacement cost."
           }
         },
         {
           "@type": "Question",
-          "name": "How do you handle steep sloping driveways in Oxenford's elevated areas?",
+          "name": "What is the best concrete finish for steep sloping blocks near Tamborine foothills?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "For steep slopes near the Tamborine foothills, we pour N32 strength concrete with heavily textured exposed aggregate or broom finishes for superior tire grip. We also integrate trench drains and cut extra control joints to manage runoff and slab stress."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What concrete thickness is required for heavy caravans or boats in Oxenford?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Standard car driveways use 100mm thick concrete. For heavy caravans, boats, or work trucks, we recommend a 125mm-150mm thick pour using N32 grade concrete with heavy SL82 steel mesh reinforcement to prevent cracking under high axle loads."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What neighboring Gold Coast suburbs do you service around Oxenford?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Alongside Oxenford (4210), we regularly pour concrete in Studio Village, Helensvale (4212), Pacific Pines (4211), Coomera (4209), Hope Island (4212), and Ormeau (4208)."
+            "text": "We strongly recommend high-grip exposed aggregate finishes. The exposed natural stones provide superior non-slip vehicle and foot traction during heavy summer rains."
           }
         }
       ]
     }
     </script>
 
+    <!-- 12. TRUSTED PARTNERS SECTION -->
     <section class="partners-section">
         <div class="section-title" style="text-align: left; max-width: 1200px; margin: 0 auto 3rem auto;">
             <span class="accent-text" style="margin-left: 0;">Trusted Partners</span>
-            <h2 style="text-align: left;">Our Supply Partners</h2>
+            <h2 style="text-align: left;">Our Partners</h2>
         </div>
         <div class="partners-grid" style="max-width: 1200px; margin: 0 auto;">
+            <!-- QBCC -->
             <div class="partner-card qbcc-logo">
                 <div class="logo-main"><span class="p-red">q</span><span class="p-blue">bcc</span></div>
                 <small>queensland building<br>and construction commission</small>
             </div>
+            <!-- Lyndons -->
             <div class="partner-card lyndons-logo">
                 <div class="lyndons-box">
                     <div class="l-red">LYNDONS Pty. Ltd.</div>
                     <div class="l-grey">The Tradesman's Warehouse</div>
                 </div>
             </div>
+            <!-- Boral -->
             <div class="partner-card boral-logo">
                 <div class="boral-box">
                     <div class="b-text">BORAL</div>
-                    <div class="b-colors"><div class="b-yellow"></div><div class="b-green"></div></div>
+                    <div class="b-colors">
+                        <div class="b-yellow"></div>
+                        <div class="b-green"></div>
+                    </div>
                 </div>
             </div>
+            <!-- River Sands -->
             <div class="partner-card riversands-logo">
-                <div class="r-icon"><span>N</span></div>
-                <div class="r-text-wrap"><div class="r-main">RIVER SANDS</div><div class="r-sub">PTY<br>LTD</div></div>
+                <div class="rs-box">
+                    <span class="rs-blue">RIVER SANDS</span>
+                    <small>Concrete Materials</small>
+                </div>
             </div>
+            <!-- Concrete Color Systems -->
             <div class="partner-card ccs-logo">
-                <div class="c-icon">C<span>S</span></div>
-                <div class="c-text-wrap"><div class="c-text">CONCRETE<br>COLOUR<br>SYSTEMS</div><div class="c-tag">Better colours and coatings</div></div>
+                <div class="ccs-box">
+                    <span class="c-red">CCS</span>
+                    <small>Concrete Color Systems</small>
+                </div>
             </div>
+            <!-- Brisbane Concrete -->
             <div class="partner-card brisbane-logo">
-                <div class="bris-icon">🏛️</div>
-                <div class="bris-text">Brisbane</div>
+                <div class="bris-box">
+                    <span class="b-dark">BRISBANE</span>
+                    <small>Concrete Supplies</small>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- 13. CALL TO ACTION BANNER -->
     <section class="cta-banner">
-        <h2>Ready to pour concrete at your Oxenford home?</h2>
-        <p>Contact our local team today for an obligation-free site measure and quote.</p>
-        <div class="cta-actions">
-            <a href="tel:+61411914157" class="phone-btn-large">📞 Call 0411 914 157</a>
-            <a href="#quote-form" class="form-btn-secondary">Request Online Quote</a>
+        <div class="cta-content">
+            <h2>Ready to Start Your Oxenford Concreting Project?</h2>
+            <p>Call our local Oxenford concreting team today for a free on-site measure and fixed-price quote.</p>
+            <a href="tel:+61411914157" class="phone-btn font-lg">📞 Call Now: 0411 914 157</a>
         </div>
     </section>
 
     </main>
 
-<footer class="main-footer">
+    <!-- 14. FOOTER -->
+    <footer class="main-footer">
         <div class="footer-container">
             <div class="footer-info">
                 <h3>Gold Coast Concreters QLD</h3>
-                <p>Your premier, QBCC licensed concrete contractors serving Oxenford (4210), Studio Village, Coomera, Helensvale, and the northern Gold Coast corridor. Quality concrete slabs, crossovers, and aggregate driveways built to last.</p>
+                <p>Your premier, QBCC licensed concrete contractors serving Oxenford (4210), Studio Village, Coomera, and the northern Gold Coast corridor. Quality concrete slabs, crossovers, and aggregate driveways built to last.</p>
+                <p><strong>Call Us:</strong> <a href="tel:+61411914157" style="color: var(--accent);">0411 914 157</a></p>
             </div>
             <div class="footer-links">
-                <h3>Core Services</h3>
-                <a href="exposed-aggregate-gold-coast">Exposed Aggregate</a>
-                <a href="covercrete-resurfacing-gold-coast">Driveway Resurfacing</a>
-                <a href="concrete-slabs-gold-coast">Concrete Slabs</a>
-                <a href="crossover-permit-guide">Council Crossovers</a>
-                <a href="retaining-walls-gold-coast">Retaining Walls</a>
+                <h3>Concreting Services</h3>
+                <a href="exposed-aggregate-gold-coast">Exposed Aggregate Driveways</a>
+                <a href="covercrete-resurfacing-gold-coast">Covercrete Resurfacing</a>
+                <a href="stencil-stamped-concrete-gold-coast">Stencil &amp; Stamped Concrete</a>
+                <a href="concrete-slabs-gold-coast">Concrete Slabs &amp; Shed Foundations</a>
+                <a href="retaining-walls-gold-coast">Concrete Retaining Walls</a>
+                <a href="crossover-permit-guide">Gold Coast Driveway Crossover Permits</a>
             </div>
             <div class="footer-contact">
                 <h3>Contact Info</h3>
-                <p>📍 Oxenford, QLD 4210 (Service Area Business)</p>
-                <p>📞 Phone: 0411 914 157</p>
-                <p>✉ Email: support@goldcoastconcretersqld.com.au</p>
+                <p>📍 Pimpama, QLD 4209 (Service Area Business)</p>
+                <p>📞 Phone: <a href="tel:+61411914157" style="color:inherit;">0411 914 157</a></p>
+                <p>🕒 Hours: Mon-Sat: 7:00am - 6:00pm</p>
             </div>
         </div>
         <div class="footer-bottom">
@@ -673,65 +682,16 @@
         </div>
     </footer>
 
+    <!-- Mobile Menu Toggle Script -->
     <script>
-        const form = document.querySelector('.quote-form');
-        const formContainer = document.getElementById('quote-form');
-        if (form && formContainer) {
-            const successDiv = document.createElement('div');
-            successDiv.id = 'form-success-msg';
-            successDiv.style.display = 'none';
-            successDiv.style.textAlign = 'center';
-            successDiv.style.padding = '3rem 1.5rem';
-            successDiv.innerHTML = '<div style="font-size: 4rem; color: #d97706; margin-bottom: 1.5rem;">✓</div>' +
-                '<h3 style="color: #0f172a; font-size: 1.75rem; font-weight: 800; margin-bottom: 1rem;">Thank You!</h3>' +
-                '<p style="color: #334155; font-size: 1rem; line-height: 1.6; margin-bottom: 1.5rem;">Your quote request has been successfully submitted. Our local concreting team will contact you shortly for a site measure.</p>' +
-                '<button id="reset-form-btn" style="background-color: #0f172a; color: #fff; border: none; padding: 0.6rem 1.2rem; border-radius: 6px; font-weight: 600; cursor: pointer;">Send another response</button>';
-            const style = document.createElement('style');
-            style.innerHTML = `@keyframes pop { 0% { transform: scale(0.6); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }`;
-            document.head.appendChild(style);
-            formContainer.appendChild(successDiv);
-            form.addEventListener('submit', function(e) {
-                e.preventDefault();
-                const submitBtn = form.querySelector('.submit-btn');
-                const originalBtnText = submitBtn.textContent;
-                submitBtn.textContent = 'Sending...';
-                submitBtn.disabled = true;
-                const formData = new FormData(form);
-                fetch('https://api.web3forms.com/submit', { method: 'POST', body: formData })
-                .then(async (response) => {
-                    let json = await response.json();
-                    if (response.status == 200) {
-                        Array.from(formContainer.children).forEach(child => { if (child.id !== 'form-success-msg') { child.style.display = 'none'; } });
-                        successDiv.style.display = 'block';
-                    } else {
-                        alert(json.message || "Something went wrong. Please try again.");
-                        submitBtn.textContent = originalBtnText;
-                        submitBtn.disabled = false;
-                    }
-                })
-                .catch(error => {
-                    alert("Form submission failed. Please check your internet connection and try again.");
-                    submitBtn.textContent = originalBtnText;
-                    submitBtn.disabled = false;
-                });
-            });
-            document.getElementById('reset-form-btn').addEventListener('click', function() {
-                form.reset();
-                successDiv.style.display = 'none';
-                Array.from(formContainer.children).forEach(child => { if (child.id !== 'form-success-msg') { child.style.display = ''; } });
+        const hamburger = document.querySelector('.hamburger-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (hamburger) {
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
             });
         }
-    </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const hamburger = document.querySelector('.hamburger-menu');
-            const navLinks = document.querySelector('.nav-links');
-            if(hamburger) {
-                hamburger.addEventListener('click', function() {
-                    navLinks.classList.toggle('active');
-                });
-            }
-        });
     </script>
 </body>
 </html>
