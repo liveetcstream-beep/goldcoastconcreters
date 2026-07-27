@@ -675,12 +675,10 @@
             successDiv.style.display = 'none';
             successDiv.style.textAlign = 'center';
             successDiv.style.padding = '3rem 1.5rem';
-            successDiv.innerHTML = `
-                <div style="font-size: 4rem; color: #d97706; margin-bottom: 1.5rem; animation: pop 0.4s ease-out;">✓</div>
-                <h3 style="color: #0f172a; font-size: 1.75rem; font-weight: 800; margin-bottom: 1rem;">Thank You!</h3>
-                <p style="color: #334155; font-size: 1rem; line-height: 1.6; margin-bottom: 1.5rem;">Your quote request has been successfully submitted. Our local concreting team will contact you shortly for a site measure.</p>
-                <button id="reset-form-btn" style="background-color: #0f172a; color: #fff; border: none; padding: 0.6rem 1.2rem; border-radius: 6px; font-weight: 600; cursor: pointer; transition: background-color 0.2s;">Send another response</button>
-            `;
+            successDiv.innerHTML = '<div style="font-size: 4rem; color: #d97706; margin-bottom: 1.5rem;">✓</div>' +
+                '<h3 style="color: #0f172a; font-size: 1.75rem; font-weight: 800; margin-bottom: 1rem;">Thank You!</h3>' +
+                '<p style="color: #334155; font-size: 1rem; line-height: 1.6; margin-bottom: 1.5rem;">Your quote request has been successfully submitted. Our local concreting team will contact you shortly for a site measure.</p>' +
+                '<button id="reset-form-btn" style="background-color: #0f172a; color: #fff; border: none; padding: 0.6rem 1.2rem; border-radius: 6px; font-weight: 600; cursor: pointer;">Send another response</button>';
             
             // Add pop animation style
             const style = document.createElement('style');
