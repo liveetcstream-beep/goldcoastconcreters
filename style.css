@@ -1384,7 +1384,7 @@ h4 {
 }
 
 .review-text {
-    color: var(--text-dark);
+    color: var(--text-main);
     font-size: 1.05rem;
     line-height: 1.7;
     font-style: italic;
@@ -1435,6 +1435,54 @@ h4 {
     font-size: 0.85rem;
     color: var(--text-light);
     margin-top: 0.2rem;
+}
+
+/* ==========================================================================
+   Service Areas Grid Styling (.areas-section, .areas-list, .area-tag)
+   ========================================================================== */
+.areas-section {
+    padding: 5rem 0;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.areas-intro {
+    max-width: 800px;
+    margin: 0 auto 2.5rem auto;
+    font-size: 1.05rem;
+    color: var(--text-main);
+    line-height: 1.7;
+}
+
+.areas-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.85rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.area-tag {
+    display: inline-block;
+    background-color: var(--light-bg);
+    color: var(--primary);
+    padding: 0.65rem 1.25rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border: 1px solid var(--border-color);
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.area-tag:hover {
+    background-color: var(--accent);
+    color: var(--white);
+    border-color: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(217, 119, 6, 0.25);
 }
 
 @media (max-width: 768px) {
