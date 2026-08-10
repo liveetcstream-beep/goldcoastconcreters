@@ -11,116 +11,134 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- Suburb Page: Coomera -->
+  <!-- Priority 1 Master Service Pillars -->
   <url>
-    <loc>https://goldcoastconcretersqld.com.au/coomera</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://goldcoastconcretersqld.com.au/concrete-driveways-gold-coast</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
   </url>
 
-  <!-- Suburb Page: Ormeau -->
-  <url>
-    <loc>https://goldcoastconcretersqld.com.au/ormeau</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Suburb Page: Pimpama -->
-  <url>
-    <loc>https://goldcoastconcretersqld.com.au/pimpama</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Suburb Page: Helensvale -->
-  <url>
-    <loc>https://goldcoastconcretersqld.com.au/helensvale</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Suburb Page: Hope Island -->
-  <url>
-    <loc>https://goldcoastconcretersqld.com.au/hope-island</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Suburb Page: Yatala -->
-  <url>
-    <loc>https://goldcoastconcretersqld.com.au/yatala</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Suburb Page: Kingsholme -->
-  <url>
-    <loc>https://goldcoastconcretersqld.com.au/kingsholme</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Suburb Page: Willow Vale -->
-  <url>
-    <loc>https://goldcoastconcretersqld.com.au/willow-vale</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Suburb Page: Oxenford -->
-  <url>
-    <loc>https://goldcoastconcretersqld.com.au/oxenford</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Suburb Page: Pacific Pines -->
-  <url>
-    <loc>https://goldcoastconcretersqld.com.au/pacific-pines</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Informational Blog: Crossover Permit Guide -->
-  <url>
-    <loc>https://goldcoastconcretersqld.com.au/crossover-permit-guide</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Service Page: Exposed Aggregate -->
   <url>
     <loc>https://goldcoastconcretersqld.com.au/exposed-aggregate-gold-coast</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Service Page: Covercrete Resurfacing -->
   <url>
     <loc>https://goldcoastconcretersqld.com.au/covercrete-resurfacing-gold-coast</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Service Page: Stencil & Stamped Concrete -->
   <url>
     <loc>https://goldcoastconcretersqld.com.au/stencil-stamped-concrete-gold-coast</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Service Page: Concrete Slabs -->
   <url>
     <loc>https://goldcoastconcretersqld.com.au/concrete-slabs-gold-coast</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Service Page: Retaining Walls -->
   <url>
     <loc>https://goldcoastconcretersqld.com.au/retaining-walls-gold-coast</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://goldcoastconcretersqld.com.au/concrete-pool-surrounds-gold-coast</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Priority 1 Pricing & Buyer Hubs -->
+  <url>
+    <loc>https://goldcoastconcretersqld.com.au/concrete-cost-per-m2-gold-coast</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Priority 1 Regulatory & Technical Guides -->
+  <url>
+    <loc>https://goldcoastconcretersqld.com.au/crossover-permit-guide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Priority 1 Suburb Location Hubs -->
+  <url>
+    <loc>https://goldcoastconcretersqld.com.au/coomera</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://goldcoastconcretersqld.com.au/ormeau</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://goldcoastconcretersqld.com.au/pimpama</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://goldcoastconcretersqld.com.au/helensvale</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://goldcoastconcretersqld.com.au/hope-island</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://goldcoastconcretersqld.com.au/robina</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://goldcoastconcretersqld.com.au/southport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://goldcoastconcretersqld.com.au/yatala</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://goldcoastconcretersqld.com.au/kingsholme</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://goldcoastconcretersqld.com.au/willow-vale</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://goldcoastconcretersqld.com.au/oxenford</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://goldcoastconcretersqld.com.au/pacific-pines</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
 </urlset>
