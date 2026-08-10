@@ -153,6 +153,28 @@ h4 {
     box-shadow: 0 6px 16px rgba(217, 119, 6, 0.4);
 }
 
+.phone-btn-outline {
+    background-color: transparent !important;
+    border: 2px solid var(--accent) !important;
+    color: #0f172a !important;
+    padding: 0.65rem 1.15rem;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.phone-btn-outline:hover {
+    background-color: var(--accent) !important;
+    color: var(--white) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(217, 119, 6, 0.3);
+}
+
 /* Hamburger Mobile Toggle Button */
 .hamburger-menu {
     display: none;
