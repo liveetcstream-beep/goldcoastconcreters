@@ -333,6 +333,14 @@ body.menu-open {
 
 /* Mobile & Tablet Responsive Drawer Navigation (991px and below) */
 @media (max-width: 991px) {
+    .header-container {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        width: 92% !important;
+    }
+
     .hamburger-menu {
         display: flex !important;
     }
