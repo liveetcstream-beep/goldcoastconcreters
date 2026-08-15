@@ -41,9 +41,9 @@
 
 ## 🟡 Priority 2 (Batch 2 — Drip Feed Days 6–12)
 
-| Page Type | Clean SEO URL Slug | Primary Keyword | Planned File |
-|---|---|---|---|
-| **Comparison Guide** | `/exposed-aggregate-vs-plain-concrete` | `exposed aggregate vs plain concrete` | `exposed-aggregate-vs-plain-concrete.html` |
+| Page Type | Clean SEO URL Slug | Primary Keyword | Planned File | Status |
+|---|---|---|---|---|
+| **Comparison Guide** | `/exposed-aggregate-vs-plain-concrete` | `exposed aggregate vs plain concrete` | `exposed-aggregate-vs-plain-concrete.html` | **LIVE (Aug 16, 2026)** |
 | **Technical Standard** | `/as3727-residential-pavements-gold-coast` | `as3727 concrete residential driveway standards` | `as3727-residential-pavements-gold-coast.html` |
 | **Sub-Service** | `/shed-slabs-gold-coast` | `shed slabs gold coast` | `shed-slabs-gold-coast.html` |
 | **Service/Guide** | `/concrete-sealing-gold-coast` | `concrete sealing gold coast` | `concrete-sealing-gold-coast.html` |

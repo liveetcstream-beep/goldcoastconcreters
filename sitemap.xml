@@ -68,6 +68,13 @@
     <priority>0.85</priority>
   </url>
 
+  <!-- Priority 2 Comparison & Technical Guides (Published August 16, 2026) -->
+  <url>
+    <loc>https://goldcoastconcretersqld.com.au/exposed-aggregate-vs-plain-concrete</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
   <!-- Priority 1 Suburb Location Hubs -->
   <url>
     <loc>https://goldcoastconcretersqld.com.au/coomera</loc>
