@@ -81,9 +81,9 @@
             }
         });
 
-        // Close on viewport resize above mobile breakpoint
+        // Close on viewport resize above mobile/tablet breakpoint
         window.addEventListener('resize', function () {
-            if (window.innerWidth > 991 && navLinks.classList.contains('active')) {
+            if (window.innerWidth > 1199 && navLinks.classList.contains('active')) {
                 setMenuState(false);
             }
         });
