@@ -162,18 +162,7 @@
             </div>
         </div>
     </header>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var menuBtn = document.getElementById('mobile-menu-btn');
-            var navLinks = document.getElementById('main-nav-links');
-            if (menuBtn && navLinks) {
-                menuBtn.addEventListener('click', function() {
-                    menuBtn.classList.toggle('active');
-                    navLinks.classList.toggle('active');
-                });
-            }
-        });
-    </script>
+    <script src="assets/menu.js" defer></script>
 
     <!-- Visual Breadcrumb Navigation (Hub to Spoke) -->
     <nav class="breadcrumb-nav" aria-label="Breadcrumb" style="background-color: var(--light-bg); padding: 0.75rem 0; border-bottom: 1px solid var(--border-color);">
