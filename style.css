@@ -266,8 +266,9 @@ body.menu-open {
     background-color: var(--accent);
 }
 
-.mobile-only-phone {
-    display: none;
+.mobile-only-phone,
+.nav-links a.mobile-only-phone {
+    display: none !important;
 }
 
 /* Desktop Header Navigation (992px and above) */
@@ -410,7 +411,8 @@ body.menu-open {
         opacity: 1 !important;
     }
 
-    .mobile-only-phone {
+    .mobile-only-phone,
+    .nav-links a.mobile-only-phone {
         display: none !important;
     }
 
