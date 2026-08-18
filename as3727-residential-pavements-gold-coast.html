@@ -86,24 +86,9 @@
           "@type": "BreadcrumbList",
           "@id": "https://goldcoastconcretersqld.com.au/as3727-residential-pavements-gold-coast#breadcrumb",
           "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "https://goldcoastconcretersqld.com.au/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "Guides",
-              "item": "https://goldcoastconcretersqld.com.au/concrete-cost-per-m2-gold-coast"
-            },
-            {
-              "@type": "ListItem",
-              "position": 3,
-              "name": "AS 3727.1-2016 Standards",
-              "item": "https://goldcoastconcretersqld.com.au/as3727-residential-pavements-gold-coast"
-            }
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://goldcoastconcretersqld.com.au/" },
+            { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://goldcoastconcretersqld.com.au/concrete-cost-per-m2-gold-coast" },
+            { "@type": "ListItem", "position": 3, "name": "AS 3727.1-2016 Driveway Standards", "item": "https://goldcoastconcretersqld.com.au/as3727-residential-pavements-gold-coast" }
           ]
         },
         {
@@ -187,31 +172,87 @@
     <script src="assets/menu.js" defer></script>
 
     <!-- Visual Breadcrumb Navigation -->
-    <nav class="breadcrumb-nav" aria-label="Breadcrumb">
-        <div class="container">
-            <a href="/">Home</a> &gt;
-            <a href="concrete-cost-per-m2-gold-coast">Guides</a> &gt;
-            <span>AS 3727.1-2016 Driveway Standards</span>
+    <nav class="breadcrumb-nav" aria-label="Breadcrumb" style="background-color: var(--light-bg); padding: 0.75rem 0; border-bottom: 1px solid var(--border-color);">
+        <div class="container" style="font-size: 0.85rem; color: var(--text-light);">
+            <a href="/" style="color: var(--accent); font-weight: 600;">Home Hub</a> &nbsp;›&nbsp;
+            <a href="concrete-cost-per-m2-gold-coast" style="color: var(--text-light);">Guides</a> &nbsp;›&nbsp;
+            <span style="color: var(--primary); font-weight: 700;">AS 3727.1-2016 Driveway Standards</span>
         </div>
     </nav>
 
-    <main class="guide-container">
-        <!-- Main Content Area -->
-        <article class="guide-content">
-            <!-- Hero Title & Context Header -->
-            <div style="margin-bottom: 2rem;">
-                <span class="accent-text" style="font-weight: 800; text-transform: uppercase; letter-spacing: 1px; font-size: 0.85rem;">Technical Standards Guide | QBCC License #1524819</span>
-                <h1 style="font-size: 2.3rem; color: #0f172a; margin-top: 0.5rem; line-height: 1.25;">AS 3727.1-2016 Guide: Australian Standards for Gold Coast Residential Driveways &amp; Slabs</h1>
-                <p style="font-size: 1.1rem; color: #475569; line-height: 1.7; margin-top: 1rem;">Pouring a concrete driveway or outdoor slab on the Gold Coast requires far more than mixing cement and gravel. To ensure your pavement withstands heavy vehicle loads, reactive clay soil movement, and intense subtropical weather, all work must comply with <strong>Australian Standard AS 3727.1-2016 (Pavements - Residential)</strong>. This guide explains the exact technical specifications required for subgrade compaction, slab thickness, steel reinforcement positioning, and expansion joint design across South East Queensland.</p>
-                <div style="font-size: 0.85rem; color: #64748b; margin-top: 0.75rem; border-left: 3px solid #d97706; padding-left: 0.75rem;">
-                    <span>Authored by: <strong>Gold Coast Concreters Trade Estimators</strong> | <strong>QBCC Licensed #1524819</strong></span>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="overlay"></div>
+            <div class="hero-content">
+                <div class="hero-text-area">
+                    <span class="sub-badge">QBCC LICENSED #1524819 | AUSTRALIAN STANDARDS GUIDE</span>
+                    <h1>AS 3727.1-2016 Concrete Driveway Standards Gold Coast</h1>
+                    <p class="lead-text">Pouring a residential driveway or outdoor slab on the Gold Coast requires strict compliance with <strong>AS 3727.1-2016 (Pavements - Residential)</strong>. Learn the exact technical requirements for 100mm–150mm slab thickness, N25 vs N32 concrete grades, SL72 steel mesh placement, and GCCC council crossover compliance.</p>
+                    <div class="hero-features">
+                        <div class="feature-item">✓ 100mm Min Slab Depth over 75mm DGB20 Base</div>
+                        <div class="feature-item">✓ SL72 Steel Mesh on 50mm Bar Chairs (30mm Cover)</div>
+                        <div class="feature-item">✓ Saw-Cut Control Joints Every 3m &amp; 10mm Foam</div>
+                    </div>
+                </div>
+
+                <!-- Lead Form -->
+                <div class="hero-form-area" id="quote-form">
+                    <h2>Request a Free Standards Quote</h2>
+                    <p>Tell us your suburb &amp; driveway specs for an AS 3727 compliant estimate.</p>
+                    <form action="https://api.web3forms.com/submit" method="POST" class="quote-form">
+                        <input type="hidden" name="access_key" value="7e54f762-c13f-422a-89a1-55ecf36f32e6">
+                        <input type="hidden" name="subject" value="New Inquiry - AS 3727 Driveway Standards Guide">
+                        <input type="hidden" name="from_name" value="Gold Coast Concreters Website">
+
+                        <div class="input-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="e.g. Mark Johnson" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="04XX XXX XXX" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="suburb">Suburb &amp; Postcode</label>
+                            <input type="text" id="suburb" name="suburb" placeholder="e.g. Coomera 4209, Robina 4226" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="service">Required Service</label>
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected>Select project type</option>
+                                <option value="new-driveway">New Residential Driveway (AS 3727)</option>
+                                <option value="council-crossover">GCCC Council Crossover (VXO)</option>
+                                <option value="heavy-pad">Caravan / Boat / Heavy Vehicle Pad</option>
+                                <option value="shed-slab">Shed Slab (AS 2870)</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label for="message">Project Details</label>
+                            <textarea id="message" name="message" rows="3" placeholder="Approx area (m²), vehicle types, and target start date." required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Request Free On-Site Inspection</button>
+                    </form>
                 </div>
             </div>
+        </section>
 
+        <!-- Credentials Bar -->
+        <section class="credentials-bar">
+            <div class="credentials-container">
+                <div class="credential-badge"><span>✓</span> QBCC LICENSED #1524819</div>
+                <div class="credential-badge"><span>✓</span> AS 3727.1-2016 COMPLIANT</div>
+                <div class="credential-badge"><span>✓</span> GCCC VXO PERMIT APPROVED</div>
+                <div class="credential-badge"><span>✓</span> FORM 16 CERTIFICATION</div>
+            </div>
+        </section>
+
+        <!-- Main Article Content Section -->
+        <section style="padding: 60px 20px; max-width: 1100px; margin: 0 auto;">
             <!-- AEO Executive Summary Box -->
-            <div class="highlight-box" style="background-color: #f8fafc; border-left: 4px solid #d97706; padding: 1.5rem; border-radius: 8px; margin-bottom: 2.5rem;">
-                <h3 style="margin-top: 0; color: #0f172a; font-size: 1.25rem;">⚡ Key AS 3727.1-2016 Specs for Gold Coast Driveways</h3>
-                <ul style="margin: 0.75rem 0 0 1.25rem; padding: 0; line-height: 1.7; font-size: 0.975rem;">
+            <div class="highlight-box" style="background-color: var(--light-bg); border-left: 4px solid var(--accent); padding: 1.5rem; border-radius: 8px; margin-bottom: 2.5rem;">
+                <h3 style="margin-top: 0; color: var(--primary); font-size: 1.25rem;">⚡ Key AS 3727.1-2016 Specs for Gold Coast Driveways</h3>
+                <ul style="margin: 0.75rem 0 0 1.25rem; padding: 0; line-height: 1.7; font-size: 0.975rem; color: var(--text-main);">
                     <li><strong>Minimum Slab Thickness:</strong> 100mm for passenger cars (up to 3 tonnes); 125mm–150mm for heavy vehicles, dual-axle caravans, or boat trailers.</li>
                     <li><strong>Concrete Strength Grade:</strong> N25 (25 MPa) minimum; N32 (32 MPa) recommended for coastal salt spray zones &amp; steep driveways.</li>
                     <li><strong>Steel Reinforcement:</strong> SL72 steel mesh placed on 50mm–65mm bar chairs (never laid directly on the ground).</li>
@@ -221,24 +262,32 @@
             </div>
 
             <!-- Section 1: Subgrade Preparation & Soil Types -->
-            <h2>1. Subgrade Compaction &amp; Gold Coast Soil Classes</h2>
-            <p>Under AS 3727.1-2016, a concrete slab is only as strong as the foundation underneath it. Gold Coast soils vary dramatically depending on location:</p>
+            <div class="section-title">
+                <span class="accent-text">Foundation Preparation</span>
+                <h2>1. Subgrade Compaction &amp; Gold Coast Soil Classes</h2>
+                <div class="divider"></div>
+            </div>
+            <p style="color: var(--text-main); font-size: 1.05rem; line-height: 1.7;">Under AS 3727.1-2016, a concrete slab is only as strong as the foundation underneath it. Gold Coast soils vary dramatically depending on location:</p>
 
-            <ul>
+            <ul style="color: var(--text-main); font-size: 1.05rem; line-height: 1.8;">
                 <li><strong>Northern Growth Corridor (Pimpama 4209, Coomera 4209, Ormeau 4208):</strong> Predominantly reactive clay soils (Class M, H1, H2 under AS 2870). These soils swell when wet during summer monsoons and shrink during dry winter spells, placing immense upward and downward pressure on concrete slabs.</li>
                 <li><strong>Central &amp; Coastal Suburbs (Southport 4215, Robina 4226, Burleigh 4220):</strong> Sandy soils and alluvial silt. While less reactive, uncompacted sand causes localized subgrade settling, leaving voids under the driveway.</li>
             </ul>
 
-            <p><strong>Trade Execution Standard:</strong> We excavate soft topsoil, lay a minimum <strong>75mm layer of DGB20 crushed roadbase</strong>, and compact it using a 100kg mechanical plate compactor to achieve a California Bearing Ratio (CBR) rating of 3.0 or higher prior to placing plastic membrane and steel mesh.</p>
+            <p style="color: var(--text-main); font-size: 1.05rem; line-height: 1.7;"><strong>Trade Execution Standard:</strong> We excavate soft topsoil, lay a minimum <strong>75mm layer of DGB20 crushed roadbase</strong>, and compact it using a 100kg mechanical plate compactor to achieve a California Bearing Ratio (CBR) rating of 3.0 or higher prior to placing plastic membrane and steel mesh.</p>
 
-            <!-- Section 2: Concrete Mix Specifications -->
-            <h2>2. Concrete Mix Specs: N25 vs N32 MPa</h2>
-            <p>AS 3727 dictates characteristic 28-day compressive strength grades for residential pavements:</p>
+            <!-- Section 2: Concrete Mix Specifications Table -->
+            <div class="section-title" style="margin-top: 3rem;">
+                <span class="accent-text">Structural Specifications</span>
+                <h2>2. Concrete Mix Specs: N25 vs N32 MPa</h2>
+                <div class="divider"></div>
+            </div>
+            <p style="color: var(--text-main); font-size: 1.05rem; line-height: 1.7;">AS 3727 dictates characteristic 28-day compressive strength grades for residential pavements:</p>
 
             <div style="overflow-x: auto; margin: 1.5rem 0 2.5rem 0;">
                 <table class="spec-table" style="width: 100%; border-collapse: collapse;">
                     <thead>
-                        <tr style="background-color: #0f172a; color: #ffffff;">
+                        <tr style="background-color: var(--primary); color: var(--white);">
                             <th style="padding: 12px; text-align: left;">Pavement Application</th>
                             <th style="padding: 12px; text-align: left;">Minimum Thickness</th>
                             <th style="padding: 12px; text-align: left;">Concrete Grade (MPa)</th>
@@ -275,126 +324,145 @@
             </div>
 
             <!-- Section 3: Steel Reinforcement Placement -->
-            <h2>3. Steel Reinforcement Mesh: Positioning Matters</h2>
-            <p>Steel reinforcement (such as <strong>SL72 square mesh</strong> with 6.75mm main wires) provides tensile strength, holding the concrete tightly together during thermal contraction and ground movement.</p>
+            <div class="section-title" style="margin-top: 3rem;">
+                <span class="accent-text">Tensile Reinforcement</span>
+                <h2>3. Steel Reinforcement Mesh: Positioning Matters</h2>
+                <div class="divider"></div>
+            </div>
+            <p style="color: var(--text-main); font-size: 1.05rem; line-height: 1.7;">Steel reinforcement (such as <strong>SL72 square mesh</strong> with 6.75mm main wires) provides tensile strength, holding the concrete tightly together during thermal contraction and ground movement.</p>
 
             <div style="background-color: #fff7ed; border-left: 4px solid #ea580c; padding: 1.25rem; margin: 1.5rem 0; border-radius: 6px;">
                 <p style="margin: 0; color: #9a3412; font-size: 0.95rem;"><strong>Critical Trade Warning:</strong> Laying steel mesh directly on the subgrade and pulling it up during the pour is a major breach of AS 3727. Mesh sitting on the bottom of the slab provides zero top-face crack control. We support all steel mesh on rigid plastic bar chairs spaced every 800mm to guarantee 30mm–40mm top cover depth.</p>
             </div>
 
             <!-- Section 4: Jointing Rules -->
-            <h2>4. Control &amp; Expansion Jointing Requirements</h2>
-            <p>Concrete naturally shrinks as water evaporates during curing. Without planned jointing, random unsightly cracking is guaranteed.</p>
+            <div class="section-title" style="margin-top: 3rem;">
+                <span class="accent-text">Crack Control</span>
+                <h2>4. Control &amp; Expansion Jointing Requirements</h2>
+                <div class="divider"></div>
+            </div>
+            <p style="color: var(--text-main); font-size: 1.05rem; line-height: 1.7;">Concrete naturally shrinks as water evaporates during curing. Without planned jointing, random unsightly cracking is guaranteed.</p>
 
-            <h3>A. Saw-Cut Control Joints</h3>
-            <p>Cut to a minimum depth of <strong>1/4 the slab thickness</strong> (25mm deep for a 100mm slab) within 12 to 24 hours of placement. Joint spacing must not exceed 3 meters for standard 100mm residential driveways.</p>
+            <h3 style="color: var(--primary);">A. Saw-Cut Control Joints</h3>
+            <p style="color: var(--text-main); font-size: 1.05rem; line-height: 1.7;">Cut to a minimum depth of <strong>1/4 the slab thickness</strong> (25mm deep for a 100mm slab) within 12 to 24 hours of placement. Joint spacing must not exceed 3 meters for standard 100mm residential driveways.</p>
 
-            <h3>B. Full-Depth Expansion Joints</h3>
-            <p>Installed using 10mm flexible closed-cell polyethylene foam (Abelflex) to isolate the driveway from rigid structures such as house footings, garage slabs, brick boundary walls, and Gold Coast City Council kerbs.</p>
+            <h3 style="color: var(--primary);">B. Full-Depth Expansion Joints</h3>
+            <p style="color: var(--text-main); font-size: 1.05rem; line-height: 1.7;">Installed using 10mm flexible closed-cell polyethylene foam (Abelflex) to isolate the driveway from rigid structures such as house footings, garage slabs, brick boundary walls, and Gold Coast City Council kerbs.</p>
 
             <!-- Section 5: GCCC Compliance -->
-            <h2>5. Gold Coast City Council (GCCC) Crossover Compliance</h2>
-            <p>When pouring a driveway section between your property boundary and the roadway curb, Gold Coast City Council (GCCC) Vehicular Crossing (VXO) guidelines strictly enforce AS 3727.1-2016. Council officers require a mandatory pre-pour inspection to verify 125mm slab depth, SL72 mesh chairs, and 75mm roadbase before any concrete mixer arrives on site.</p>
+            <div class="section-title" style="margin-top: 3rem;">
+                <span class="accent-text">Council Regulatory Sign-Off</span>
+                <h2>5. Gold Coast City Council (GCCC) Crossover Compliance</h2>
+                <div class="divider"></div>
+            </div>
+            <p style="color: var(--text-main); font-size: 1.05rem; line-height: 1.7;">When pouring a driveway section between your property boundary and the roadway curb, Gold Coast City Council (GCCC) Vehicular Crossing (VXO) guidelines strictly enforce AS 3727.1-2016. Council officers require a mandatory pre-pour inspection to verify 125mm slab depth, SL72 mesh chairs, and 75mm roadbase before any concrete mixer arrives on site.</p>
 
-            <!-- Inline CTA -->
-            <div style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: #ffffff; padding: 2rem; border-radius: 12px; text-align: center; margin: 3rem 0;">
-                <h3 style="color: #ffffff; margin-top: 0; font-size: 1.5rem;">Build Your Driveway to Australian Standards</h3>
-                <p style="color: #94a3b8; font-size: 1rem; max-width: 600px; margin: 0.5rem auto 1.5rem auto;">Our licensed QBCC concreters guarantee 100% AS 3727.1-2016 compliance on every residential driveway, slab, and council crossover on the Gold Coast.</p>
-                <a href="#quote-form" class="phone-btn" style="padding: 0.85rem 1.75rem; font-size: 1rem;">Book Free On-Site Measure</a>
+            <!-- Inline CTA Box -->
+            <div style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: #ffffff; padding: 2.5rem 2rem; border-radius: 12px; text-align: center; margin: 3.5rem 0; box-shadow: 0 10px 25px rgba(0,0,0,0.15);">
+                <h3 style="color: #ffffff; margin-top: 0; font-size: 1.6rem; font-weight: 700;">Build Your Driveway to Australian Standards</h3>
+                <p style="color: #94a3b8; font-size: 1.05rem; max-width: 650px; margin: 0.75rem auto 1.75rem auto; line-height: 1.6;">Our licensed QBCC concreters guarantee 100% AS 3727.1-2016 compliance on every residential driveway, slab, and council crossover on the Gold Coast.</p>
+                <a href="#quote-form" class="phone-btn" style="padding: 0.9rem 2rem; font-size: 1.05rem;">Book Free On-Site Measure</a>
             </div>
 
             <!-- Section 6: FAQs -->
-            <h2>6. Frequently Asked Questions</h2>
+            <div class="section-title" style="margin-top: 3.5rem;">
+                <span class="accent-text">Common Questions</span>
+                <h2>6. Frequently Asked Questions</h2>
+                <div class="divider"></div>
+            </div>
             <div style="margin-top: 1.5rem;">
-                <div style="border-bottom: 1px solid #e2e8f0; padding: 1rem 0;">
-                    <h4 style="color: #0f172a; margin: 0 0 0.5rem 0; font-size: 1.1rem;">What is the minimum concrete thickness for a residential driveway under AS 3727.1-2016?</h4>
-                    <p style="margin: 0; color: #475569; line-height: 1.6;">Under AS 3727.1-2016, the standard minimum thickness for a light vehicle residential driveway (up to 3-tonne vehicles) is 100mm over a 75mm compacted roadbase. For heavy vehicles, caravans, or dual-axle boat trailers, standard practice requires a minimum 125mm to 150mm slab thickness with N32 MPa concrete.</p>
+                <div style="border-bottom: 1px solid var(--border-color); padding: 1.25rem 0;">
+                    <h4 style="color: var(--primary); margin: 0 0 0.5rem 0; font-size: 1.15rem; font-weight: 700;">What is the minimum concrete thickness for a residential driveway under AS 3727.1-2016?</h4>
+                    <p style="margin: 0; color: var(--text-main); line-height: 1.6; font-size: 1rem;">Under AS 3727.1-2016, the standard minimum thickness for a light vehicle residential driveway (up to 3-tonne vehicles) is 100mm over a 75mm compacted roadbase. For heavy vehicles, caravans, or dual-axle boat trailers, standard practice requires a minimum 125mm to 150mm slab thickness with N32 MPa concrete.</p>
                 </div>
-                <div style="border-bottom: 1px solid #e2e8f0; padding: 1rem 0;">
-                    <h4 style="color: #0f172a; margin: 0 0 0.5rem 0; font-size: 1.1rem;">What concrete strength grade (MPa) is required on the Gold Coast?</h4>
-                    <p style="margin: 0; color: #475569; line-height: 1.6;">AS 3727 specifies a minimum characteristic compressive strength of N25 (25 MPa at 28 days) for standard residential driveways. However, on the Gold Coast—especially in coastal salt-spray zones like Hope Island (4212) or Southport (4215)—we recommend N32 (32 MPa) for higher abrasion resistance and superior steel mesh protection against coastal corrosion.</p>
+                <div style="border-bottom: 1px solid var(--border-color); padding: 1.25rem 0;">
+                    <h4 style="color: var(--primary); margin: 0 0 0.5rem 0; font-size: 1.15rem; font-weight: 700;">What concrete strength grade (MPa) is required on the Gold Coast?</h4>
+                    <p style="margin: 0; color: var(--text-main); line-height: 1.6; font-size: 1rem;">AS 3727 specifies a minimum characteristic compressive strength of N25 (25 MPa at 28 days) for standard residential driveways. However, on the Gold Coast—especially in coastal salt-spray zones like Hope Island (4212) or Southport (4215)—we recommend N32 (32 MPa) for higher abrasion resistance and superior steel mesh protection against coastal corrosion.</p>
                 </div>
-                <div style="border-bottom: 1px solid #e2e8f0; padding: 1rem 0;">
-                    <h4 style="color: #0f172a; margin: 0 0 0.5rem 0; font-size: 1.1rem;">Where should steel reinforcing mesh (SL72) be positioned inside the slab?</h4>
-                    <p style="margin: 0; color: #475569; line-height: 1.6;">Steel mesh must be supported on plastic bar chairs (50mm–65mm height) so it rests in the upper third of the slab, ensuring 30mm to 40mm top cover. Placing mesh directly on the ground or stepping on it during the pour renders it useless and leads to premature cracking under AS 3727 guidelines.</p>
+                <div style="border-bottom: 1px solid var(--border-color); padding: 1.25rem 0;">
+                    <h4 style="color: var(--primary); margin: 0 0 0.5rem 0; font-size: 1.15rem; font-weight: 700;">Where should steel reinforcing mesh (SL72) be positioned inside the slab?</h4>
+                    <p style="margin: 0; color: var(--text-main); line-height: 1.6; font-size: 1rem;">Steel mesh must be supported on plastic bar chairs (50mm–65mm height) so it rests in the upper third of the slab, ensuring 30mm to 40mm top cover. Placing mesh directly on the ground or stepping on it during the pour renders it useless and leads to premature cracking under AS 3727 guidelines.</p>
                 </div>
-                <div style="border-bottom: 1px solid #e2e8f0; padding: 1rem 0;">
-                    <h4 style="color: #0f172a; margin: 0 0 0.5rem 0; font-size: 1.1rem;">How far apart should expansion and control joints be placed?</h4>
-                    <p style="margin: 0; color: #475569; line-height: 1.6;">Control joints (cut to 1/4 slab depth) should be spaced at maximum distances equal to 25 to 30 times the slab thickness—typically every 3 meters for a 100mm slab. Full-depth expansion joints with 10mm flexible foam must be installed against existing house footings, garage kerbs, and council curbs.</p>
+                <div style="border-bottom: 1px solid var(--border-color); padding: 1.25rem 0;">
+                    <h4 style="color: var(--primary); margin: 0 0 0.5rem 0; font-size: 1.15rem; font-weight: 700;">How far apart should expansion and control joints be placed?</h4>
+                    <p style="margin: 0; color: var(--text-main); line-height: 1.6; font-size: 1rem;">Control joints (cut to 1/4 slab depth) should be spaced at maximum distances equal to 25 to 30 times the slab thickness—typically every 3 meters for a 100mm slab. Full-depth expansion joints with 10mm flexible foam must be installed against existing house footings, garage kerbs, and council curbs.</p>
                 </div>
-                <div style="border-bottom: 1px solid #e2e8f0; padding: 1rem 0;">
-                    <h4 style="color: #0f172a; margin: 0 0 0.5rem 0; font-size: 1.1rem;">Does Gold Coast City Council enforce AS 3727 for crossover permits?</h4>
-                    <p style="margin: 0; color: #475569; line-height: 1.6;">Yes. Gold Coast City Council (GCCC) Vehicular Crossing (VXO) specifications strictly enforce AS 3727.1-2016 and AS 2870. Crossovers on council land require a minimum 125mm slab thickness, N25 or N32 concrete mix, SL72 mesh on chairs, and mandatory pre-pour council inspection before any concrete is placed.</p>
+                <div style="border-bottom: 1px solid var(--border-color); padding: 1.25rem 0;">
+                    <h4 style="color: var(--primary); margin: 0 0 0.5rem 0; font-size: 1.15rem; font-weight: 700;">Does Gold Coast City Council enforce AS 3727 for crossover permits?</h4>
+                    <p style="margin: 0; color: var(--text-main); line-height: 1.6; font-size: 1rem;">Yes. Gold Coast City Council (GCCC) Vehicular Crossing (VXO) specifications strictly enforce AS 3727.1-2016 and AS 2870. Crossovers on council land require a minimum 125mm slab thickness, N25 or N32 concrete mix, SL72 mesh on chairs, and mandatory pre-pour council inspection before any concrete is placed.</p>
                 </div>
             </div>
-        </article>
+        </section>
 
-        <!-- Sidebar / Interactive Quote Form Container -->
-        <aside class="guide-sidebar">
-            <div class="guide-form-container" id="quote-form">
-                <h3>Get Your Free Quote</h3>
-                <p>Speak directly with a local QBCC licensed concreter for a free site measure &amp; estimate.</p>
-                <form class="quote-form" action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="7e54f762-c13f-422a-89a1-55ecf36f32e6">
-                    <input type="hidden" name="subject" value="New AS 3727 Driveway Standards Inquiry - Gold Coast Concreters">
-                    <input type="hidden" name="from_name" value="Gold Coast Concreters Website">
-                    
-                    <div style="margin-bottom: 1rem;">
-                        <label for="name" style="display: block; margin-bottom: 0.35rem; font-size: 0.875rem; font-weight: 600; color: #f8fafc;">Full Name *</label>
-                        <input type="text" id="name" name="name" required placeholder="e.g. Mark Johnson" style="width: 100%; padding: 0.75rem; border-radius: 6px; border: 1px solid #334155; background: #0f172a; color: #ffffff; box-sizing: border-radius;">
-                    </div>
-
-                    <div style="margin-bottom: 1rem;">
-                        <label for="phone" style="display: block; margin-bottom: 0.35rem; font-size: 0.875rem; font-weight: 600; color: #f8fafc;">Phone Number *</label>
-                        <input type="tel" id="phone" name="phone" required placeholder="e.g. 0411 914 157" style="width: 100%; padding: 0.75rem; border-radius: 6px; border: 1px solid #334155; background: #0f172a; color: #ffffff; box-sizing: border-radius;">
-                    </div>
-
-                    <div style="margin-bottom: 1rem;">
-                        <label for="suburb" style="display: block; margin-bottom: 0.35rem; font-size: 0.875rem; font-weight: 600; color: #f8fafc;">Gold Coast Suburb *</label>
-                        <input type="text" id="suburb" name="suburb" required placeholder="e.g. Robina, Coomera, Southport" style="width: 100%; padding: 0.75rem; border-radius: 6px; border: 1px solid #334155; background: #0f172a; color: #ffffff; box-sizing: border-radius;">
-                    </div>
-
-                    <div style="margin-bottom: 1.25rem;">
-                        <label for="service_type" style="display: block; margin-bottom: 0.35rem; font-size: 0.875rem; font-weight: 600; color: #f8fafc;">Project Type *</label>
-                        <select id="service_type" name="service_type" required style="width: 100%; padding: 0.75rem; border-radius: 6px; border: 1px solid #334155; background: #0f172a; color: #ffffff; box-sizing: border-radius;">
-                            <option value="">-- Select Project Type --</option>
-                            <option value="New Residential Driveway">New Residential Driveway</option>
-                            <option value="Council Crossover VXO">Council Crossover (VXO)</option>
-                            <option value="Caravan or Boat Pad">Caravan or Boat Pad</option>
-                            <option value="Shed Slab">Heavy Machinery / Shed Slab</option>
-                        </select>
-                    </div>
-
-                    <button type="submit" class="submit-btn phone-btn" style="width: 100%; justify-content: center; padding: 0.9rem; font-size: 1rem; border: none; cursor: pointer;">Request Free Site Measure</button>
-                </form>
+        <!-- Client Testimonials Section -->
+        <section class="reviews-section" id="reviews">
+            <div class="section-title">
+                <span class="accent-text">Client Testimonials</span>
+                <h2>What Our Gold Coast Clients Say</h2>
+                <div class="divider"></div>
             </div>
-        </aside>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Gold Coast Concreters QLD poured our exposed aggregate driveway in Pimpama. Non-slip finish, cleanly sealed, and completed on schedule. Couldn't be happier!"</p>
+                    <div class="reviewer-info">
+                        <div class="avatar">J</div>
+                        <div class="reviewer-details">
+                            <h4>Jason &amp; Sarah M.</h4>
+                            <span>Pimpama (4209) • Exposed Aggregate</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Covercrete resurfacing transformed our faded driveway in Robina. The stencil pattern looks like brand-new pavers for half the cost."</p>
+                    <div class="reviewer-info">
+                        <div class="avatar">C</div>
+                        <div class="reviewer-details">
+                            <h4>Christine M.</h4>
+                            <span>Robina (4226) • Covercrete Resurfacing</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Poured a heavy-duty N32 warehouse slab in Southport. Handled council crossover permits and Form 16 certification smoothly."</p>
+                    <div class="reviewer-info">
+                        <div class="avatar">D</div>
+                        <div class="reviewer-details">
+                            <h4>David M.</h4>
+                            <span>Southport (4215) • Commercial Slab</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Areas (SEO Suburb relevance) -->
+        <section id="areas" class="areas-section">
+            <div class="section-title">
+                <span class="accent-text">We Work Near You</span>
+                <h2>Local Concreters Servicing Gold Coast Suburbs</h2>
+                <div class="divider"></div>
+            </div>
+            <p class="areas-intro">We are active across the northern and central corridors of the Gold Coast. Whether you are building in Pimpama, Coomera, Ormeau, Robina, or Southport, we have local trade teams ready to quote.</p>
+
+            <div class="areas-list">
+                <a href="pimpama" class="area-tag">Pimpama (4209)</a>
+                <a href="coomera" class="area-tag">Coomera &amp; Upper Coomera (4209)</a>
+                <a href="ormeau" class="area-tag">Ormeau &amp; Ormeau Hills (4208)</a>
+                <a href="helensvale" class="area-tag">Helensvale (4212)</a>
+                <a href="hope-island" class="area-tag">Hope Island (4212)</a>
+                <a href="robina" class="area-tag">Robina &amp; Varsity Lakes (4226)</a>
+                <a href="southport" class="area-tag">Southport (4215)</a>
+                <a href="yatala" class="area-tag">Yatala (4207)</a>
+                <a href="kingsholme" class="area-tag">Kingsholme (4208)</a>
+                <a href="willow-vale" class="area-tag">Willow Vale (4209)</a>
+                <a href="oxenford" class="area-tag">Oxenford (4210)</a>
+                <a href="pacific-pines" class="area-tag">Pacific Pines (4211)</a>
+            </div>
+        </section>
     </main>
-
-    <!-- Service Areas (SEO Suburb relevance) -->
-    <section id="areas" class="areas-section">
-        <div class="section-title">
-            <span class="accent-text">We Work Near You</span>
-            <h2>Local Concreters Servicing Gold Coast Suburbs</h2>
-            <div class="divider"></div>
-        </div>
-        <p class="areas-intro">We are active across the northern and central corridors of the Gold Coast. Whether you are building in Pimpama, Coomera, Ormeau, Robina, or Southport, we have local trade teams ready to quote.</p>
-
-        <div class="areas-list">
-            <a href="pimpama" class="area-tag">Pimpama (4209)</a>
-            <a href="coomera" class="area-tag">Coomera &amp; Upper Coomera (4209)</a>
-            <a href="ormeau" class="area-tag">Ormeau &amp; Ormeau Hills (4208)</a>
-            <a href="helensvale" class="area-tag">Helensvale (4212)</a>
-            <a href="hope-island" class="area-tag">Hope Island (4212)</a>
-            <a href="robina" class="area-tag">Robina &amp; Varsity Lakes (4226)</a>
-            <a href="southport" class="area-tag">Southport (4215)</a>
-            <a href="yatala" class="area-tag">Yatala (4207)</a>
-            <a href="kingsholme" class="area-tag">Kingsholme (4208)</a>
-            <a href="willow-vale" class="area-tag">Willow Vale (4209)</a>
-            <a href="oxenford" class="area-tag">Oxenford (4210)</a>
-            <a href="pacific-pines" class="area-tag">Pacific Pines (4211)</a>
-        </div>
-    </section>
 
     <!-- Master Footer -->
     <footer style="background-color: #0b0f19; color: #94a3b8; padding: 60px 20px 25px; border-top: 1px solid #1e293b;">

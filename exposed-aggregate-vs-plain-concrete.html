@@ -86,24 +86,9 @@
           "@type": "BreadcrumbList",
           "@id": "https://goldcoastconcretersqld.com.au/exposed-aggregate-vs-plain-concrete#breadcrumb",
           "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "https://goldcoastconcretersqld.com.au/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "Guides",
-              "item": "https://goldcoastconcretersqld.com.au/concrete-cost-per-m2-gold-coast"
-            },
-            {
-              "@type": "ListItem",
-              "position": 3,
-              "name": "Exposed Aggregate vs Plain Concrete",
-              "item": "https://goldcoastconcretersqld.com.au/exposed-aggregate-vs-plain-concrete"
-            }
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://goldcoastconcretersqld.com.au/" },
+            { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://goldcoastconcretersqld.com.au/concrete-cost-per-m2-gold-coast" },
+            { "@type": "ListItem", "position": 3, "name": "Exposed Aggregate vs Plain Concrete", "item": "https://goldcoastconcretersqld.com.au/exposed-aggregate-vs-plain-concrete" }
           ]
         },
         {
@@ -187,44 +172,104 @@
     <script src="assets/menu.js" defer></script>
 
     <!-- Visual Breadcrumb Navigation -->
-    <nav class="breadcrumb-nav" aria-label="Breadcrumb">
-        <div class="container">
-            <a href="/">Home</a> &gt;
-            <a href="concrete-cost-per-m2-gold-coast">Guides</a> &gt;
-            <span>Exposed Aggregate vs Plain Concrete</span>
+    <nav class="breadcrumb-nav" aria-label="Breadcrumb" style="background-color: var(--light-bg); padding: 0.75rem 0; border-bottom: 1px solid var(--border-color);">
+        <div class="container" style="font-size: 0.85rem; color: var(--text-light);">
+            <a href="/" style="color: var(--accent); font-weight: 600;">Home Hub</a> &nbsp;›&nbsp;
+            <a href="concrete-cost-per-m2-gold-coast" style="color: var(--text-light);">Guides</a> &nbsp;›&nbsp;
+            <span style="color: var(--primary); font-weight: 700;">Exposed Aggregate vs Plain Concrete</span>
         </div>
     </nav>
 
-    <main class="guide-container">
-        <!-- Main Content Area -->
-        <article class="guide-content">
-            <!-- Hero Title & Context Header -->
-            <div style="margin-bottom: 2rem;">
-                <span class="accent-text" style="font-weight: 800; text-transform: uppercase; letter-spacing: 1px; font-size: 0.85rem;">2026 Gold Coast Trade Comparison | QBCC #1524819</span>
-                <h1 style="font-size: 2.3rem; color: #0f172a; margin-top: 0.5rem; line-height: 1.25;">Exposed Aggregate vs Plain Concrete: Which Is Right for Your Gold Coast Property?</h1>
-                <p style="font-size: 1.1rem; color: #475569; line-height: 1.7; margin-top: 1rem;">Deciding between traditional plain grey concrete and premium exposed aggregate is one of the biggest choices Gold Coast homeowners face when upgrading a driveway, patio, or pool surrounds. Both surfaces provide rock-solid structural longevity under Australian Standards (<strong>AS 3727.1-2016</strong>), but they differ drastically in cost, slip resistance, maintenance demands, and visual appeal under our intense South East Queensland climate.</p>
-                <div style="font-size: 0.85rem; color: #64748b; margin-top: 0.75rem; border-left: 3px solid #d97706; padding-left: 0.75rem;">
-                    <span>Authored by: <strong>Gold Coast Concreters Trade Estimators</strong> | <strong>QBCC Licensed #1524819</strong></span>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="overlay"></div>
+            <div class="hero-content">
+                <div class="hero-text-area">
+                    <span class="sub-badge">QBCC LICENSED #1524819 | 2026 TRADE COMPARISON</span>
+                    <h1>Exposed Aggregate vs Plain Concrete Gold Coast</h1>
+                    <p class="lead-text">Deciding between traditional plain grey concrete and premium exposed aggregate for your Gold Coast driveway, patio, or pool surround? Compare upfront costs, P5 slip safety, UV resistance, and salt spray durability under Australian Standards (<strong>AS 3727.1-2016</strong>).</p>
+                    <div class="hero-features">
+                        <div class="feature-item">✓ Plain Concrete ($75–$95/m²) vs Exposed ($110–$145/m²)</div>
+                        <div class="feature-item">✓ AS 4586 P5 High-Traction Slip Rating Comparison</div>
+                        <div class="feature-item">✓ QBCC Form 16 &amp; Council Crossover Compliant</div>
+                    </div>
+                </div>
+
+                <!-- Lead Form -->
+                <div class="hero-form-area" id="quote-form">
+                    <h2>Request a Free Site Quote</h2>
+                    <p>Get a transparent, fixed-price estimate for exposed aggregate or plain concrete.</p>
+                    <form action="https://api.web3forms.com/submit" method="POST" class="quote-form">
+                        <input type="hidden" name="access_key" value="7e54f762-c13f-422a-89a1-55ecf36f32e6">
+                        <input type="hidden" name="subject" value="New Inquiry - Exposed vs Plain Concrete Guide">
+                        <input type="hidden" name="from_name" value="Gold Coast Concreters Website">
+
+                        <div class="input-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="e.g. John Doe" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="04XX XXX XXX" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="suburb">Suburb &amp; Postcode</label>
+                            <input type="text" id="suburb" name="suburb" placeholder="e.g. Robina 4226, Coomera 4209" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="service">Preferred Finish</label>
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected>Select concrete finish</option>
+                                <option value="exposed-aggregate">Exposed Aggregate Concrete</option>
+                                <option value="plain-concrete">Plain Grey Concrete</option>
+                                <option value="covercrete">Covercrete Resurfacing</option>
+                                <option value="trade-advice">Not Sure - Need Trade Advice</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label for="message">Project Details</label>
+                            <textarea id="message" name="message" rows="3" placeholder="Approx area (m²), location (driveway/patio), and target start date." required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Request Free On-Site Inspection</button>
+                    </form>
                 </div>
             </div>
+        </section>
 
-            <!-- AEO Executive Summary Box (For Search Engine Snippets & SGE) -->
-            <div class="highlight-box" style="background-color: #f8fafc; border-left: 4px solid #d97706; padding: 1.5rem; border-radius: 8px; margin-bottom: 2.5rem;">
-                <h3 style="margin-top: 0; color: #0f172a; font-size: 1.25rem;">⚡ Quick Summary: At-a-Glance Recommendation</h3>
-                <ul style="margin: 0.75rem 0 0 1.25rem; padding: 0; line-height: 1.7; font-size: 0.975rem;">
+        <!-- Credentials Bar -->
+        <section class="credentials-bar">
+            <div class="credentials-container">
+                <div class="credential-badge"><span>✓</span> QBCC LICENSED #1524819</div>
+                <div class="credential-badge"><span>✓</span> AS 3727.1-2016 COMPLIANT</div>
+                <div class="credential-badge"><span>✓</span> N25 &amp; N32 CONCRETE MIXES</div>
+                <div class="credential-badge"><span>✓</span> 100% FIXED-PRICE QUOTES</div>
+            </div>
+        </section>
+
+        <!-- Main Article Content Section -->
+        <section style="padding: 60px 20px; max-width: 1100px; margin: 0 auto;">
+            <!-- AEO Executive Summary Box -->
+            <div class="highlight-box" style="background-color: var(--light-bg); border-left: 4px solid var(--accent); padding: 1.5rem; border-radius: 8px; margin-bottom: 2.5rem;">
+                <h3 style="margin-top: 0; color: var(--primary); font-size: 1.25rem;">⚡ Quick Summary: At-a-Glance Recommendation</h3>
+                <ul style="margin: 0.75rem 0 0 1.25rem; padding: 0; line-height: 1.7; font-size: 0.975rem; color: var(--text-main);">
                     <li><strong>Choose Plain Grey Concrete ($75 – $95/m²) if:</strong> You are working on a strict budget, building a rental property, pouring a side access path, or laying an industrial shed slab where functionality matters more than visual flair.</li>
                     <li><strong>Choose Exposed Aggregate ($110 – $145/m²) if:</strong> You want a luxury architectural finish that boosts street appeal, provides maximum P5 non-slip traction on steep Gold Coast inclines, hides dirt/tire marks effortlessly, and increases property resale value.</li>
                 </ul>
             </div>
 
             <!-- Section 1: Detailed Comparison Table -->
-            <h2>1. Side-by-Side Comparison Matrix</h2>
-            <p>Here is how plain broom-finished concrete compares directly to decorative exposed aggregate under typical Gold Coast residential conditions:</p>
+            <div class="section-title">
+                <span class="accent-text">Side-by-Side Comparison</span>
+                <h2>1. Plain Concrete vs Exposed Aggregate Specs Matrix</h2>
+                <div class="divider"></div>
+            </div>
+            <p style="color: var(--text-main); font-size: 1.05rem; line-height: 1.7;">Here is how plain broom-finished concrete compares directly to decorative exposed aggregate under typical Gold Coast residential conditions:</p>
 
             <div style="overflow-x: auto; margin: 1.5rem 0 2.5rem 0;">
                 <table class="spec-table" style="width: 100%; border-collapse: collapse;">
                     <thead>
-                        <tr style="background-color: #0f172a; color: #ffffff;">
+                        <tr style="background-color: var(--primary); color: var(--white);">
                             <th style="padding: 12px; text-align: left;">Feature / Metric</th>
                             <th style="padding: 12px; text-align: left;">Plain Grey Concrete</th>
                             <th style="padding: 12px; text-align: left;">Exposed Aggregate Concrete</th>
@@ -271,11 +316,14 @@
             </div>
 
             <!-- Section 2: Deep Dive into Plain Concrete -->
-            <h2>2. Plain Grey Concrete: Pros, Cons &amp; Best Uses</h2>
-            <p>Plain concrete remains Australia's most widely poured paving material for a reason—it is dependable, cost-effective, and engineered for high structural load capacities when placed with <strong>SL72 steel reinforcing mesh</strong> over a thoroughly compacted roadbase subgrade.</p>
+            <div class="section-title" style="margin-top: 3rem;">
+                <span class="accent-text">Budget &amp; Utility</span>
+                <h2>2. Plain Grey Concrete: Pros, Cons &amp; Best Uses</h2>
+                <div class="divider"></div>
+            </div>
+            <p style="color: var(--text-main); font-size: 1.05rem; line-height: 1.7;">Plain concrete remains Australia's most widely poured paving material for a reason—it is dependable, cost-effective, and engineered for high structural load capacities when placed with <strong>SL72 steel reinforcing mesh</strong> over a thoroughly compacted roadbase subgrade.</p>
 
-            <h3>Why Homeowners Choose Plain Concrete:</h3>
-            <ul>
+            <ul style="color: var(--text-main); font-size: 1.05rem; line-height: 1.8;">
                 <li><strong>Unbeatable Upfront Value:</strong> Saves between $35 and $50 per square meter compared to decorative options, allowing homeowners with large driveways in suburbs like <strong>Pimpama (4209)</strong> or <strong>Coomera (4209)</strong> to cover larger areas within budget.</li>
                 <li><strong>Clean Minimalist Lines:</strong> Complements modern architectural builds with industrial gray aesthetics and sharp expansion joint cuts.</li>
                 <li><strong>Low Initial Labor Intensity:</strong> Requires standard placement, wood float bull-floating, and a light broom finish without the need for chemical retarding agents or pressure washing.</li>
@@ -286,143 +334,150 @@
             </div>
 
             <!-- Section 3: Deep Dive into Exposed Aggregate -->
-            <h2>3. Exposed Aggregate: Pros, Cons &amp; Local Popularity</h2>
-            <p>Exposed aggregate is created by batching premium natural stones, rounded Tweed River gravels, quartz, or crushed basalt directly into an <strong>N25 or N32 MPa concrete mix</strong> (sourced locally from Boral, Hanson, or Holcim batch plants). Once screeded and level, a surface retarding chemical is applied, delaying the top mortar layer from setting while the base slab hardens. Hours later, our concreters wash off the top cream, revealing the stunning natural stone aggregate beneath.</p>
+            <div class="section-title" style="margin-top: 3rem;">
+                <span class="accent-text">Architectural Appeal</span>
+                <h2>3. Exposed Aggregate: Pros, Cons &amp; Local Popularity</h2>
+                <div class="divider"></div>
+            </div>
+            <p style="color: var(--text-main); font-size: 1.05rem; line-height: 1.7;">Exposed aggregate is created by batching premium natural stones, rounded Tweed River gravels, quartz, or crushed basalt directly into an <strong>N25 or N32 MPa concrete mix</strong> (sourced locally from Boral, Hanson, or Holcim batch plants). Once screeded and level, a surface retarding chemical is applied, delaying the top mortar layer from setting while the base slab hardens. Hours later, our concreters wash off the top cream, revealing the stunning natural stone aggregate beneath.</p>
 
-            <h3>Why Exposed Aggregate Dominates Gold Coast Driveways:</h3>
-            <ul>
+            <ul style="color: var(--text-main); font-size: 1.05rem; line-height: 1.8;">
                 <li><strong>Maximum Slip Safety on Steep Slopes:</strong> Suburbs along the M1 foothills—such as <strong>Pacific Pines (4211)</strong>, <strong>Helensvale (4212)</strong>, and <strong>Oxenford (4210)</strong>—feature steep driveway inclines. The natural stone relief of exposed aggregate provides superior P5 non-slip traction during heavy torrential summer downpours.</li>
                 <li><strong>Hides Dirt &amp; Tire Rubber:</strong> Unlike plain grey concrete that shows every oil drop and tire skid mark, the rich multi-toned stone matrix conceals daily wear effortlessly.</li>
                 <li><strong>High Resale ROI:</strong> Estate developers and real estate agents across <strong>Robina (4226)</strong> and <strong>Hope Island (4212)</strong> consistently report higher buyer interest for properties with custom exposed aggregate entryways.</li>
             </ul>
 
             <!-- Section 4: Gold Coast Environmental & Climate Factors -->
-            <h2>4. Gold Coast Climate Factors: Heat, Salt &amp; Rainstorms</h2>
-            <p>The Gold Coast presents unique climate challenges that directly impact how concrete cures and performs long term:</p>
+            <div class="section-title" style="margin-top: 3rem;">
+                <span class="accent-text">SEQ Climate Realities</span>
+                <h2>4. Gold Coast Climate Factors: Heat, Salt &amp; Rainstorms</h2>
+                <div class="divider"></div>
+            </div>
+            <p style="color: var(--text-main); font-size: 1.05rem; line-height: 1.7;">The Gold Coast presents unique climate challenges that directly impact how concrete cures and performs long term:</p>
 
-            <h3>A. Subtropical Summer Heat &amp; Thermal Expansion</h3>
-            <p>With summer ambient temperatures frequently exceeding 35°C, concrete expands significantly. Under <strong>AS 3727.1-2016</strong>, we install 10mm flexible closed-cell polyethylene expansion joints every 3 meters to prevent stress cracking. Exposed aggregate, when sealed with UV-resistant acrylic sealer, reflects solar radiation far better than dark grey or unsealed slabs.</p>
+            <h3 style="color: var(--primary);">A. Subtropical Summer Heat &amp; Thermal Expansion</h3>
+            <p style="color: var(--text-main); font-size: 1.05rem; line-height: 1.7;">With summer ambient temperatures frequently exceeding 35°C, concrete expands significantly. Under <strong>AS 3727.1-2016</strong>, we install 10mm flexible closed-cell polyethylene expansion joints every 3 meters to prevent stress cracking. Exposed aggregate, when sealed with UV-resistant acrylic sealer, reflects solar radiation far better than dark grey or unsealed slabs.</p>
 
-            <h3>B. Salt Spray &amp; Coastal Corrosion Resistance</h3>
-            <p>Properties near canal waterways in <strong>Hope Island (4212)</strong> or coastal strips in <strong>Surfers Paradise (4217)</strong> and <strong>Burleigh Heads (4220)</strong> are exposed to airborne chlorides. Sealing exposed aggregate creates a non-porous barrier, locking out salt spray and preventing rebar oxidation beneath the surface.</p>
+            <h3 style="color: var(--primary);">B. Salt Spray &amp; Coastal Corrosion Resistance</h3>
+            <p style="color: var(--text-main); font-size: 1.05rem; line-height: 1.7;">Properties near canal waterways in <strong>Hope Island (4212)</strong> or coastal strips in <strong>Surfers Paradise (4217)</strong> and <strong>Burleigh Heads (4220)</strong> are exposed to airborne chlorides. Sealing exposed aggregate creates a non-porous barrier, locking out salt spray and preventing rebar oxidation beneath the surface.</p>
 
-            <h3>C. Flash Rainstorms &amp; Washout Risk</h3>
-            <p>During SEQ's storm season, unexpected downpours can ruin a fresh pour. Our trade teams monitor real-time Bureau of Meteorology radar tracking before committing to batch delivery, ensuring exact hydration timing for both plain and exposed finishes.</p>
-
-            <!-- Section 5: Maintenance Requirements -->
-            <h2>5. Long-Term Maintenance Compared</h2>
-            <p>How much ongoing effort is required to keep each finish looking pristine over a 10-year period?</p>
-
-            <ul>
+            <!-- Section 5: Long-Term Maintenance -->
+            <div class="section-title" style="margin-top: 3rem;">
+                <span class="accent-text">Care &amp; Longevity</span>
+                <h2>5. Long-Term Maintenance Compared</h2>
+                <div class="divider"></div>
+            </div>
+            <ul style="color: var(--text-main); font-size: 1.05rem; line-height: 1.8;">
                 <li><strong>Plain Concrete Maintenance:</strong> Low maintenance, but prone to permanent oil staining unless sealed initially. Requires occasional pressure washing with degreaser to remove mold and tire marks.</li>
                 <li><strong>Exposed Aggregate Maintenance:</strong> Requires pressure washing and a fresh coat of high-solid, UV-stable solvent acrylic sealer every <strong>2 to 3 years</strong>. This simple maintenance keeps the colors rich, protects against oil penetration, and stops stone popping.</li>
             </ul>
 
-            <!-- Section 6: Estimator Verdict -->
-            <h2>6. Trade Estimator Verdict: Which Should You Choose?</h2>
-            <p>As QBCC licensed concrete contractors with over 15 years pouring slabs across South East Queensland, here is our honest recommendation:</p>
-            
-            <p>If you are building your main family home or upgrading an existing driveway to boost property value, <strong>exposed aggregate is well worth the extra investment</strong>. The added slip safety, stain resistance, and curb appeal pay for themselves over time. However, if budget constraints are paramount or you are laying concrete for utility areas, garden sheds, or side walkways, <strong>plain grey concrete delivered with proper subgrade compaction and SL72 steel mesh remains a reliable, cost-effective choice.</strong></p>
-
-            <!-- Inline Call to Action -->
-            <div style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: #ffffff; padding: 2rem; border-radius: 12px; text-align: center; margin: 3rem 0;">
-                <h3 style="color: #ffffff; margin-top: 0; font-size: 1.5rem;">Need an Accurate On-Site Quote on the Gold Coast?</h3>
-                <p style="color: #94a3b8; font-size: 1rem; max-width: 600px; margin: 0.5rem auto 1.5rem auto;">We provide transparent, fixed-price quotes for both exposed aggregate and plain grey concrete driveways, slabs, and crossovers across all Gold Coast suburbs.</p>
-                <a href="#quote-form" class="phone-btn" style="padding: 0.85rem 1.75rem; font-size: 1rem;">Get Free Site Measure &amp; Quote</a>
+            <!-- Inline CTA Box -->
+            <div style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: #ffffff; padding: 2.5rem 2rem; border-radius: 12px; text-align: center; margin: 3.5rem 0; box-shadow: 0 10px 25px rgba(0,0,0,0.15);">
+                <h3 style="color: #ffffff; margin-top: 0; font-size: 1.6rem; font-weight: 700;">Need an Accurate On-Site Quote on the Gold Coast?</h3>
+                <p style="color: #94a3b8; font-size: 1.05rem; max-width: 650px; margin: 0.75rem auto 1.75rem auto; line-height: 1.6;">We provide transparent, fixed-price quotes for both exposed aggregate and plain grey concrete driveways, slabs, and crossovers across all Gold Coast suburbs.</p>
+                <a href="#quote-form" class="phone-btn" style="padding: 0.9rem 2rem; font-size: 1.05rem;">Request Free On-Site Inspection</a>
             </div>
 
-            <!-- Section 7: FAQs -->
-            <h2>7. Frequently Asked Questions</h2>
+            <!-- Section 6: FAQs -->
+            <div class="section-title" style="margin-top: 3.5rem;">
+                <span class="accent-text">Common Questions</span>
+                <h2>6. Frequently Asked Questions</h2>
+                <div class="divider"></div>
+            </div>
             <div style="margin-top: 1.5rem;">
-                <div style="border-bottom: 1px solid #e2e8f0; padding: 1rem 0;">
-                    <h4 style="color: #0f172a; margin: 0 0 0.5rem 0; font-size: 1.1rem;">Is exposed aggregate harder to clean than plain concrete?</h4>
-                    <p style="margin: 0; color: #475569; line-height: 1.6;">Exposed aggregate actually hides everyday tire marks, dust, and light oil drips much better than plain grey concrete due to its multi-toned stone pattern. However, because of its textured surface, it requires periodic pressure washing and a fresh coat of solvent-based acrylic sealer every 2 to 3 years to maintain its vibrant shine.</p>
+                <div style="border-bottom: 1px solid var(--border-color); padding: 1.25rem 0;">
+                    <h4 style="color: var(--primary); margin: 0 0 0.5rem 0; font-size: 1.15rem; font-weight: 700;">Is exposed aggregate harder to clean than plain concrete?</h4>
+                    <p style="margin: 0; color: var(--text-main); line-height: 1.6; font-size: 1rem;">Exposed aggregate actually hides everyday tire marks, dust, and light oil drips much better than plain grey concrete due to its multi-toned stone pattern. However, because of its textured surface, it requires periodic pressure washing and a fresh coat of solvent-based acrylic sealer every 2 to 3 years to maintain its vibrant shine.</p>
                 </div>
-                <div style="border-bottom: 1px solid #e2e8f0; padding: 1rem 0;">
-                    <h4 style="color: #0f172a; margin: 0 0 0.5rem 0; font-size: 1.1rem;">Does exposed aggregate hurt bare feet around pool surrounds?</h4>
-                    <p style="margin: 0; color: #475569; line-height: 1.6;">Not when poured and washed correctly by experienced trade finishers. We select smooth, rounded Tweed River pebbles or fine 7mm quartz aggregate mixes designed specifically for barefoot zones. The surface is light-hosed at the precise hydration window to expose stone tops without leaving sharp edges.</p>
+                <div style="border-bottom: 1px solid var(--border-color); padding: 1.25rem 0;">
+                    <h4 style="color: var(--primary); margin: 0 0 0.5rem 0; font-size: 1.15rem; font-weight: 700;">Does exposed aggregate hurt bare feet around pool surrounds?</h4>
+                    <p style="margin: 0; color: var(--text-main); line-height: 1.6; font-size: 1rem;">Not when poured and washed correctly by experienced trade finishers. We select smooth, rounded Tweed River pebbles or fine 7mm quartz aggregate mixes designed specifically for barefoot zones. The surface is light-hosed at the precise hydration window to expose stone tops without leaving sharp edges.</p>
                 </div>
-                <div style="border-bottom: 1px solid #e2e8f0; padding: 1rem 0;">
-                    <h4 style="color: #0f172a; margin: 0 0 0.5rem 0; font-size: 1.1rem;">Can I upgrade my existing plain concrete driveway to exposed aggregate later?</h4>
-                    <p style="margin: 0; color: #475569; line-height: 1.6;">You cannot expose aggregate on an already cured plain concrete slab. However, you can achieve a similar decorative textured look over sound plain concrete using Covercrete resurfacing—a polymer-modified cementitious coating sprayed on with custom stencils or stone textures.</p>
+                <div style="border-bottom: 1px solid var(--border-color); padding: 1.25rem 0;">
+                    <h4 style="color: var(--primary); margin: 0 0 0.5rem 0; font-size: 1.15rem; font-weight: 700;">Can I upgrade my existing plain concrete driveway to exposed aggregate later?</h4>
+                    <p style="margin: 0; color: var(--text-main); line-height: 1.6; font-size: 1rem;">You cannot expose aggregate on an already cured plain concrete slab. However, you can achieve a similar decorative textured look over sound plain concrete using Covercrete resurfacing—a polymer-modified cementitious coating sprayed on with custom stencils or stone textures.</p>
                 </div>
-                <div style="border-bottom: 1px solid #e2e8f0; padding: 1rem 0;">
-                    <h4 style="color: #0f172a; margin: 0 0 0.5rem 0; font-size: 1.1rem;">Which finish handles steep Gold Coast driveways better?</h4>
-                    <p style="margin: 0; color: #475569; line-height: 1.6;">Exposed aggregate is the superior choice for steep slopes in suburbs like Pacific Pines (4211) and Helensvale (4212). Its exposed stone relief provides an AS 4586 P5 non-slip rating, giving car tires superior grip during heavy Gold Coast summer rainstorms compared to standard broom-finished grey concrete.</p>
+                <div style="border-bottom: 1px solid var(--border-color); padding: 1.25rem 0;">
+                    <h4 style="color: var(--primary); margin: 0 0 0.5rem 0; font-size: 1.15rem; font-weight: 700;">Which finish handles steep Gold Coast driveways better?</h4>
+                    <p style="margin: 0; color: var(--text-main); line-height: 1.6; font-size: 1rem;">Exposed aggregate is the superior choice for steep slopes in suburbs like Pacific Pines (4211) and Helensvale (4212). Its exposed stone relief provides an AS 4586 P5 non-slip rating, giving car tires superior grip during heavy Gold Coast summer rainstorms compared to standard broom-finished grey concrete.</p>
                 </div>
-                <div style="border-bottom: 1px solid #e2e8f0; padding: 1rem 0;">
-                    <h4 style="color: #0f172a; margin: 0 0 0.5rem 0; font-size: 1.1rem;">What is the price difference between plain concrete and exposed aggregate?</h4>
-                    <p style="margin: 0; color: #475569; line-height: 1.6;">Plain grey concrete generally costs between $75 and $95 per square meter for standard residential driveways, while decorative exposed aggregate ranges from $110 to $145 per square meter depending on stone mix selection, acid wash retarding, and high-solid acrylic sealing.</p>
+                <div style="border-bottom: 1px solid var(--border-color); padding: 1.25rem 0;">
+                    <h4 style="color: var(--primary); margin: 0 0 0.5rem 0; font-size: 1.15rem; font-weight: 700;">What is the price difference between plain concrete and exposed aggregate?</h4>
+                    <p style="margin: 0; color: var(--text-main); line-height: 1.6; font-size: 1rem;">Plain grey concrete generally costs between $75 and $95 per square meter for standard residential driveways, while decorative exposed aggregate ranges from $110 to $145 per square meter depending on stone mix selection, acid wash retarding, and high-solid acrylic sealing.</p>
                 </div>
             </div>
-        </article>
+        </section>
 
-        <!-- Sidebar / Interactive Quote Form Container -->
-        <aside class="guide-sidebar">
-            <div class="guide-form-container" id="quote-form">
-                <h3>Get Your Free Quote</h3>
-                <p>Speak directly with a local QBCC licensed concreter for a free site measure &amp; estimate.</p>
-                <form class="quote-form" action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="7e54f762-c13f-422a-89a1-55ecf36f32e6">
-                    <input type="hidden" name="subject" value="New Exposed vs Plain Concrete Inquiry - Gold Coast Concreters">
-                    <input type="hidden" name="from_name" value="Gold Coast Concreters Website">
-                    
-                    <div style="margin-bottom: 1rem;">
-                        <label for="name" style="display: block; margin-bottom: 0.35rem; font-size: 0.875rem; font-weight: 600; color: #f8fafc;">Full Name *</label>
-                        <input type="text" id="name" name="name" required placeholder="e.g. Mark Johnson" style="width: 100%; padding: 0.75rem; border-radius: 6px; border: 1px solid #334155; background: #0f172a; color: #ffffff; box-sizing: border-radius;">
-                    </div>
-
-                    <div style="margin-bottom: 1rem;">
-                        <label for="phone" style="display: block; margin-bottom: 0.35rem; font-size: 0.875rem; font-weight: 600; color: #f8fafc;">Phone Number *</label>
-                        <input type="tel" id="phone" name="phone" required placeholder="e.g. 0411 914 157" style="width: 100%; padding: 0.75rem; border-radius: 6px; border: 1px solid #334155; background: #0f172a; color: #ffffff; box-sizing: border-radius;">
-                    </div>
-
-                    <div style="margin-bottom: 1rem;">
-                        <label for="suburb" style="display: block; margin-bottom: 0.35rem; font-size: 0.875rem; font-weight: 600; color: #f8fafc;">Gold Coast Suburb *</label>
-                        <input type="text" id="suburb" name="suburb" required placeholder="e.g. Robina, Coomera, Southport" style="width: 100%; padding: 0.75rem; border-radius: 6px; border: 1px solid #334155; background: #0f172a; color: #ffffff; box-sizing: border-radius;">
-                    </div>
-
-                    <div style="margin-bottom: 1.25rem;">
-                        <label for="service_type" style="display: block; margin-bottom: 0.35rem; font-size: 0.875rem; font-weight: 600; color: #f8fafc;">Preferred Concrete Finish *</label>
-                        <select id="service_type" name="service_type" required style="width: 100%; padding: 0.75rem; border-radius: 6px; border: 1px solid #334155; background: #0f172a; color: #ffffff; box-sizing: border-radius;">
-                            <option value="">-- Select Preferred Option --</option>
-                            <option value="Exposed Aggregate">Exposed Aggregate Concrete</option>
-                            <option value="Plain Concrete">Plain Grey Concrete</option>
-                            <option value="Covercrete Resurfacing">Covercrete Resurfacing</option>
-                            <option value="Not Sure - Need Trade Advice">Not Sure - Need Trade Advice</option>
-                        </select>
-                    </div>
-
-                    <button type="submit" class="submit-btn phone-btn" style="width: 100%; justify-content: center; padding: 0.9rem; font-size: 1rem; border: none; cursor: pointer;">Request Free Site Measure</button>
-                </form>
+        <!-- Client Testimonials Section -->
+        <section class="reviews-section" id="reviews">
+            <div class="section-title">
+                <span class="accent-text">Client Testimonials</span>
+                <h2>What Our Gold Coast Clients Say</h2>
+                <div class="divider"></div>
             </div>
-        </aside>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Gold Coast Concreters QLD poured our exposed aggregate driveway in Pimpama. Non-slip finish, cleanly sealed, and completed on schedule. Couldn't be happier!"</p>
+                    <div class="reviewer-info">
+                        <div class="avatar">J</div>
+                        <div class="reviewer-details">
+                            <h4>Jason &amp; Sarah M.</h4>
+                            <span>Pimpama (4209) • Exposed Aggregate</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Covercrete resurfacing transformed our faded driveway in Robina. The stencil pattern looks like brand-new pavers for half the cost."</p>
+                    <div class="reviewer-info">
+                        <div class="avatar">C</div>
+                        <div class="reviewer-details">
+                            <h4>Christine M.</h4>
+                            <span>Robina (4226) • Covercrete Resurfacing</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Poured a heavy-duty N32 warehouse slab in Southport. Handled council crossover permits and Form 16 certification smoothly."</p>
+                    <div class="reviewer-info">
+                        <div class="avatar">D</div>
+                        <div class="reviewer-details">
+                            <h4>David M.</h4>
+                            <span>Southport (4215) • Commercial Slab</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Areas (SEO Suburb relevance) -->
+        <section id="areas" class="areas-section">
+            <div class="section-title">
+                <span class="accent-text">We Work Near You</span>
+                <h2>Local Concreters Servicing Gold Coast Suburbs</h2>
+                <div class="divider"></div>
+            </div>
+            <p class="areas-intro">We are active across the northern and central corridors of the Gold Coast. Whether you are building in Pimpama, Coomera, Ormeau, Robina, or Southport, we have local trade teams ready to quote.</p>
+
+            <div class="areas-list">
+                <a href="pimpama" class="area-tag">Pimpama (4209)</a>
+                <a href="coomera" class="area-tag">Coomera &amp; Upper Coomera (4209)</a>
+                <a href="ormeau" class="area-tag">Ormeau &amp; Ormeau Hills (4208)</a>
+                <a href="helensvale" class="area-tag">Helensvale (4212)</a>
+                <a href="hope-island" class="area-tag">Hope Island (4212)</a>
+                <a href="robina" class="area-tag">Robina &amp; Varsity Lakes (4226)</a>
+                <a href="southport" class="area-tag">Southport (4215)</a>
+                <a href="yatala" class="area-tag">Yatala (4207)</a>
+                <a href="kingsholme" class="area-tag">Kingsholme (4208)</a>
+                <a href="willow-vale" class="area-tag">Willow Vale (4209)</a>
+                <a href="oxenford" class="area-tag">Oxenford (4210)</a>
+                <a href="pacific-pines" class="area-tag">Pacific Pines (4211)</a>
+            </div>
+        </section>
     </main>
-
-    <!-- Service Areas (SEO Suburb relevance) -->
-    <section id="areas" class="areas-section">
-        <div class="section-title">
-            <span class="accent-text">We Work Near You</span>
-            <h2>Local Concreters Servicing Gold Coast Suburbs</h2>
-            <div class="divider"></div>
-        </div>
-        <p class="areas-intro">We are active across the northern and central corridors of the Gold Coast. Whether you are building in Pimpama, Coomera, Ormeau, Robina, or Southport, we have local trade teams ready to quote.</p>
-
-        <div class="areas-list">
-            <a href="pimpama" class="area-tag">Pimpama (4209)</a>
-            <a href="coomera" class="area-tag">Coomera &amp; Upper Coomera (4209)</a>
-            <a href="ormeau" class="area-tag">Ormeau &amp; Ormeau Hills (4208)</a>
-            <a href="helensvale" class="area-tag">Helensvale (4212)</a>
-            <a href="hope-island" class="area-tag">Hope Island (4212)</a>
-            <a href="robina" class="area-tag">Robina &amp; Varsity Lakes (4226)</a>
-            <a href="southport" class="area-tag">Southport (4215)</a>
-            <a href="yatala" class="area-tag">Yatala (4207)</a>
-            <a href="kingsholme" class="area-tag">Kingsholme (4208)</a>
-            <a href="willow-vale" class="area-tag">Willow Vale (4209)</a>
-            <a href="oxenford" class="area-tag">Oxenford (4210)</a>
-            <a href="pacific-pines" class="area-tag">Pacific Pines (4211)</a>
-        </div>
-    </section>
 
     <!-- Master Footer -->
     <footer style="background-color: #0b0f19; color: #94a3b8; padding: 60px 20px 25px; border-top: 1px solid #1e293b;">
