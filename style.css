@@ -133,7 +133,7 @@ h4 {
 }
 
 .phone-btn {
-    background-color: var(--accent);
+    background-color: #25d366;
     color: var(--white) !important;
     padding: 0.65rem 1.15rem;
     border-radius: 6px;
@@ -144,14 +144,14 @@ h4 {
     justify-content: center;
     gap: 0.4rem;
     text-decoration: none;
-    box-shadow: 0 4px 12px rgba(217, 119, 6, 0.3);
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.35);
     transition: all 0.25s ease;
 }
 
 .phone-btn:hover {
-    background-color: var(--accent-hover);
+    background-color: #128c7e;
     transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(217, 119, 6, 0.4);
+    box-shadow: 0 6px 16px rgba(37, 211, 102, 0.45);
 }
 
 .phone-btn-outline {
