@@ -46,7 +46,7 @@
 | **Comparison Guide** | `/exposed-aggregate-vs-plain-concrete` | `exposed aggregate vs plain concrete` | `exposed-aggregate-vs-plain-concrete.html` | **LIVE (Aug 16, 2026)** |
 | **Technical Standard** | `/as3727-residential-pavements-gold-coast` | `as3727 concrete residential driveway standards` | `as3727-residential-pavements-gold-coast.html` | **LIVE (Aug 17, 2026)** |
 | **Sub-Service** | `/shed-slabs-gold-coast` | `shed slabs gold coast` | `shed-slabs-gold-coast.html` | **LIVE (Aug 18, 2026)** |
-| **Service/Guide** | `/concrete-sealing-gold-coast` | `concrete sealing gold coast` | `concrete-sealing-gold-coast.html` |
+| **Service/Guide** | `/concrete-sealing-gold-coast` | `concrete sealing gold coast` | `concrete-sealing-gold-coast.html` | **LIVE (Aug 19, 2026)** |
 | **Service Page** | `/epoxy-flooring-gold-coast` | `epoxy flooring gold coast` | `epoxy-flooring-gold-coast.html` |
 | **Location Page** | `/surfers-paradise` | `concreters surfers paradise` | `surfers-paradise.html` |
 | **Location Page** | `/burleigh-heads` | `concreters burleigh heads` | `burleigh-heads.html` |
