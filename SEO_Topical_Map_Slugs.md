@@ -54,7 +54,7 @@
 | **Location Page** | `/kingsholme` | `concreters kingsholme` | `kingsholme.html` | **LIVE (Aug 20, 2026)** |
 | **Location Page** | `/willow-vale` | `concreters willow vale` | `willow-vale.html` | **LIVE (Aug 20, 2026)** |
 | **Location Page** | `/surfers-paradise` | `concreters surfers paradise` | `surfers-paradise.html` | **LIVE (Aug 21, 2026)** |
-| **Location Page** | `/burleigh-heads` | `concreters burleigh heads` | `burleigh-heads.html` | Planned |
+| **Location Page** | `/burleigh-heads` | `concreters burleigh heads` | `burleigh-heads.html` | **LIVE (Aug 22, 2026)** |
 | **Technical Pillar** | `/gold-coast-soil-types-slab-foundations` | `reactive clay soil slab design gold coast` | `gold-coast-soil-types-slab-foundations.html` | Planned |
 | **Technical Guide** | `/prevent-concrete-cracking-gold-coast` | `how to stop concrete cracking Queensland` | `prevent-concrete-cracking-gold-coast.html` | Planned |
 
