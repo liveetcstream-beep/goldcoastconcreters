@@ -65,8 +65,8 @@
 | Page Type | Clean SEO URL Slug | Primary Keyword | Planned File | Status |
 |---|---|---|---|---|
 | **Location Page** | `/nerang` | `concreters nerang` | `nerang.html` | **LIVE (Aug 25, 2026)** |
-| **Location Page** | `/ashmore` | `concreters ashmore` | `ashmore.html` | Planned |
-| **Location Page** | `/bundall` | `concreters bundall` | `bundall.html` |
+| **Location Page** | `/ashmore` | `concreters ashmore` | `ashmore.html` | **LIVE (Aug 26, 2026)** |
+| **Location Page** | `/bundall` | `concreters bundall` | `bundall.html` | Planned |
 | **Location Page** | `/varsity-lakes` | `concreters varsity lakes` | `varsity-lakes.html` |
 | **Location Page** | `/palm-beach` | `concreters palm beach gold coast` | `palm-beach.html` |
 | **Location Page** | `/mudgeeraba` | `concreters mudgeeraba` | `mudgeeraba.html` |
