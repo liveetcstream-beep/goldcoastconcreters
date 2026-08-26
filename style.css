@@ -1895,6 +1895,361 @@ body.menu-open {
     }
 }
 
+/* ==========================================================================
+   Comprehensive Multi-Device Responsive Engine (Desktop, Tablet, Mobile)
+   ========================================================================== */
+
+/* 1. Large Tablets & Small Laptops (<= 1024px) */
+@media (max-width: 1024px) {
+    .hero-section {
+        padding: 5rem 0 4rem 0;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        width: 92%;
+    }
+
+    .hero-text-area {
+        text-align: center;
+    }
+
+    .hero-text-area .sub-badge {
+        display: inline-block;
+        margin: 0 auto 1rem auto;
+    }
+
+    .hero-features {
+        justify-content: center;
+    }
+
+    .hero-form-area {
+        max-width: 580px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .services-section,
+    .specifications-section,
+    .process-section,
+    .why-us-section,
+    .gallery-section,
+    .areas-section,
+    .faq-section {
+        padding: 4.5rem 0;
+    }
+
+    .services-grid,
+    .specs-grid,
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .partners-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.25rem;
+    }
+}
+
+/* 2. Tablets & Mobile Landscape (<= 768px) */
+@media (max-width: 768px) {
+    /* Fluid Section Headings */
+    .section-title {
+        margin-bottom: 2rem;
+        padding: 0 1rem;
+    }
+
+    .section-title .accent-text {
+        font-size: 0.8rem;
+        letter-spacing: 1.5px;
+    }
+
+    .section-title h2 {
+        font-size: 1.65rem;
+        line-height: 1.3;
+    }
+
+    .divider {
+        margin-top: 0.75rem;
+        width: 45px;
+        height: 3px;
+    }
+
+    /* Section Padding Uniformity */
+    .services-section,
+    .specifications-section,
+    .process-section,
+    .why-us-section,
+    .gallery-section,
+    .areas-section,
+    .faq-section {
+        padding: 3.5rem 0;
+    }
+
+    /* Hero Section on Mobile */
+    .hero-section {
+        padding: 3.5rem 0 3rem 0;
+        min-height: auto;
+    }
+
+    .hero-content {
+        width: 92%;
+        gap: 2rem;
+    }
+
+    .hero-text-area h1 {
+        font-size: 1.75rem;
+        line-height: 1.25;
+        margin-bottom: 1rem;
+    }
+
+    .hero-text-area .lead-text {
+        font-size: 0.95rem;
+        line-height: 1.65;
+        margin-bottom: 1.25rem;
+    }
+
+    .hero-features {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.6rem;
+    }
+
+    .feature-item {
+        font-size: 0.875rem;
+        padding: 0.35rem 0.75rem;
+    }
+
+    .hero-form-area {
+        padding: 1.75rem 1.25rem;
+        border-radius: 10px;
+    }
+
+    .hero-form-area h2 {
+        font-size: 1.45rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .hero-form-area p {
+        font-size: 0.875rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .input-group input,
+    .input-group select,
+    .input-group textarea {
+        font-size: 16px !important; /* Prevents auto-zoom on iOS */
+        padding: 0.75rem;
+    }
+
+    /* Trust Credentials Bar */
+    .credentials-bar {
+        padding: 1.25rem 0;
+    }
+
+    .credentials-container {
+        gap: 0.85rem;
+        justify-content: center;
+    }
+
+    .credential-badge {
+        font-size: 0.8rem;
+        letter-spacing: 0.5px;
+    }
+
+    /* Grid Layouts on Mobile */
+    .services-grid,
+    .specs-grid,
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        width: 92%;
+    }
+
+    .service-card-img,
+    .gallery-img-container {
+        height: 200px;
+    }
+
+    /* Process Timeline on Mobile */
+    .process-timeline {
+        width: 92%;
+        margin-top: 2.5rem;
+    }
+
+    .process-step {
+        gap: 1.25rem;
+        margin-bottom: 2rem;
+    }
+
+    .step-num {
+        width: 45px;
+        height: 45px;
+        font-size: 1.1rem;
+    }
+
+    .step-content {
+        padding: 1.25rem;
+    }
+
+    .step-content h3 {
+        font-size: 1.15rem;
+    }
+
+    /* Crossover Banner */
+    .crossover-banner {
+        padding: 3.5rem 1rem;
+    }
+
+    .crossover-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .crossover-content p {
+        font-size: 0.95rem;
+    }
+
+    /* Service Suburbs Section */
+    .areas-section {
+        padding: 3.5rem 1rem;
+    }
+
+    .areas-intro {
+        width: 100%;
+        font-size: 0.95rem;
+        margin-bottom: 2rem;
+        padding: 0 0.5rem;
+    }
+
+    .areas-list {
+        width: 100%;
+        gap: 0.6rem;
+    }
+
+    .area-tag {
+        padding: 0.5rem 0.9rem;
+        font-size: 0.825rem;
+    }
+
+    /* FAQ Section */
+    .faq-section {
+        padding: 3.5rem 1rem;
+    }
+
+    .faq-container {
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .faq-item {
+        padding: 1.35rem 1.25rem;
+    }
+
+    .faq-item h3 {
+        font-size: 1.05rem;
+        line-height: 1.4;
+    }
+
+    .faq-item p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    /* Partners Bar */
+    .partners-section {
+        padding: 3.5rem 1rem;
+    }
+
+    .partners-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .partner-card {
+        padding: 1.25rem 0.75rem;
+        min-height: 90px;
+    }
+
+    /* Call To Action Banner */
+    .cta-banner {
+        padding: 3.5rem 1.25rem;
+    }
+
+    .cta-banner h2 {
+        font-size: 1.65rem;
+    }
+
+    .cta-banner p {
+        font-size: 0.95rem;
+        margin-bottom: 1.75rem;
+    }
+
+    .cta-actions {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .phone-btn-large,
+    .form-btn-secondary {
+        width: 100%;
+        text-align: center;
+        padding: 0.9rem 1.5rem;
+        box-sizing: border-box;
+    }
+
+    /* Tables in Guides & Pillars */
+    table.spec-table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        font-size: 0.85rem;
+    }
+
+    table.spec-table th,
+    table.spec-table td {
+        padding: 10px 8px;
+        min-width: 110px;
+    }
+}
+
+/* 3. Small Mobile Phones (<= 480px) */
+@media (max-width: 480px) {
+    .hero-text-area h1 {
+        font-size: 1.55rem;
+    }
+
+    .section-title h2 {
+        font-size: 1.45rem;
+    }
+
+    .hero-form-area {
+        padding: 1.5rem 1rem;
+    }
+
+    .area-tag {
+        padding: 0.45rem 0.75rem;
+        font-size: 0.8rem;
+    }
+
+    .partners-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.75rem;
+    }
+
+    .partner-card {
+        padding: 1rem 0.5rem;
+    }
+
+    .credential-badge {
+        font-size: 0.75rem;
+    }
+}
+
+
 
 
 
