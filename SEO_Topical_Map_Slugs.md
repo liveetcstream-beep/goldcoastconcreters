@@ -67,8 +67,8 @@
 | **Location Page** | `/nerang` | `concreters nerang` | `nerang.html` | **LIVE (Aug 25, 2026)** |
 | **Location Page** | `/ashmore` | `concreters ashmore` | `ashmore.html` | **LIVE (Aug 26, 2026)** |
 | **Location Page** | `/bundall` | `concreters bundall` | `bundall.html` | **LIVE (Aug 27, 2026)** |
-| **Location Page** | `/varsity-lakes` | `concreters varsity lakes` | `varsity-lakes.html` | Planned |
-| **Location Page** | `/palm-beach` | `concreters palm beach gold coast` | `palm-beach.html` |
+| **Location Page** | `/varsity-lakes` | `concreters varsity lakes` | `varsity-lakes.html` | **LIVE (Aug 28, 2026)** |
+| **Location Page** | `/palm-beach` | `concreters palm beach gold coast` | `palm-beach.html` | Planned |
 | **Location Page** | `/mudgeeraba` | `concreters mudgeeraba` | `mudgeeraba.html` |
 | **Location Page** | `/tamborine-mountain` | `concreters tamborine mountain` | `tamborine-mountain.html` |
 | **Location Page** | `/tweed-heads` | `concreters tweed heads` | `tweed-heads.html` |
