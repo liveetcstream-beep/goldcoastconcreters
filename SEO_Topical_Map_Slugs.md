@@ -68,10 +68,10 @@
 | **Location Page** | `/ashmore` | `concreters ashmore` | `ashmore.html` | **LIVE (Aug 26, 2026)** |
 | **Location Page** | `/bundall` | `concreters bundall` | `bundall.html` | **LIVE (Aug 27, 2026)** |
 | **Location Page** | `/varsity-lakes` | `concreters varsity lakes` | `varsity-lakes.html` | **LIVE (Aug 28, 2026)** |
-| **Location Page** | `/palm-beach` | `concreters palm beach gold coast` | `palm-beach.html` | Planned |
-| **Location Page** | `/mudgeeraba` | `concreters mudgeeraba` | `mudgeeraba.html` |
+| **Location Page** | `/palm-beach` | `concreters palm beach gold coast` | `palm-beach.html` | **LIVE (Aug 29, 2026)** |
+| **Location Page** | `/mudgeeraba` | `concreters mudgeeraba` | `mudgeeraba.html` | Planned |
 | **Location Page** | `/tamborine-mountain` | `concreters tamborine mountain` | `tamborine-mountain.html` |
-| **Location Page** | `/tweed-heads` | `concreters tweed heads` | `tweed-heads.html` |
+| **Location Page** | `/coolangatta` | `concreters coolangatta` | `coolangatta.html` |
 | **Master FAQ Hub** | `/faq` | `gold coast concreting questions` | `faq.html` |
 | **Troubleshooting** | `/clean-concrete-driveway-gold-coast` | `remove algae mold concrete driveway` | `clean-concrete-driveway-gold-coast.html` |
 | **Technical Guide** | `/concrete-efflorescence-removal` | `efflorescence on concrete gold coast` | `concrete-efflorescence-removal.html` |
