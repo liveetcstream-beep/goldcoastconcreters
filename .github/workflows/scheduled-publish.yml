@@ -1,0 +1,40 @@
+name: Daily Scheduled Content Publisher (09:00 AM AEST)
+
+on:
+  schedule:
+    # 23:00 UTC corresponds to exactly 09:00 AM Queensland Time (AEST = UTC+10)
+    - cron: '0 23 * * *'
+  workflow_dispatch: # Allows manual one-click trigger anytime
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Codebase
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run Auto-Publisher
+        run: node scripts/auto_publisher.js
+
+      - name: Commit & Push Scheduled Changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain)" ]; then
+            git add .
+            git commit -m "Auto-publish daily scheduled content [skip ci]"
+            git push origin main
+            echo "Successfully published scheduled content."
+          else
+            echo "No new publications scheduled for today."
+          fi

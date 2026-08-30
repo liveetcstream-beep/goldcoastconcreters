@@ -69,8 +69,8 @@
 | **Location Page** | `/bundall` | `concreters bundall` | `bundall.html` | **LIVE (Aug 27, 2026)** |
 | **Location Page** | `/varsity-lakes` | `concreters varsity lakes` | `varsity-lakes.html` | **LIVE (Aug 28, 2026)** |
 | **Location Page** | `/palm-beach` | `concreters palm beach gold coast` | `palm-beach.html` | **LIVE (Aug 29, 2026)** |
-| **Location Page** | `/mudgeeraba` | `concreters mudgeeraba` | `mudgeeraba.html` | Planned |
-| **Location Page** | `/tamborine-mountain` | `concreters tamborine mountain` | `tamborine-mountain.html` |
+| **Location Page** | `/mudgeeraba` | `concreters mudgeeraba` | `mudgeeraba.html` | **LIVE (Aug 30, 2026)** |
+| **Location Page** | `/tamborine-mountain` | `concreters tamborine mountain` | `tamborine-mountain.html` | Planned |
 | **Location Page** | `/coolangatta` | `concreters coolangatta` | `coolangatta.html` |
 | **Master FAQ Hub** | `/faq` | `gold coast concreting questions` | `faq.html` |
 | **Troubleshooting** | `/clean-concrete-driveway-gold-coast` | `remove algae mold concrete driveway` | `clean-concrete-driveway-gold-coast.html` |
