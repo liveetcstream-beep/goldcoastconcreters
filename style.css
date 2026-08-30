@@ -133,25 +133,25 @@ h4 {
 }
 
 .phone-btn {
-    background-color: #25d366;
+    background-color: var(--accent);
     color: var(--white) !important;
-    padding: 0.65rem 1.15rem;
+    padding: 0.65rem 1.25rem;
     border-radius: 6px;
     font-weight: 700;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 0.4rem;
     text-decoration: none;
-    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.35);
+    box-shadow: 0 4px 12px rgba(217, 119, 6, 0.35);
     transition: all 0.25s ease;
 }
 
 .phone-btn:hover {
-    background-color: #128c7e;
+    background-color: var(--accent-hover);
     transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(37, 211, 102, 0.45);
+    box-shadow: 0 6px 16px rgba(217, 119, 6, 0.45);
 }
 
 .phone-btn-outline {
