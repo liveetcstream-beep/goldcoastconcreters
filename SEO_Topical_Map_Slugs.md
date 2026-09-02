@@ -70,9 +70,9 @@
 | **Location Page** | `/varsity-lakes` | `concreters varsity lakes` | `varsity-lakes.html` | **LIVE (Aug 28, 2026)** |
 | **Location Page** | `/palm-beach` | `concreters palm beach gold coast` | `palm-beach.html` | **LIVE (Aug 29, 2026)** |
 | **Location Page** | `/mudgeeraba` | `concreters mudgeeraba` | `mudgeeraba.html` | **LIVE (Aug 30, 2026)** |
-| **Location Page** | `/tamborine-mountain` | `concreters tamborine mountain` | `tamborine-mountain.html` | Planned |
-| **Location Page** | `/coolangatta` | `concreters coolangatta` | `coolangatta.html` |
-| **Master FAQ Hub** | `/faq` | `gold coast concreting questions` | `faq.html` |
+| **Location Page** | `/tamborine-mountain` | `concreters tamborine mountain` | `tamborine-mountain.html` | **LIVE (Aug 31, 2026)** |
+| **Location Page** | `/coolangatta` | `concreters coolangatta` | `coolangatta.html` | **LIVE (Sep 1, 2026)** |
+| **Master FAQ Hub** | `/faq` | `gold coast concreting questions` | `faq.html` | **LIVE (Sep 2, 2026)** |
 | **Troubleshooting** | `/clean-concrete-driveway-gold-coast` | `remove algae mold concrete driveway` | `clean-concrete-driveway-gold-coast.html` |
 | **Technical Guide** | `/concrete-efflorescence-removal` | `efflorescence on concrete gold coast` | `concrete-efflorescence-removal.html` |
 | **Technical Guide** | `/concrete-mpa-strength-slump-test-guide` | `concrete mpa strength 20 25 32 40` | `concrete-mpa-strength-slump-test-guide.html` |

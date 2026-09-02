@@ -48,13 +48,29 @@ function runPublisher() {
             const liveBadge = `**LIVE (${dateLabel})**`;
 
             // 1. Check & Update SEO_Topical_Map_Slugs.md
-            const regex = new RegExp(`(\\|\\s*\\/${item.slug}\\s*\\|[^\\|]*\\|[^\\|]*\\|)([^\\r\\n]*)`, 'i');
-            const match = topicalContent.match(regex);
-            if (match && !match[2].includes('LIVE')) {
-                topicalContent = topicalContent.replace(regex, `$1 ${liveBadge} |`);
+            const lines = topicalContent.split('\n');
+            let mapUpdated = false;
+            for (let i = 0; i < lines.length; i++) {
+                if (lines[i].includes(`/${item.slug}`) && !lines[i].includes('LIVE')) {
+                    const parts = lines[i].split('|');
+                    if (parts.length >= 6) {
+                        parts[5] = ` ${liveBadge} `;
+                        if (parts.length === 6) {
+                            parts.push('');
+                        }
+                        lines[i] = parts.join('|').trimEnd();
+                        if (!lines[i].endsWith('|')) {
+                            lines[i] += ' |';
+                        }
+                        mapUpdated = true;
+                        publishedSlugs.push(item.slug);
+                        console.log(`[Auto-Publisher] Marked /${item.slug} as ${liveBadge} in topical map.`);
+                    }
+                }
+            }
+            if (mapUpdated) {
+                topicalContent = lines.join('\n');
                 hasChanges = true;
-                publishedSlugs.push(item.slug);
-                console.log(`[Auto-Publisher] Marked /${item.slug} as ${liveBadge} in topical map.`);
             }
 
             // 2. Check & Update sitemap.xml
