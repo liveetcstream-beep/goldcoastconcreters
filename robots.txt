@@ -4,5 +4,8 @@
 User-agent: *
 Allow: /
 
+# LLM & AI Search Index
+# https://goldcoastconcretersqld.com.au/llms.txt
+
 # Point crawlers to XML sitemap
 Sitemap: https://goldcoastconcretersqld.com.au/sitemap.xml
