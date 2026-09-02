@@ -8,7 +8,13 @@ const SCHEDULE = [
     { date: '2026-08-31', slug: 'tamborine-mountain', file: 'tamborine-mountain.html', title: 'Tamborine Mountain (4272)', type: 'location' },
     { date: '2026-09-01', slug: 'coolangatta', file: 'coolangatta.html', title: 'Coolangatta (4225)', type: 'location' },
     { date: '2026-09-02', slug: 'faq', file: 'faq.html', title: 'FAQ Hub', type: 'guide' },
-    { date: '2026-09-03', slug: 'clean-concrete-driveway-gold-coast', file: 'clean-concrete-driveway-gold-coast.html', title: 'Clean Concrete Driveway', type: 'guide' }
+    { date: '2026-09-03', slug: 'clean-concrete-driveway-gold-coast', file: 'clean-concrete-driveway-gold-coast.html', title: 'Clean Concrete Driveway', type: 'guide' },
+    { date: '2026-09-04', slug: 'concrete-efflorescence-removal', file: 'concrete-efflorescence-removal.html', title: 'Efflorescence Removal Guide', type: 'guide' },
+    { date: '2026-09-05', slug: 'concrete-mpa-strength-slump-test-guide', file: 'concrete-mpa-strength-slump-test-guide.html', title: 'Concrete MPa Strength & Slump Guide', type: 'guide' },
+    { date: '2026-09-06', slug: 'driveway-drainage-gold-coast', file: 'driveway-drainage-gold-coast.html', title: 'Driveway Drainage Guide', type: 'guide' },
+    { date: '2026-09-07', slug: 'steep-driveway-concreting-gold-coast', file: 'steep-driveway-concreting-gold-coast.html', title: 'Steep Driveway Concreting', type: 'guide' },
+    { date: '2026-09-08', slug: 'coloured-concrete-gold-coast', file: 'coloured-concrete-gold-coast.html', title: 'Coloured Concrete Guide', type: 'guide' },
+    { date: '2026-09-09', slug: 'how-long-until-you-can-drive-on-new-concrete', file: 'how-long-until-you-can-drive-on-new-concrete.html', title: 'How Long to Drive on New Concrete', type: 'guide' }
 ];
 
 function getQueenslandDate() {
