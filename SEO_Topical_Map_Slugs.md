@@ -73,7 +73,7 @@
 | **Location Page** | `/tamborine-mountain` | `concreters tamborine mountain` | `tamborine-mountain.html` | **LIVE (Aug 31, 2026)** |
 | **Location Page** | `/coolangatta` | `concreters coolangatta` | `coolangatta.html` | **LIVE (Sep 1, 2026)** |
 | **Master FAQ Hub** | `/faq` | `gold coast concreting questions` | `faq.html` | **LIVE (Sep 2, 2026)** |
-| **Troubleshooting** | `/clean-concrete-driveway-gold-coast` | `remove algae mold concrete driveway` | `clean-concrete-driveway-gold-coast.html` | Scheduled (Sep 3, 2026) |
+| **Troubleshooting** | `/clean-concrete-driveway-gold-coast` | `remove algae mold concrete driveway` | `clean-concrete-driveway-gold-coast.html` | **LIVE (Sep 3, 2026)** |
 | **Technical Guide** | `/concrete-efflorescence-removal` | `efflorescence on concrete gold coast` | `concrete-efflorescence-removal.html` | Scheduled (Sep 4, 2026) |
 | **Technical Guide** | `/concrete-mpa-strength-slump-test-guide` | `concrete mpa strength 20 25 32 40` | `concrete-mpa-strength-slump-test-guide.html` | Scheduled (Sep 5, 2026) |
 | **Technical Guide** | `/driveway-drainage-gold-coast` | `driveway drainage gold coast council` | `driveway-drainage-gold-coast.html` | Scheduled (Sep 6, 2026) |
