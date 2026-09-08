@@ -1,4 +1,300 @@
 # Gold Coast Concreters QLD — Phase 2 Growth Plan
+**Started:** 8 September 2026 (GBP + Schema Entity Loop already complete)  
+**Domain:** `goldcoastconcretersqld.com.au`  
+**Goal:** Convert a fully-built, topically authoritative digital asset into consistent monthly cash flow through monetization, authority building, and niche expansion.
+
+---
+
+## ✅ Phase 1 — COMPLETE (Asset Built)
+
+| Metric | Status |
+|---|---|
+| Total Live Pages | 50+ pages across all silos |
+| Suburb Pages | 20+ Gold Coast suburbs with dedicated location hubs |
+| Service Silos | Driveways, Slabs, Retaining Walls, Pool Surrounds, Epoxy, Covercrete, Sealing |
+| Technical Guides | MPa/Slump, Drainage, Efflorescence, Steep Sites, Coloured Concrete, Cracking, Soil Types |
+| Council Guides | GCCC Crossover Permits, AS 3727, AS 2890.1, AS 3600, AS 1379 |
+| Lead Capture | Web3Forms (all pages), Click-to-Call (+61 411 914 157) |
+| Google Search Console | Active — tracking via `G-BJDBPFFRCW` |
+| Hosting | Vercel (GitHub auto-deploy, `cleanUrls: true`) |
+| SEO Topical Map | 100% complete — all slugs planned and published |
+
+---
+
+## ✅ Phase 2 — Already Done (8 Sep 2026)
+
+These tasks are **live on the website right now**. Do not repeat them.
+
+| Task | Status | Date |
+|---|---|---|
+| GBP (Google Business Profile) Setup | ✅ Live — Verified, 5 star (1 review) | Done |
+| GBP linked to website in schema | ✅ hasMap + sameAs added to 5 main pages | 8 Sep 2026 |
+| FreeListingAustralia citation | ✅ Live — freelistingaustralia.com | Done |
+| WhoToHire Australia citation | ✅ Live — whotohire.com.au (phone matched) | Done |
+| LocalBusiness Schema on all suburb pages | ✅ Complete | Done |
+| GBP "Verified on Google Maps" link in footer | ✅ Added to index.html footer | 8 Sep 2026 |
+| sameAs entity loop in schema | ✅ GBP + FreeListingAustralia + WhoToHire | 8 Sep 2026 |
+| Yellow Pages submission | Submitted — awaiting approval (3-7 days) | Pending |
+
+**GBP Link (Your Profile):** https://share.google/JFf7ytZmImwOGNwnj
+
+---
+
+## 🔴 Next Priority Actions — What To Do Right Now
+
+These are ordered by highest SEO/revenue impact first.
+
+---
+
+### ACTION 1: Get 3–5 More Google Reviews (Biggest Impact This Week)
+
+**Why:** Aapki GBP listing abhi 1 review par hai. Google local pack mein 5–10 reviews wali listings ko kafi zyada boost milta hai.
+
+**How to do it:**
+1. Kisi 2–3 family/friend se bolo GBP par review dein — real Gmail account se
+2. Marise (Ormeau lead) agar job ho jaye to unse zaroor review lo
+3. Review link directly share karo: https://share.google/JFf7ytZmImwOGNwnj
+
+**Review mein yeh words hon (ask karo):**
+- "concrete driveway in Coomera / Pimpama / Ormeau"
+- "exposed aggregate", "house slab", "covercrete"
+- Google in keywords ko directly ranking mein use karta hai
+
+**Target:** 5 reviews by end of September 2026
+
+---
+
+### ACTION 2: Submit Remaining Top Australian Citations
+
+Yellow Pages pending hai — is doran yeh directories par free listings bana lo. Ek din mein 2–3 se zyada mat banana (natural lagna chahiye Google ko).
+
+| Priority | Directory | URL | Time |
+|---|---|---|---|
+| HIGH | True Local | truelocal.com.au | 5 min |
+| HIGH | Hot Frog | hotfrog.com.au | 5 min |
+| HIGH | Local Search | localsearch.com.au/get-listed | 10 min |
+| HIGH | Bing Places | bingplaces.com | 5 min |
+| MEDIUM | Apple Maps Connect | mapsconnect.apple.com | 10 min |
+| MEDIUM | Hipages | hipages.com.au | 10 min (free listing only) |
+| MEDIUM | Oneflare | oneflare.com.au | 10 min |
+| LOW | ServiceSeeking | serviceseeking.com.au | 10 min |
+| LOW | WOMO | womo.com.au | 5 min |
+
+**NAP to use (exactly the same everywhere):**
+```
+Business Name: Gold Coast Concreters QLD
+Phone:         0411 914 157
+Website:       https://goldcoastconcretersqld.com.au
+Suburb:        Pimpama, QLD 4209
+```
+
+> As each citation goes live — tell me the URL — I will add it to sameAs schema immediately.
+
+---
+
+### ACTION 3: Facebook Business Page Setup (30 Minutes)
+
+**Why:** Facebook page = another sameAs citation. Google trusts Facebook very highly. Plus aap directly FB Marketplace par tradie website service bech sakte ho.
+
+**Steps:**
+1. Facebook par "Create Page" → Category: Concrete Contractor
+2. Page Name: `Gold Coast Concreters QLD`
+3. Website: `https://goldcoastconcretersqld.com.au`
+4. Phone: `0411 914 157`
+5. Location: Pimpama, QLD 4209
+6. Cover photo: `assets/gmb_cover_photo.webp`
+7. Logo: `assets/gmb_logo.webp`
+
+**Page banate hi URL yahan dena** (e.g. facebook.com/goldcoastconcretersqld) — main schema mein daal dunga.
+
+---
+
+### ACTION 4: GBP Weekly Posts Start Karo
+
+**Why:** GBP posts directly ranking boost karte hain. Google dekhta hai ke business active hai ya dead.
+
+**Post hafte mein ek baar — copy-paste ready:**
+```
+Post 1:
+"Planning a new driveway in Coomera or Ormeau this spring?
+Our team is now taking bookings for exposed aggregate and plain
+concrete driveways across northern Gold Coast.
+Call 0411 914 157 for a free measure and quote."
+
+Post 2:
+"Did you know a 40m2 driveway in Pimpama starts from around $5,200?
+We break down all Gold Coast concrete prices on our website —
+link in bio. No hidden costs, no pressure."
+
+Post 3:
+"We just completed a coloured concrete patio in Upper Coomera
+this week. Want the same for your home? Get in touch —
+0411 914 157 or visit goldcoastconcretersqld.com.au"
+```
+
+---
+
+### ACTION 5: GBP Services Tab Complete Karo
+
+**Steps:**
+1. GBP Dashboard → Products/Services → Add Service
+2. Add these services:
+   - Concrete Driveways Gold Coast
+   - Exposed Aggregate Driveways
+   - House and Shed Slabs
+   - Covercrete Resurfacing
+   - Concrete Pool Surrounds
+   - Retaining Walls Gold Coast
+   - Council Driveway Crossovers (GCCC)
+   - Stencil and Stamped Concrete
+3. Har service ki description mein suburb ka naam mention karo
+
+---
+
+### ACTION 6: WhatsApp Business Setup
+
+**Steps:**
+1. WhatsApp Business install karo `0411 914 157` par
+2. Business name: `Gold Coast Concreters QLD`
+3. Website: `goldcoastconcretersqld.com.au`
+4. Away message set karo (automatic):
+   "Thanks for your WhatsApp! We are on-site right now. Please send your suburb and what job you need quoted and we will get back to you with a free quote. Cheers!"
+
+**WhatsApp ready hone par batana** — main website par WhatsApp chat button add kar dunga.
+
+---
+
+### ACTION 7: Ormeau Lead (Marise) — Follow Up
+
+**Status:** Live lead for 24m2 back patio concrete slab in Ormeau (4208)
+
+**If no reply from Pimpama Wholesale — send this SMS:**
+```
+Hi, following up on my email from last week re: the Ormeau
+concreting job. 24m2 back patio slab at Marise's in Ormeau.
+Ready for a quote this week. Do you have a concreter who can
+head out? Cheers, Sam
+```
+
+First job pass karo free — trust build karne ke liye. Uske baad per-lead charge shuru.
+
+---
+
+## Track 2: Monetization — Immediate Path
+
+### 2.1 Pay-Per-Lead Model (This Month)
+
+| Lead Type | Job Value | Your Charge |
+|---|---|---|
+| Residential Driveway (40–80m2) | $6,000–$15,000 | $100–$150 per lead |
+| Patio or Shed Slab | $3,000–$8,000 | $60–$100 per lead |
+| Retaining Wall | $5,000–$20,000 | $120–$200 per lead |
+| Pool Surround | $8,000–$18,000 | $100–$180 per lead |
+
+### 2.2 Rank & Rent Monthly Retainer (October Target)
+
+**Pitch to one contractor:**
+> "Our website ranks for concrete driveways, slabs, and retaining walls across northern Gold Coast. We get residential enquiries every week. We want to lock in one licensed concreter so all leads go directly to you — flat monthly rate, no per-lead cost."
+
+| Package | What Contractor Gets | Monthly Rent |
+|---|---|---|
+| Starter | All forms forwarded via text | $400–$600/month |
+| Standard | Calls + forms direct to their number | $700–$1,100/month |
+| Premium (3-month locked) | Full exclusivity + branding option | $1,200–$1,800/month |
+
+**Target:** First paying contractor by end of October 2026
+
+### 2.3 Tradie Website Sales (Facebook Marketplace)
+
+Ad image ready: `tradie_website_ad_1788762191446.jpg`
+
+Post in these Facebook groups:
+- "Gold Coast Tradies"
+- "Pimpama and Coomera Community"
+- "QLD Builders and Contractors"
+
+**Pricing:**
+- 1-page starter site: $199
+- Full 5-page tradie site: $499–$799
+- Rank and Rent clone build: $1,200–$2,500
+
+---
+
+## Track 3: Technical — Agle Hafte
+
+### 3.1 Google Search Console
+
+1. GSC → Coverage tab → check no 404 errors
+2. Performance tab → check top 10 pages
+3. URL Inspection → Request Indexing for these 5 pages:
+   - /pimpama
+   - /coomera
+   - /ormeau
+   - /helensvale
+   - /hope-island
+
+### 3.2 Sitemap Update
+
+After final articles published:
+- Update `sitemap.xml` with new URLs
+- Re-submit in GSC: `https://goldcoastconcretersqld.com.au/sitemap.xml`
+
+---
+
+## 4-Week Sprint Plan (Sep 9 – Oct 5, 2026)
+
+| Week | Tasks | Goal |
+|---|---|---|
+| Week 1 (Sep 9–15) | Final articles publish, True Local + HotFrog citations, GBP Services tab, get 2 reviews | Citations live, GBP fully optimized |
+| Week 2 (Sep 16–22) | Facebook Page setup, Local Search + Bing Places, 1 GBP post, GSC request indexing | Social entity live |
+| Week 3 (Sep 23–29) | Apple Maps + Hipages, follow up Ormeau lead, 1 GBP post, WhatsApp business | Lead conversion focus |
+| Week 4 (Sep 30–Oct 5) | Review all citations, pitch rank-and-rent to contractor, Oneflare + WOMO, 1 GBP post | First rental pitch done |
+
+---
+
+## 6-Month Revenue Forecast
+
+| Month | Activity | Expected Revenue |
+|---|---|---|
+| Sep 2026 | Citations building, GBP optimizing, 1–2 leads passed free | $0 (relationship building) |
+| Oct 2026 | Pay-per-lead model @ $80–$150 per lead | $300–$800 AUD |
+| Nov 2026 | Monthly rent deal locked + FB web builds | $700–$1,500 AUD |
+| Dec 2026 | 2 rental contractors + web design clients | $1,500–$2,800 AUD |
+| Jan–Feb 2027 | Site asset sale OR fencing niche launched | $2,000–$5,000 AUD |
+| Mar 2027 | Two sites renting + ongoing web design | $3,000–$7,000 AUD |
+
+---
+
+## KPIs — Monthly Tracking
+
+| KPI | Tool | Target (Month 3) |
+|---|---|---|
+| Organic Impressions | Google Search Console | 5,000+/month |
+| Organic Clicks | Google Search Console | 150+/month |
+| Form Submissions | Web3Forms inbox | 10+/month |
+| Phone Calls | Call log | 15+/month |
+| GBP Views | GBP Insights | 500+/month |
+| GBP Reviews | GBP Dashboard | 5+ total |
+| Citations Built | Manual log | 15+ total |
+| sameAs entities in schema | Code | 5+ total |
+| Monthly Revenue | Manual | $800+ AUD |
+
+---
+
+## Next Niche (Month 2+) — Fencing Gold Coast
+
+After current site has a renting contractor:
+- Domain suggestion: `goldcoastfencingqld.com.au`
+- Avg job value: $3,000–$12,000
+- Competition: Low–Medium
+- Build time: 4–6 weeks
+- Contractor source: Duncan (Dunc's Aussie Scapes) knows fencers
+
+---
+
+*Last Updated: 8 September 2026 — Reflects current live status*
+*Author: Vortic Growth — Gold Coast Concreters Network*
+
 **Starts:** 10 September 2026 (Day After Topical Map Completion)  
 **Domain:** `goldcoastconcretersqld.com.au`  
 **Goal:** Convert a fully-built, topically authoritative digital asset into consistent monthly cash flow through monetization, authority building, and niche expansion.
