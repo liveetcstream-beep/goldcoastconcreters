@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LeadRescue.ai Portal - Gold Coast Concreters QLD</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              900: '#1e3a8a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .custom-scrollbar::-webkit-scrollbar { width: 6px; height: 6px; }
+    .custom-scrollbar::-webkit-scrollbar-track { background: #f1f5f9; }
+    .custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col antialiased">
+
+  <!-- ================= AUTHENTICATION GATE ================= -->
+  <div id="authScreen" class="fixed inset-0 z-50 bg-slate-900 flex flex-col justify-center items-center px-4 py-12">
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-1/4 left-1/2 -translate-x-1/2 translate-y-1/2 w-80 h-80 bg-indigo-600/15 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="w-full max-w-md relative z-10">
+      <div class="text-center mb-8">
+        <div class="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-blue-600 text-white font-black text-2xl shadow-xl shadow-blue-500/25 mb-4 border border-blue-400/30">
+          LR
+        </div>
+        <h1 class="text-2xl font-bold text-white tracking-tight">
+          LeadRescue<span class="text-blue-400">.ai</span> Portal
+        </h1>
+        <p class="text-slate-400 text-xs mt-1">
+          Gold Coast Concreters QLD &bull; AI Phone Receptionist Management
+        </p>
+      </div>
+
+      <div class="bg-slate-800/90 backdrop-blur-xl border border-slate-700/80 rounded-2xl p-7 shadow-2xl">
+        <div class="flex items-center gap-2 pb-4 mb-5 border-b border-slate-700/60 text-xs text-slate-300">
+          <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+          <span>Authorized Management Access Only</span>
+        </div>
+
+        <div id="loginError" class="hidden mb-5 p-3 rounded-lg bg-rose-500/15 border border-rose-500/30 text-rose-300 text-xs flex items-center gap-2">
+          <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          <span id="loginErrorText">Invalid username or password.</span>
+        </div>
+
+        <form id="loginForm" class="space-y-4" onsubmit="handleLogin(event)">
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-1.5">Username</label>
+            <div class="relative">
+              <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+              </div>
+              <input type="text" id="usernameInput" required placeholder="Enter username" class="w-full text-xs pl-9 pr-3 py-2.5 bg-slate-900/80 border border-slate-700 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 font-mono">
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-1.5">Password</label>
+            <div class="relative">
+              <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+              </div>
+              <input type="password" id="passwordInput" required placeholder="Enter password" class="w-full text-xs pl-9 pr-3 py-2.5 bg-slate-900/80 border border-slate-700 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 font-mono">
+            </div>
+          </div>
+
+          <button type="submit" id="loginBtn" class="w-full mt-2 py-2.5 px-4 bg-blue-600 hover:bg-blue-500 active:bg-blue-700 text-white font-semibold text-xs rounded-lg shadow-lg shadow-blue-600/30 transition-all flex items-center justify-center gap-2 cursor-pointer">
+            <span>Sign In to Portal</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </button>
+        </form>
+
+        <div class="mt-6 pt-4 border-t border-slate-700/60 flex items-center justify-between text-[11px] text-slate-400">
+          <div class="flex items-center gap-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+            <span>Pilot Receptionist: Sumaira</span>
+          </div>
+          <span class="text-slate-500 font-mono">v0.1.0 AU-Pilot</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= PORTAL MAIN APP (VISIBLE WHEN AUTHENTICATED) ================= -->
+  <div id="portalApp" class="hidden flex-1 flex flex-col min-h-screen">
+
+    <!-- Top Telephony & Pilot Mode Banner -->
+    <header class="bg-slate-900 text-white text-xs py-2 px-4 border-b border-slate-800 flex flex-wrap items-center justify-between gap-2 sticky top-0 z-40">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center gap-1 bg-amber-500/20 text-amber-300 px-2 py-0.5 rounded font-medium border border-amber-500/30">
+          <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
+          AU PILOT MODE
+        </span>
+        <span class="text-slate-300">
+          Tenant: <strong class="text-white">Gold Coast Concreters QLD</strong> (Gold Coast, QLD)
+        </span>
+      </div>
+
+      <div class="flex items-center gap-4 text-slate-300">
+        <div class="flex items-center gap-1.5">
+          <svg class="w-3.5 h-3.5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+          <span>AI Test Line: <strong class="text-blue-300 font-mono">+1 (208) 293-0115</strong></span>
+        </div>
+        <div class="hidden md:flex items-center gap-1 text-slate-400">
+          <svg class="w-3.5 h-3.5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+          <span>Public line (0411 914 157) preserved</span>
+        </div>
+        <div class="flex items-center gap-2 pl-2 border-l border-slate-700">
+          <span class="inline-flex items-center gap-1 text-emerald-400 text-[11px] font-mono">
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+            bilal345
+          </span>
+          <button onclick="handleLogout()" title="Logout" class="text-slate-400 hover:text-rose-400 transition-colors p-1 rounded">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path></svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="flex flex-1">
+      <!-- Desktop Sidebar -->
+      <aside class="hidden lg:flex flex-col w-64 bg-white border-r border-slate-200">
+        <!-- Brand Header -->
+        <div class="p-5 border-b border-slate-200 flex items-center justify-between">
+          <div class="flex items-center gap-2.5">
+            <div class="w-9 h-9 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-lg shadow-sm">
+              LR
+            </div>
+            <div>
+              <span class="font-bold text-slate-900 tracking-tight text-base block leading-tight">
+                LeadRescue<span class="text-blue-600">.ai</span>
+              </span>
+              <span class="text-[11px] text-slate-500 leading-none">
+                Never Miss An Enquiry
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Business Quick Card -->
+        <div class="p-3 mx-3 my-3 bg-slate-50 border border-slate-200/80 rounded-lg">
+          <div class="text-[11px] font-semibold text-slate-500 uppercase tracking-wider mb-1">
+            Active Trade Profile
+          </div>
+          <div class="text-xs font-bold text-slate-900 truncate">
+            Gold Coast Concreters QLD
+          </div>
+          <div class="text-[11px] text-slate-500 flex items-center gap-1 mt-0.5">
+            <span>Timezone:</span>
+            <span class="font-medium text-slate-700">AEST (Brisbane)</span>
+          </div>
+        </div>
+
+        <!-- Navigation items -->
+        <nav class="flex-1 px-3 py-2 space-y-1 overflow-y-auto custom-scrollbar">
+          <button onclick="switchTab('overview')" id="nav-overview" class="nav-btn w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-semibold bg-blue-50 text-blue-700 text-left">
+            <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
+            <span>Overview</span>
+          </button>
+          <button onclick="switchTab('calls')" id="nav-calls" class="nav-btn w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:bg-slate-100 text-left">
+            <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+            <span>Calls Log</span>
+          </button>
+          <button onclick="switchTab('leads')" id="nav-leads" class="nav-btn w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:bg-slate-100 text-left">
+            <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+            <span>Leads CRM</span>
+          </button>
+          <button onclick="switchTab('inspections')" id="nav-inspections" class="nav-btn w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:bg-slate-100 text-left">
+            <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+            <span>Inspection Requests</span>
+          </button>
+          <button onclick="switchTab('receptionist')" id="nav-receptionist" class="nav-btn w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:bg-slate-100 text-left">
+            <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+            <span>AI Receptionist</span>
+          </button>
+          <button onclick="switchTab('knowledge')" id="nav-knowledge" class="nav-btn w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:bg-slate-100 text-left">
+            <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+            <span>Business Knowledge</span>
+          </button>
+          <button onclick="switchTab('service-areas')" id="nav-service-areas" class="nav-btn w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:bg-slate-100 text-left">
+            <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path></svg>
+            <span>Service Areas</span>
+          </button>
+          <button onclick="switchTab('services')" id="nav-services" class="nav-btn w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:bg-slate-100 text-left">
+            <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+            <span>Services Offered</span>
+          </button>
+          <button onclick="switchTab('notifications')" id="nav-notifications" class="nav-btn w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:bg-slate-100 text-left">
+            <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path></svg>
+            <span>Notifications</span>
+          </button>
+          <button onclick="switchTab('settings')" id="nav-settings" class="nav-btn w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:bg-slate-100 text-left">
+            <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path></svg>
+            <span>Settings</span>
+          </button>
+        </nav>
+
+        <!-- User profile footer -->
+        <div class="p-3 border-t border-slate-200 bg-slate-50 flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <div class="w-7 h-7 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-xs">
+              B
+            </div>
+            <div class="leading-tight">
+              <span class="text-xs font-bold text-slate-800 block">bilal345</span>
+              <span class="text-[10px] text-slate-500">Administrator</span>
+            </div>
+          </div>
+          <button onclick="handleLogout()" class="p-1.5 text-slate-400 hover:text-rose-600 hover:bg-rose-50 rounded-md transition-colors" title="Sign Out">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path></svg>
+          </button>
+        </div>
+      </aside>
+
+      <!-- Main Content Container -->
+      <main class="flex-1 bg-slate-50 min-h-screen overflow-y-auto p-4 md:p-6 max-w-7xl mx-auto custom-scrollbar">
+
+        <!-- ================= TAB: OVERVIEW ================= -->
+        <section id="tab-overview" class="tab-content space-y-6">
+          <!-- Page Header -->
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+            <div>
+              <div class="flex items-center gap-2 mb-1">
+                <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 flex items-center gap-1">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                  AI Phone Receptionist Active
+                </span>
+                <span class="text-xs text-slate-500">
+                  Gold Coast, QLD (AEST) &bull; AS 2870 / AS 3727.1
+                </span>
+              </div>
+              <h1 class="text-2xl font-bold text-slate-900 tracking-tight">
+                Gold Coast Concreters QLD
+              </h1>
+              <p class="text-sm text-slate-600 mt-0.5">
+                Real-time lead qualification, phone call triage & site inspection management for Gold Coast concreting contractors.
+              </p>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-3">
+              <div class="bg-slate-50 px-3.5 py-2 rounded-lg border border-slate-200 text-right">
+                <div class="text-[11px] text-slate-500 font-medium uppercase tracking-wider">
+                  Australian Business Line
+                </div>
+                <div class="text-sm font-bold text-blue-600 font-mono">
+                  0411 914 157
+                </div>
+              </div>
+              <div class="bg-slate-50 px-3.5 py-2 rounded-lg border border-slate-200 text-right">
+                <div class="text-[11px] text-slate-500 font-medium uppercase tracking-wider">
+                  Website Synced
+                </div>
+                <a href="https://goldcoastconcretersqld.com.au" target="_blank" class="text-xs font-bold text-slate-700 hover:text-blue-600 truncate max-w-[180px] block">
+                  goldcoastconcretersqld.com.au
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6 Metric Cards -->
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+              <div class="flex items-center justify-between text-slate-500 text-xs font-medium mb-2">
+                <span>Calls Today</span>
+                <svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+              </div>
+              <div class="text-2xl font-bold text-slate-900">4</div>
+              <div class="text-[11px] text-emerald-600 font-medium mt-1 flex items-center gap-1">
+                <span>✓ 100% answered</span>
+              </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+              <div class="flex items-center justify-between text-slate-500 text-xs font-medium mb-2">
+                <span>Qualified Leads</span>
+                <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+              </div>
+              <div class="text-2xl font-bold text-slate-900">4</div>
+              <div class="text-[11px] text-slate-500 mt-1">Ready for estimate</div>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+              <div class="flex items-center justify-between text-slate-500 text-xs font-medium mb-2">
+                <span>Site Measures</span>
+                <svg class="w-4 h-4 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+              </div>
+              <div class="text-2xl font-bold text-slate-900">3</div>
+              <div class="text-[11px] text-blue-600 font-medium mt-1">Next: Tue 9:30 AM</div>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+              <div class="flex items-center justify-between text-slate-500 text-xs font-medium mb-2">
+                <span>Hot Leads</span>
+                <span class="text-amber-500 text-xs font-bold">🔥</span>
+              </div>
+              <div class="text-2xl font-bold text-amber-600">2</div>
+              <div class="text-[11px] text-slate-500 mt-1">Scores &ge; 80/100</div>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+              <div class="flex items-center justify-between text-slate-500 text-xs font-medium mb-2">
+                <span>Avg Pickup</span>
+                <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              </div>
+              <div class="text-2xl font-bold text-slate-900">&lt; 1s</div>
+              <div class="text-[11px] text-emerald-600 font-medium mt-1">Instant 24/7</div>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+              <div class="flex items-center justify-between text-slate-500 text-xs font-medium mb-2">
+                <span>Spam Filtered</span>
+                <svg class="w-4 h-4 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"></path></svg>
+              </div>
+              <div class="text-2xl font-bold text-slate-900">5</div>
+              <div class="text-[11px] text-slate-500 mt-1">Diverted to email</div>
+            </div>
+          </div>
+
+          <!-- Interactive Call Simulation Section -->
+          <div class="bg-gradient-to-r from-blue-900 to-indigo-900 text-white rounded-xl p-6 shadow-md">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+              <div>
+                <span class="text-xs uppercase tracking-wider text-blue-300 font-semibold">Live Australian Call Triage Simulator</span>
+                <h2 class="text-lg font-bold">Simulate Inbound Gold Coast Client Scenarios</h2>
+                <p class="text-xs text-blue-100/80 mt-0.5">Test how Sumaira handles different Australian customer enquiries, quotes, and council crossover questions.</p>
+              </div>
+              <span class="text-xs bg-blue-800/80 border border-blue-400/30 px-3 py-1.5 rounded-lg font-mono text-blue-200">
+                Receptionist: Sumaira (en-AU)
+              </span>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-2.5 mb-4">
+              <button onclick="runSimulation('pimpama')" class="p-3 bg-white/10 hover:bg-white/20 active:bg-white/30 rounded-lg text-left border border-white/10 transition-all">
+                <div class="text-xs font-bold text-white">1. Pimpama Aggregate</div>
+                <div class="text-[11px] text-blue-200">85m² driveway, reactive clay</div>
+              </button>
+              <button onclick="runSimulation('palmbeach')" class="p-3 bg-white/10 hover:bg-white/20 active:bg-white/30 rounded-lg text-left border border-white/10 transition-all">
+                <div class="text-xs font-bold text-white">2. Palm Beach Pool</div>
+                <div class="text-[11px] text-blue-200">N32 marine mix, salt spray</div>
+              </button>
+              <button onclick="runSimulation('southport')" class="p-3 bg-white/10 hover:bg-white/20 active:bg-white/30 rounded-lg text-left border border-white/10 transition-all">
+                <div class="text-xs font-bold text-white">3. Southport Crossover</div>
+                <div class="text-[11px] text-blue-200">City VXO permit guidance</div>
+              </button>
+              <button onclick="runSimulation('ballpark')" class="p-3 bg-white/10 hover:bg-white/20 active:bg-white/30 rounded-lg text-left border border-white/10 transition-all">
+                <div class="text-xs font-bold text-white">4. Ballpark Price Inquiry</div>
+                <div class="text-[11px] text-blue-200">$75–$165/m² conversion</div>
+              </button>
+            </div>
+
+            <!-- Simulation Console -->
+            <div id="simConsole" class="bg-slate-950 p-4 rounded-lg font-mono text-xs text-emerald-400 border border-slate-800 h-32 overflow-y-auto whitespace-pre-wrap custom-scrollbar">
+Select a scenario above to test how Sumaira qualifies the lead and books the site inspection in real-time...
+            </div>
+          </div>
+
+          <!-- Inbound Leads Table Preview -->
+          <div class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
+            <div class="p-5 border-b border-slate-200 flex items-center justify-between">
+              <div>
+                <h3 class="font-bold text-slate-900 text-base">Recent Qualified Enquiries</h3>
+                <p class="text-xs text-slate-500">Live feed of inbound phone leads triaged by AI receptionist.</p>
+              </div>
+              <button onclick="switchTab('leads')" class="text-xs text-blue-600 font-semibold hover:underline">
+                View All Leads CRM &rarr;
+              </button>
+            </div>
+
+            <div class="overflow-x-auto">
+              <table class="w-full text-left text-xs">
+                <thead class="bg-slate-50 text-slate-600 font-semibold border-b border-slate-200">
+                  <tr>
+                    <th class="p-3.5">Customer & Phone</th>
+                    <th class="p-3.5">Suburb</th>
+                    <th class="p-3.5">Project Type</th>
+                    <th class="p-3.5">Est. Size</th>
+                    <th class="p-3.5">Score</th>
+                    <th class="p-3.5">Status</th>
+                    <th class="p-3.5 text-right">Action</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-100 text-slate-700">
+                  <tr class="hover:bg-slate-50/60 transition-colors">
+                    <td class="p-3.5 font-medium text-slate-900">
+                      <div>Marcus Vance</div>
+                      <div class="text-[11px] text-slate-500 font-mono">+61 412 345 678</div>
+                    </td>
+                    <td class="p-3.5">Pimpama (4209)</td>
+                    <td class="p-3.5 font-medium">Exposed Aggregate Driveway</td>
+                    <td class="p-3.5">85 m²</td>
+                    <td class="p-3.5">
+                      <span class="px-2 py-0.5 rounded-full bg-rose-50 text-rose-700 font-bold border border-rose-200">88/100 🔥</span>
+                    </td>
+                    <td class="p-3.5">
+                      <span class="px-2 py-0.5 rounded bg-indigo-50 text-indigo-700 font-semibold border border-indigo-200">Measure Booked (Tue)</span>
+                    </td>
+                    <td class="p-3.5 text-right">
+                      <button onclick="showLeadDetails('Marcus Vance', '+61 412 345 678', 'Pimpama', 'Exposed Aggregate', '85 sqm', 'Next 2-3 weeks', 'New 85 sqm driveway. Site is clear and flat. Requested on-site inspection for Tuesday morning.')" class="px-2.5 py-1 bg-blue-50 text-blue-600 hover:bg-blue-100 rounded font-semibold text-[11px]">View Details</button>
+                    </td>
+                  </tr>
+
+                  <tr class="hover:bg-slate-50/60 transition-colors">
+                    <td class="p-3.5 font-medium text-slate-900">
+                      <div>Emma Bradley</div>
+                      <div class="text-[11px] text-slate-500 font-mono">+61 423 456 789</div>
+                    </td>
+                    <td class="p-3.5">Helensvale (4212)</td>
+                    <td class="p-3.5 font-medium">Covercrete Resurfacing</td>
+                    <td class="p-3.5">60 m²</td>
+                    <td class="p-3.5">
+                      <span class="px-2 py-0.5 rounded-full bg-amber-50 text-amber-700 font-bold border border-amber-200">72/100 ☀️</span>
+                    </td>
+                    <td class="p-3.5">
+                      <span class="px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 font-semibold border border-emerald-200">Quote In Progress</span>
+                    </td>
+                    <td class="p-3.5 text-right">
+                      <button onclick="showLeadDetails('Emma Bradley', '+61 423 456 789', 'Helensvale', 'Covercrete Resurfacing', '60 sqm', 'Within 1 month', 'Existing patio slab looks faded with minor hairline surface cracks. Needs resurfacing quote.')" class="px-2.5 py-1 bg-blue-50 text-blue-600 hover:bg-blue-100 rounded font-semibold text-[11px]">View Details</button>
+                    </td>
+                  </tr>
+
+                  <tr class="hover:bg-slate-50/60 transition-colors">
+                    <td class="p-3.5 font-medium text-slate-900">
+                      <div>Darren Taylor (Commercial)</div>
+                      <div class="text-[11px] text-slate-500 font-mono">+61 434 567 890</div>
+                    </td>
+                    <td class="p-3.5">Southport (4215)</td>
+                    <td class="p-3.5 font-medium">Commercial Crossover & Apron</td>
+                    <td class="p-3.5">120 m²</td>
+                    <td class="p-3.5">
+                      <span class="px-2 py-0.5 rounded-full bg-rose-50 text-rose-700 font-bold border border-rose-200">79/100 🔥</span>
+                    </td>
+                    <td class="p-3.5">
+                      <span class="px-2 py-0.5 rounded bg-amber-50 text-amber-700 font-semibold border border-amber-200">Permit Pending (VXO)</span>
+                    </td>
+                    <td class="p-3.5 text-right">
+                      <button onclick="showLeadDetails('Darren Taylor', '+61 434 567 890', 'Southport', 'Commercial Crossover', '120 sqm', 'Urgent / Council permit pending', 'Commercial warehouse entrance crossover. Council plans available. Requested estimator phone call.')" class="px-2.5 py-1 bg-blue-50 text-blue-600 hover:bg-blue-100 rounded font-semibold text-[11px]">View Details</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= TAB: CALLS LOG ================= -->
+        <section id="tab-calls" class="tab-content hidden space-y-6">
+          <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div>
+              <h2 class="text-xl font-bold text-slate-900">Calls Log & Audio Transcripts</h2>
+              <p class="text-xs text-slate-500 mt-0.5">Every call handled by Sumaira on live pilot line +1 (208) 293-0115.</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="px-3 py-1 bg-emerald-50 text-emerald-700 border border-emerald-200 rounded-lg text-xs font-semibold">
+                ● Live Vapi Webhook Connected
+              </span>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
+            <div class="p-4 border-b border-slate-200 flex items-center justify-between gap-4">
+              <input type="text" placeholder="Filter calls by caller number, suburb, outcome..." class="text-xs px-3 py-2 border border-slate-300 rounded-lg w-72 focus:outline-none focus:ring-2 focus:ring-blue-500">
+              <span class="text-xs text-slate-500">Showing 4 calls recorded today</span>
+            </div>
+
+            <div class="overflow-x-auto">
+              <table class="w-full text-left text-xs">
+                <thead class="bg-slate-50 text-slate-600 font-semibold border-b border-slate-200">
+                  <tr>
+                    <th class="p-3.5">Caller Phone</th>
+                    <th class="p-3.5">Duration</th>
+                    <th class="p-3.5">Status</th>
+                    <th class="p-3.5">Triage Outcome</th>
+                    <th class="p-3.5">Timestamp</th>
+                    <th class="p-3.5 text-right">Playback & Transcript</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-100 text-slate-700">
+                  <tr class="hover:bg-slate-50/60">
+                    <td class="p-3.5 font-mono font-medium text-slate-900">+61 412 345 678</td>
+                    <td class="p-3.5">2m 45s</td>
+                    <td class="p-3.5"><span class="px-2 py-0.5 bg-emerald-100 text-emerald-800 rounded font-semibold text-[10px]">Completed</span></td>
+                    <td class="p-3.5 font-medium text-slate-900">Lead Qualified & Inspection Booked</td>
+                    <td class="p-3.5 text-slate-500">Today, 2:15 PM</td>
+                    <td class="p-3.5 text-right">
+                      <button onclick="openTranscriptModal('+61 412 345 678', '2m 45s', 'Marcus Vance (Pimpama)', 'Sumaira: G\'day! Thanks for calling Gold Coast Concreters, this is Sumaira. How can I help you today?\nCaller: Hi, looking to get an exposed aggregate driveway poured in Pimpama.\nSumaira: Yeah absolutely! Do you have a rough idea of the size in square metres?\nCaller: Roughly 85 square metres.\nSumaira: Awesome! When would suit you best for our estimator to come by for the free on-site measure?\nCaller: Tuesday morning works great.\nSumaira: Too easy! Can I grab your full name and mobile number to lock that in?\nCaller: Marcus Vance, 0412 345 678.\nSumaira: Perfect Marcus, we have you down for Tuesday morning. Have a wonderful day!')" class="px-3 py-1 bg-blue-600 text-white rounded font-medium text-[11px] hover:bg-blue-700">Play & Transcript</button>
+                    </td>
+                  </tr>
+
+                  <tr class="hover:bg-slate-50/60">
+                    <td class="p-3.5 font-mono font-medium text-slate-900">+61 423 456 789</td>
+                    <td class="p-3.5">3m 12s</td>
+                    <td class="p-3.5"><span class="px-2 py-0.5 bg-emerald-100 text-emerald-800 rounded font-semibold text-[10px]">Completed</span></td>
+                    <td class="p-3.5 font-medium text-slate-900">Covercrete Patio Resurfacing Advice</td>
+                    <td class="p-3.5 text-slate-500">Today, 1:40 PM</td>
+                    <td class="p-3.5 text-right">
+                      <button onclick="openTranscriptModal('+61 423 456 789', '3m 12s', 'Emma Bradley (Helensvale)', 'Sumaira: G\'day! Thanks for calling Gold Coast Concreters, this is Sumaira.\nCaller: Hi, my existing patio is discoloured. Do you do resurfacing?\nSumaira: Yeah absolutely, we do covercrete resurfacing across Helensvale. What size is the patio?\nCaller: Around 60 sqm.\nSumaira: Too easy! We can do a stencil pattern or plain spray. Would you like a free measure?')" class="px-3 py-1 bg-blue-600 text-white rounded font-medium text-[11px] hover:bg-blue-700">Play & Transcript</button>
+                    </td>
+                  </tr>
+
+                  <tr class="hover:bg-slate-50/60">
+                    <td class="p-3.5 font-mono font-medium text-slate-900">+61 434 567 890</td>
+                    <td class="p-3.5">1m 58s</td>
+                    <td class="p-3.5"><span class="px-2 py-0.5 bg-emerald-100 text-emerald-800 rounded font-semibold text-[10px]">Completed</span></td>
+                    <td class="p-3.5 font-medium text-slate-900">Council Crossover VXO Rules Clarified</td>
+                    <td class="p-3.5 text-slate-500">Today, 11:20 AM</td>
+                    <td class="p-3.5 text-right">
+                      <button onclick="openTranscriptModal('+61 434 567 890', '1m 58s', 'Darren Taylor (Southport)', 'Sumaira: G\'day! Thanks for calling Gold Coast Concreters.\nCaller: Need a new crossover in Southport for a factory.\nSumaira: Just a heads up, the property owner needs to lodge the VXO permit with City of Gold Coast first. Once council approves, we pour strictly to council engineering standard drawings.')" class="px-3 py-1 bg-blue-600 text-white rounded font-medium text-[11px] hover:bg-blue-700">Play & Transcript</button>
+                    </td>
+                  </tr>
+
+                  <tr class="hover:bg-slate-50/60">
+                    <td class="p-3.5 font-mono font-medium text-slate-900">+61 408 991 223</td>
+                    <td class="p-3.5">0m 42s</td>
+                    <td class="p-3.5"><span class="px-2 py-0.5 bg-rose-100 text-rose-800 rounded font-semibold text-[10px]">Spam Deflected</span></td>
+                    <td class="p-3.5 font-medium text-rose-700">SEO / Marketing Telemarketer Filtered</td>
+                    <td class="p-3.5 text-slate-500">Today, 10:05 AM</td>
+                    <td class="p-3.5 text-right">
+                      <button onclick="openTranscriptModal('+61 408 991 223', '0m 42s', 'Telemarketer (Marketing)', 'Caller: Hi I\'m calling from Apex Digital SEO to speak to the business owner...\nSumaira: Thanks for reaching out, but we don\'t take sales or marketing calls on this line. Please email your details to support@goldcoastconcretersqld.com.au and management will review it. Have a great day!')" class="px-3 py-1 bg-slate-600 text-white rounded font-medium text-[11px] hover:bg-slate-700">Play & Transcript</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= TAB: LEADS CRM ================= -->
+        <section id="tab-leads" class="tab-content hidden space-y-6">
+          <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div>
+              <h2 class="text-xl font-bold text-slate-900">Leads CRM Database</h2>
+              <p class="text-xs text-slate-500 mt-0.5">Categorized by lead score, suburb, and concreting project type.</p>
+            </div>
+            <button onclick="alert('Exporting qualified leads to CSV...')" class="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg text-xs font-semibold border border-slate-300">
+              ⬇ Export CSV
+            </button>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- Lead Card 1 -->
+            <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-2">
+                  <span class="px-2 py-0.5 rounded-full bg-rose-50 text-rose-700 border border-rose-200 font-bold text-xs">Score 88/100 🔥 HOT</span>
+                  <span class="text-[11px] text-slate-500">10 mins ago</span>
+                </div>
+                <h3 class="font-bold text-base text-slate-900">Marcus Vance</h3>
+                <div class="text-xs text-blue-600 font-mono font-semibold">+61 412 345 678</div>
+                <div class="mt-3 space-y-1 text-xs text-slate-600">
+                  <div><strong>Suburb:</strong> Pimpama 4209</div>
+                  <div><strong>Project:</strong> Exposed Aggregate Driveway (85 m²)</div>
+                  <div><strong>Finish:</strong> Salt & Pepper Pebble Blend</div>
+                  <div><strong>Inspection:</strong> Requested for Tuesday Morning</div>
+                </div>
+              </div>
+              <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                <span class="text-[11px] text-emerald-600 font-semibold">● Alert Dispatched to Pakistani Admin</span>
+                <button onclick="alert('Calling Marcus Vance on +61 412 345 678...')" class="px-3 py-1 bg-blue-600 text-white rounded text-xs font-semibold">Call Customer</button>
+              </div>
+            </div>
+
+            <!-- Lead Card 2 -->
+            <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-2">
+                  <span class="px-2 py-0.5 rounded-full bg-amber-50 text-amber-700 border border-amber-200 font-bold text-xs">Score 72/100 ☀️ WARM</span>
+                  <span class="text-[11px] text-slate-500">42 mins ago</span>
+                </div>
+                <h3 class="font-bold text-base text-slate-900">Emma Bradley</h3>
+                <div class="text-xs text-blue-600 font-mono font-semibold">+61 423 456 789</div>
+                <div class="mt-3 space-y-1 text-xs text-slate-600">
+                  <div><strong>Suburb:</strong> Helensvale 4212</div>
+                  <div><strong>Project:</strong> Covercrete Resurfacing (60 m²)</div>
+                  <div><strong>Finish:</strong> Charcoal Fleck Stencil</div>
+                  <div><strong>Timeframe:</strong> Within 1 month</div>
+                </div>
+              </div>
+              <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                <span class="text-[11px] text-slate-500">Awaiting estimator quote</span>
+                <button onclick="alert('Calling Emma Bradley on +61 423 456 789...')" class="px-3 py-1 bg-blue-600 text-white rounded text-xs font-semibold">Call Customer</button>
+              </div>
+            </div>
+
+            <!-- Lead Card 3 -->
+            <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-2">
+                  <span class="px-2 py-0.5 rounded-full bg-rose-50 text-rose-700 border border-rose-200 font-bold text-xs">Score 79/100 🔥 HOT</span>
+                  <span class="text-[11px] text-slate-500">2 hours ago</span>
+                </div>
+                <h3 class="font-bold text-base text-slate-900">Darren Taylor (Commercial)</h3>
+                <div class="text-xs text-blue-600 font-mono font-semibold">+61 434 567 890</div>
+                <div class="mt-3 space-y-1 text-xs text-slate-600">
+                  <div><strong>Suburb:</strong> Southport 4215</div>
+                  <div><strong>Project:</strong> Commercial Heavy Crossover (120 m²)</div>
+                  <div><strong>Permit:</strong> Owner obtaining City VXO permit</div>
+                  <div><strong>Timeframe:</strong> Urgent / Ready upon permit</div>
+                </div>
+              </div>
+              <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                <span class="text-[11px] text-amber-600 font-semibold">Council plans attached</span>
+                <button onclick="alert('Calling Darren Taylor on +61 434 567 890...')" class="px-3 py-1 bg-blue-600 text-white rounded text-xs font-semibold">Call Customer</button>
+              </div>
+            </div>
+
+            <!-- Lead Card 4 -->
+            <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-2">
+                  <span class="px-2 py-0.5 rounded-full bg-amber-50 text-amber-700 border border-amber-200 font-bold text-xs">Score 65/100 ☀️ WARM</span>
+                  <span class="text-[11px] text-slate-500">4 hours ago</span>
+                </div>
+                <h3 class="font-bold text-base text-slate-900">Chloe Bennett</h3>
+                <div class="text-xs text-blue-600 font-mono font-semibold">+61 445 678 901</div>
+                <div class="mt-3 space-y-1 text-xs text-slate-600">
+                  <div><strong>Suburb:</strong> Burleigh Heads 4220</div>
+                  <div><strong>Project:</strong> Pool Surround (45 m²)</div>
+                  <div><strong>Finish:</strong> Honed Non-Slip Decorative</div>
+                  <div><strong>Timeframe:</strong> Before summer</div>
+                </div>
+              </div>
+              <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                <span class="text-[11px] text-slate-500">Coastal N32 Marine concrete needed</span>
+                <button onclick="alert('Calling Chloe Bennett on +61 445 678 901...')" class="px-3 py-1 bg-blue-600 text-white rounded text-xs font-semibold">Call Customer</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= TAB: INSPECTION REQUESTS ================= -->
+        <section id="tab-inspections" class="tab-content hidden space-y-6">
+          <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+            <h2 class="text-xl font-bold text-slate-900">Free On-Site Inspection Measure Schedule</h2>
+            <p class="text-xs text-slate-500 mt-0.5">Appointments booked directly by Sumaira for the Gold Coast estimator team.</p>
+          </div>
+
+          <div class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
+            <table class="w-full text-left text-xs">
+              <thead class="bg-slate-50 text-slate-600 font-semibold border-b border-slate-200">
+                <tr>
+                  <th class="p-3.5">Customer & Phone</th>
+                  <th class="p-3.5">Address / Suburb</th>
+                  <th class="p-3.5">Project Scope</th>
+                  <th class="p-3.5">Scheduled Slot</th>
+                  <th class="p-3.5">Estimator Assigned</th>
+                  <th class="p-3.5 text-right">Status</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-100 text-slate-700">
+                <tr>
+                  <td class="p-3.5 font-medium text-slate-900">
+                    <div>Marcus Vance</div>
+                    <div class="text-[11px] text-slate-500 font-mono">+61 412 345 678</div>
+                  </td>
+                  <td class="p-3.5">Pimpama (4209)</td>
+                  <td class="p-3.5">85 m² Exposed Aggregate</td>
+                  <td class="p-3.5 font-bold text-blue-600">Tuesday, 9:30 AM</td>
+                  <td class="p-3.5">Marcus / Lead Estimator</td>
+                  <td class="p-3.5 text-right"><span class="px-2 py-0.5 bg-emerald-100 text-emerald-800 rounded font-bold text-[10px]">Confirmed</span></td>
+                </tr>
+                <tr>
+                  <td class="p-3.5 font-medium text-slate-900">
+                    <div>Chloe Bennett</div>
+                    <div class="text-[11px] text-slate-500 font-mono">+61 445 678 901</div>
+                  </td>
+                  <td class="p-3.5">Burleigh Heads (4220)</td>
+                  <td class="p-3.5">45 m² Pool Surround</td>
+                  <td class="p-3.5 font-bold text-blue-600">Wednesday, 2:00 PM</td>
+                  <td class="p-3.5">Marcus / Lead Estimator</td>
+                  <td class="p-3.5 text-right"><span class="px-2 py-0.5 bg-blue-100 text-blue-800 rounded font-bold text-[10px]">Pending Confirmation</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- ================= TAB: AI RECEPTIONIST (SUMAIRA) ================= -->
+        <section id="tab-receptionist" class="tab-content hidden space-y-6">
+          <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+            <div class="flex items-center gap-2 mb-1">
+              <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-blue-50 text-blue-700 border border-blue-200">
+                Persona: Sumaira (en-AU)
+              </span>
+              <span class="text-xs bg-amber-50 text-amber-700 border border-amber-200 px-2 py-0.5 rounded-full font-mono">
+                Speech Rate: 0.88x (Calm & Unhurried)
+              </span>
+            </div>
+            <h2 class="text-xl font-bold text-slate-900">AI Phone Receptionist Instructions</h2>
+            <p class="text-xs text-slate-500 mt-0.5">System prompt configured in Vapi for live phone calls to +1 (208) 293-0115.</p>
+          </div>
+
+          <!-- Alert Rules -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-xs text-emerald-900 space-y-1">
+              <div class="font-bold flex items-center gap-1.5">
+                <span>🛡 Human Persona Rule</span>
+              </div>
+              <p class="text-[11px] text-emerald-800 leading-relaxed">
+                Sumaira strictly never refers to herself as an "AI", "bot", or "virtual assistant". She speaks naturally as a team member of Gold Coast Concreters.
+              </p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-rose-50 border border-rose-200 text-xs text-rose-900 space-y-1">
+              <div class="font-bold flex items-center gap-1.5">
+                <span>🚫 Marketing Call Deflector</span>
+              </div>
+              <p class="text-[11px] text-rose-800 leading-relaxed">
+                Cold callers selling SEO, ads, or web design are politely deflected to <strong>support@goldcoastconcretersqld.com.au</strong> and the call is politely concluded.
+              </p>
+            </div>
+          </div>
+
+          <!-- Editable Prompt Box -->
+          <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-bold text-slate-800">Live Vapi Prompt Configuration</span>
+              <button onclick="alert('Prompt saved and synchronized with Vapi Assistant!')" class="px-3 py-1 bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold rounded-lg shadow-sm">
+                Save & Update Vapi
+              </button>
+            </div>
+            <textarea id="promptTextarea" rows="14" class="w-full text-xs font-mono p-4 bg-slate-900 text-emerald-300 rounded-lg border border-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-500 custom-scrollbar leading-relaxed">
+IDENTITY & PERSONA:
+Your name is Sumaira. You are the warm, friendly, and practical office receptionist for Gold Coast Concreters QLD (+61 411 914 157, goldcoastconcretersqld.com.au).
+CRITICAL RULE: NEVER refer to yourself as an "AI", "bot", "language model", or "virtual receptionist". Speak completely naturally as a real human member of the local Gold Coast team.
+If someone asks "Who is this?" or "Am I speaking to a real person?", reply naturally: "Yes, this is Sumaira from Gold Coast Concreters! How can I help you today?"
+
+VOICE & CONVERSATIONAL PACE:
+- Speak in a calm, relaxed, unhurried pace (0.88 speed). Never rush your words.
+- Keep each spoken response short — just 1 to 2 spoken sentences at a time, then let the customer speak.
+- Use natural Australian phrasing: "No worries at all", "Yeah absolutely", "Too easy", "Sure thing".
+
+MARKETING & SALES COLD-CALLERS (STRICT FILTER):
+- If the caller is selling SEO, web design, digital marketing, Google ads, leads, or recruitment:
+- Politely deflect: "Thanks for reaching out, but we don't take sales or marketing calls on this line. Please email your details to support@goldcoastconcretersqld.com.au and our management team will review it. Have a great day!" Then conclude call.
+
+NATURAL HUMAN CONVERSATION FLOW:
+1. Greet: "G'day! Thanks for calling Gold Coast Concreters, this is Sumaira. How can I help you with your concreting today?"
+2. When they tell you their project, acknowledge warmly: "Yeah, absolutely! What suburb is the property in?"
+3. Ask if it's a brand new pour or replacing/resurfacing existing concrete.
+4. Ask roughly how big the area is: "Do you have a rough idea of the size or area in square metres?"
+5. Ask about their preferred look or finish (exposed aggregate pebbles, smooth broom, or covercrete).
+6. Ask when they want the on-site inspection/measure: "Awesome! When would suit you best for our estimator to come by for the free on-site measure?"
+7. Ask for their name and mobile number: "Perfect! Can I grab your full name and mobile number so we can lock that in?"
+8. Warm wrap up: "Thanks so much! Our estimator will give you a quick call to confirm. Have a wonderful day!"
+            </textarea>
+          </div>
+        </section>
+
+        <!-- ================= TAB: BUSINESS KNOWLEDGE & RATES ================= -->
+        <section id="tab-knowledge" class="tab-content hidden space-y-6">
+          <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+            <h2 class="text-xl font-bold text-slate-900">Trade Knowledge, Standards & Rates</h2>
+            <p class="text-xs text-slate-500 mt-0.5">Knowledge base used by Sumaira when answering caller technical and pricing queries.</p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <!-- Pricing card -->
+            <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-3">
+              <span class="text-xs font-bold text-blue-600 uppercase tracking-wider block">Gold Coast Ballpark Rates</span>
+              <div class="space-y-2 text-xs">
+                <div class="flex justify-between py-1 border-b border-slate-100">
+                  <span class="text-slate-600">Plain Broom Finish:</span>
+                  <strong class="text-slate-900 font-mono">$75 – $95 / m²</strong>
+                </div>
+                <div class="flex justify-between py-1 border-b border-slate-100">
+                  <span class="text-slate-600">Coloured Concrete:</span>
+                  <strong class="text-slate-900 font-mono">$85 – $120 / m²</strong>
+                </div>
+                <div class="flex justify-between py-1 border-b border-slate-100">
+                  <span class="text-slate-600">Exposed Aggregate:</span>
+                  <strong class="text-slate-900 font-mono">$110 – $165 / m²</strong>
+                </div>
+                <div class="flex justify-between py-1">
+                  <span class="text-slate-600">Covercrete Resurfacing:</span>
+                  <strong class="text-slate-900 font-mono">$50 – $75 / m²</strong>
+                </div>
+              </div>
+              <p class="text-[11px] text-slate-500">Sumaira explains that due to soil excavation and pump access, we always provide a free on-site measure for fixed quotes.</p>
+            </div>
+
+            <!-- Curing Times -->
+            <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-3">
+              <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider block">Concrete Curing Timeline</span>
+              <div class="space-y-2 text-xs">
+                <div class="flex justify-between py-1 border-b border-slate-100">
+                  <span class="text-slate-600">Walking Foot Traffic:</span>
+                  <strong class="text-slate-900">24 – 48 Hours</strong>
+                </div>
+                <div class="flex justify-between py-1 border-b border-slate-100">
+                  <span class="text-slate-600">Passenger Cars:</span>
+                  <strong class="text-slate-900">7 Days</strong>
+                </div>
+                <div class="flex justify-between py-1">
+                  <span class="text-slate-600">Heavy Boats / Caravans:</span>
+                  <strong class="text-slate-900">28 Days (Full Cure)</strong>
+                </div>
+              </div>
+            </div>
+
+            <!-- Coastal & Council Rules -->
+            <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-3">
+              <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider block">Coastal & Council Standards</span>
+              <div class="text-xs text-slate-700 space-y-2">
+                <p><strong>Marine Zones (&lt;1km sea):</strong> N32 (32 MPa) concrete with SL82 mesh to resist coastal salt corrosion.</p>
+                <p><strong>Council Crossovers (VXO):</strong> Property owner MUST obtain City of Gold Coast permit approval before pour.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= TAB: SERVICE AREAS ================= -->
+        <section id="tab-service-areas" class="tab-content hidden space-y-6">
+          <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+            <h2 class="text-xl font-bold text-slate-900">24 Gold Coast Service Hubs</h2>
+            <p class="text-xs text-slate-500 mt-0.5">Sumaira recognizes all 24 suburbs, assigns postal codes, and identifies soil profiles.</p>
+          </div>
+
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-xs">
+            <div class="p-3 bg-white rounded-lg border border-slate-200 font-medium">Pimpama (4209)</div>
+            <div class="p-3 bg-white rounded-lg border border-slate-200 font-medium">Coomera (4209)</div>
+            <div class="p-3 bg-white rounded-lg border border-slate-200 font-medium">Helensvale (4212)</div>
+            <div class="p-3 bg-white rounded-lg border border-slate-200 font-medium">Hope Island (4212)</div>
+            <div class="p-3 bg-white rounded-lg border border-slate-200 font-medium">Southport (4215)</div>
+            <div class="p-3 bg-white rounded-lg border border-slate-200 font-medium">Bundall (4217)</div>
+            <div class="p-3 bg-white rounded-lg border border-slate-200 font-medium">Surfers Paradise (4217)</div>
+            <div class="p-3 bg-white rounded-lg border border-slate-200 font-medium">Broadbeach (4218)</div>
+            <div class="p-3 bg-white rounded-lg border border-slate-200 font-medium">Burleigh Heads (4220)</div>
+            <div class="p-3 bg-white rounded-lg border border-slate-200 font-medium">Palm Beach (4221)</div>
+            <div class="p-3 bg-white rounded-lg border border-slate-200 font-medium">Coolangatta (4225)</div>
+            <div class="p-3 bg-white rounded-lg border border-slate-200 font-medium">Robina (4226)</div>
+            <div class="p-3 bg-white rounded-lg border border-slate-200 font-medium">Mudgeeraba (4213)</div>
+            <div class="p-3 bg-white rounded-lg border border-slate-200 font-medium">Nerang (4211)</div>
+            <div class="p-3 bg-white rounded-lg border border-slate-200 font-medium">Pacific Pines (4211)</div>
+            <div class="p-3 bg-white rounded-lg border border-slate-200 font-medium">Oxenford (4210)</div>
+          </div>
+        </section>
+
+        <!-- ================= TAB: SERVICES OFFERED ================= -->
+        <section id="tab-services" class="tab-content hidden space-y-6">
+          <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+            <h2 class="text-xl font-bold text-slate-900">Services Offered Catalogue</h2>
+            <p class="text-xs text-slate-500 mt-0.5">Specifications and turnkey scopes handled by the concreting trade.</p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+            <div class="p-4 bg-white rounded-xl border border-slate-200">
+              <h3 class="font-bold text-sm text-slate-900 mb-1">Exposed Aggregate Driveways</h3>
+              <p class="text-slate-600">Premium pebble blend mixes with high durability and slip resistance for residential driveways.</p>
+            </div>
+            <div class="p-4 bg-white rounded-xl border border-slate-200">
+              <h3 class="font-bold text-sm text-slate-900 mb-1">Covercrete Resurfacing</h3>
+              <p class="text-slate-600">Polymer-modified cement spray resurfacing for faded, aged, or hairline-cracked existing concrete.</p>
+            </div>
+            <div class="p-4 bg-white rounded-xl border border-slate-200">
+              <h3 class="font-bold text-sm text-slate-900 mb-1">Shed & House Slabs</h3>
+              <p class="text-slate-600">Engineered to AS 2870 standard with moisture barrier and perimeter footing thickening.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= TAB: NOTIFICATIONS ================= -->
+        <section id="tab-notifications" class="tab-content hidden space-y-6">
+          <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+            <h2 class="text-xl font-bold text-slate-900">Instant Alert & Notification Channels</h2>
+            <p class="text-xs text-slate-500 mt-0.5">Where hot leads and booked measures are dispatched.</p>
+          </div>
+
+          <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-4 max-w-lg">
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 mb-1">Owner Mobile for Instant Alerts (SMS / WhatsApp)</label>
+              <input type="text" id="ownerMobile" value="+92 331 5268002" class="w-full text-xs font-mono px-3 py-2 border border-slate-300 rounded-lg">
+              <span class="text-[11px] text-slate-500 mt-1 block">Hot leads and booked site inspection alerts are dispatched here instantly.</span>
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 mb-1">Support & Spam Filter Email</label>
+              <input type="text" id="supportEmail" value="support@goldcoastconcretersqld.com.au" class="w-full text-xs font-mono px-3 py-2 border border-slate-300 rounded-lg">
+              <span class="text-[11px] text-slate-500 mt-1 block">Cold-call marketing solicitors are deflected to this address.</span>
+            </div>
+
+            <button onclick="alert('Notification settings updated successfully!')" class="px-4 py-2 bg-blue-600 text-white rounded-lg text-xs font-semibold">Save Settings</button>
+          </div>
+        </section>
+
+        <!-- ================= TAB: SETTINGS ================= -->
+        <section id="tab-settings" class="tab-content hidden space-y-6">
+          <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+            <h2 class="text-xl font-bold text-slate-900">Portal & Telephony Settings</h2>
+            <p class="text-xs text-slate-500 mt-0.5">Vapi webhook connection and account parameters.</p>
+          </div>
+
+          <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-3 max-w-lg text-xs">
+            <div><strong>Active Tenant:</strong> Gold Coast Concreters QLD</div>
+            <div><strong>Pilot Phone Line:</strong> +1 (208) 293-0115 (Active on Vapi)</div>
+            <div><strong>Primary Public Line:</strong> 0411 914 157 (Preserved)</div>
+            <div><strong>Administrator User:</strong> bilal345</div>
+            <div class="pt-3 border-t border-slate-100">
+              <button onclick="handleLogout()" class="px-3 py-1.5 bg-rose-50 text-rose-700 border border-rose-200 rounded-lg font-semibold hover:bg-rose-100">Sign Out of Portal</button>
+            </div>
+          </div>
+        </section>
+
+      </main>
+    </div>
+  </div>
+
+  <!-- Transcript Modal -->
+  <div id="transcriptModal" class="hidden fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-lg w-full p-6 shadow-2xl space-y-4">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-200">
+        <div>
+          <h3 id="modalTitle" class="font-bold text-slate-900 text-base">Call Transcript</h3>
+          <span id="modalMeta" class="text-xs text-slate-500"></span>
+        </div>
+        <button onclick="closeModal()" class="text-slate-400 hover:text-slate-600 text-lg font-bold">&times;</button>
+      </div>
+
+      <!-- Audio player simulation -->
+      <div class="bg-slate-50 p-3 rounded-lg border border-slate-200 flex items-center gap-3">
+        <button onclick="alert('Playing recorded audio call...')" class="w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold">▶</button>
+        <div class="flex-1">
+          <div class="w-full bg-slate-200 h-1.5 rounded-full overflow-hidden">
+            <div class="bg-blue-600 h-full w-2/3"></div>
+          </div>
+          <div class="flex justify-between text-[10px] text-slate-500 mt-1 font-mono">
+            <span>01:14</span>
+            <span id="modalDuration">02:45</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="max-h-60 overflow-y-auto bg-slate-50 p-3 rounded-lg border border-slate-200 text-xs font-mono text-slate-800 whitespace-pre-wrap leading-relaxed" id="modalTranscript"></div>
+
+      <div class="text-right pt-2">
+        <button onclick="closeModal()" class="px-4 py-2 bg-slate-100 text-slate-700 hover:bg-slate-200 rounded-lg text-xs font-semibold">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Logic -->
+  <script>
+    // Authentication State
+    function checkAuth() {
+      const isAuth = localStorage.getItem('leadrescue_auth');
+      if (isAuth === 'authenticated') {
+        document.getElementById('authScreen').classList.add('hidden');
+        document.getElementById('portalApp').classList.remove('hidden');
+      } else {
+        document.getElementById('authScreen').classList.remove('hidden');
+        document.getElementById('portalApp').classList.add('hidden');
+      }
+    }
+
+    function handleLogin(e) {
+      e.preventDefault();
+      const u = document.getElementById('usernameInput').value.trim();
+      const p = document.getElementById('passwordInput').value;
+      const errorBox = document.getElementById('loginError');
+
+      if (u === 'bilal345' && p === 'Bilal357547.') {
+        localStorage.setItem('leadrescue_auth', 'authenticated');
+        localStorage.setItem('leadrescue_user', 'bilal345');
+        errorBox.classList.add('hidden');
+        checkAuth();
+      } else {
+        errorBox.classList.remove('hidden');
+      }
+    }
+
+    function handleLogout() {
+      localStorage.removeItem('leadrescue_auth');
+      localStorage.removeItem('leadrescue_user');
+      checkAuth();
+    }
+
+    // Tab Navigation
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('.nav-btn').forEach(btn => {
+        btn.classList.remove('bg-blue-50', 'text-blue-700', 'font-semibold');
+        btn.classList.add('text-slate-600', 'font-medium');
+      });
+
+      const activeSection = document.getElementById('tab-' + tabId);
+      if (activeSection) activeSection.classList.remove('hidden');
+
+      const activeNav = document.getElementById('nav-' + tabId);
+      if (activeNav) {
+        activeNav.classList.remove('text-slate-600', 'font-medium');
+        activeNav.classList.add('bg-blue-50', 'text-blue-700', 'font-semibold');
+      }
+    }
+
+    // Modal Helpers
+    function openTranscriptModal(phone, duration, caller, transcript) {
+      document.getElementById('modalTitle').innerText = 'Transcript: ' + caller;
+      document.getElementById('modalMeta').innerText = phone + ' • Duration ' + duration;
+      document.getElementById('modalDuration').innerText = duration;
+      document.getElementById('modalTranscript').innerText = transcript;
+      document.getElementById('transcriptModal').classList.remove('hidden');
+    }
+
+    function closeModal() {
+      document.getElementById('transcriptModal').classList.add('hidden');
+    }
+
+    function showLeadDetails(name, phone, suburb, project, size, timeframe, summary) {
+      alert("LEAD DETAILS:\n\nName: " + name + "\nPhone: " + phone + "\nSuburb: " + suburb + "\nProject: " + project + " (" + size + ")\nTimeframe: " + timeframe + "\n\nAI Summary:\n" + summary);
+    }
+
+    // Simulation Runner
+    function runSimulation(type) {
+      const box = document.getElementById('simConsole');
+      box.innerText = "Connecting inbound test call on +61 411 914 157...";
+
+      setTimeout(() => {
+        if (type === 'pimpama') {
+          box.innerText = "AI Receptionist Sumaira Greeted: \"G'day! Thanks for calling Gold Coast Concreters, this is Sumaira. How can I help you today?\"\n" +
+            "Caller: \"Hi, I need a quote for an 85 sqm exposed aggregate driveway in Pimpama.\"\n" +
+            "AI Action: Pimpama 4209 matched (Class H reactive clay profile noted).\n" +
+            "AI Action: Offered free on-site measure for Tuesday morning.\n" +
+            "Lead Captured: Marcus Vance, +61 412 345 678 (Score: 88/100 🔥). Instant alert dispatched to +92 331 5268002.";
+        } else if (type === 'palmbeach') {
+          box.innerText = "AI Receptionist Sumaira Greeted: Natural warm en-AU tone.\n" +
+            "Caller: \"Looking for a pool surround in Palm Beach and worried about salt.\"\n" +
+            "AI Technical Guidance: Recommended N32 (32 MPa) concrete with SL82 steel mesh for coastal marine zone.\n" +
+            "Lead Captured: Chloe Bennett, 45 sqm pool surround (Score: 82/100).";
+        } else if (type === 'southport') {
+          box.innerText = "Caller: \"We need a crossover into our warehouse in Southport.\"\n" +
+            "AI Council Compliance: Advised caller that the property owner must apply for and receive the City of Gold Coast VXO permit approval first. Once approved, our crew pours strictly to standard drawings.\n" +
+            "Lead Captured: Darren Taylor, 120 sqm crossover.";
+        } else {
+          box.innerText = "Caller: \"How much do you charge per square metre for exposed aggregate?\"\n" +
+            "AI Ballpark Guidance: \"Rough ballparks on the Gold Coast usually sit around $110 to $165 a square metre for exposed aggregate. But every site has different excavation and access, so we do a free on-site measure for an exact fixed price.\"\n" +
+            "Result: Customer converted from price shopping into booked on-site measure!";
+        }
+      }, 700);
+    }
+
+    // Run auth check on page load
+    window.onload = checkAuth;
+  </script>
+</body>
+</html>
