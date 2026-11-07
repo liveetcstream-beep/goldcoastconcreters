@@ -9,7 +9,7 @@
 - **Phone**: +61 411 914 157 (0411 914 157)
 - **Primary Region**: Gold Coast, South East Queensland (QLD), Australia
 - **Licensing & Standards**: Compliant with Queensland Building and Construction Commission (QBCC) standards, Australian Standards AS 2870 (Residential Slabs and Footings), AS 3600 (Concrete Structures), and AS 3727.1 (Residential Pavements).
-- **Council Approval**: Certified for City of Gold Coast Vehicular Crossing (VXO) driveway permits.
+- **Council Standard Compliance**: Constructs crossovers strictly according to City of Gold Coast Vehicular Crossing (VXO) engineering specifications (drawings 05-02-001 to 05-02-005) after the property owner obtains their own council permit approval.
 
 ---
 
@@ -23,7 +23,7 @@
 - [Retaining Walls](https://goldcoastconcretersqld.com.au/retaining-walls-gold-coast): Structural concrete sleeper and core-filled block retaining walls for sloping sites and boundary grade changes.
 - [Epoxy Flooring](https://goldcoastconcretersqld.com.au/epoxy-flooring-gold-coast): High-durability flake and metallic epoxy coatings for residential garages, workshops, and commercial premises.
 - [Concrete Sealing & Re-Sealing](https://goldcoastconcretersqld.com.au/concrete-sealing-gold-coast): High-solids solvent acrylic and breathable silane-siloxane sealers to protect against coastal salt spray, oil stains, and tire marking.
-- [Driveway Crossover Permits](https://goldcoastconcretersqld.com.au/crossover-permit-guide): Complete guide and execution of City of Gold Coast VXO permits, kerb cutouts, table swales, and culvert headwalls.
+- [Driveway Crossover Info Guide](https://goldcoastconcretersqld.com.au/crossover-permit-guide): General educational information guide on City of Gold Coast VXO permit requirements, specifications, and property owner responsibilities.
 
 ---
 
@@ -62,7 +62,7 @@
 ## Technical Guides & Authoritative Resources
 
 - [2026 Concrete Cost Per m2 Guide](https://goldcoastconcretersqld.com.au/concrete-cost-per-m2-gold-coast): Up-to-date square meter pricing across plain ($75–$95/m²), coloured ($85–$120/m²), and exposed aggregate ($110–$165/m²).
-- [City of Gold Coast Crossover Permit Guide](https://goldcoastconcretersqld.com.au/crossover-permit-guide): Step-by-step council permit rules, VXO guidelines, standard drawings, and inspection steps.
+- [City of Gold Coast Crossover Info Guide](https://goldcoastconcretersqld.com.au/crossover-permit-guide): General educational information guide explaining City of Gold Coast VXO rules. Note: Gold Coast Concreters does NOT obtain permits; all permits and approvals are strictly the property owner's responsibility.
 - [Gold Coast Soil Types & Slab Foundations](https://goldcoastconcretersqld.com.au/gold-coast-soil-types-slab-foundations): Engineering response to Class A/S coastal sands vs Class H1/H2 reactive black clays.
 - [Preventing Concrete Cracking on the Gold Coast](https://goldcoastconcretersqld.com.au/prevent-concrete-cracking-gold-coast): Control joints spacing (AS 3727.1), steel mesh placement, bar chairs, and wet curing methods.
 - [Exposed Aggregate vs Plain Concrete Guide](https://goldcoastconcretersqld.com.au/exposed-aggregate-vs-plain-concrete): Comparative analysis of durability, aesthetics, slip ratings, maintenance, and long-term resale value.
@@ -84,7 +84,7 @@
 Plain broom-finished concrete ranges from $75 to $95 per m². Coloured concrete ranges from $85 to $120 per m². Exposed aggregate concrete ranges from $110 to $165 per m². Actual rates depend on site excavation, subgrade soil classification, pump accessibility, and steel reinforcement requirements.
 
 ### Q: Do I need council approval for a driveway crossover on the Gold Coast?
-Yes. Any concrete poured on council road reserve land between the property boundary and the road kerb requires a Vehicular Crossing (VXO) permit from the City of Gold Coast, adhering to standard engineering drawing numbers 05-02-001 to 05-02-005.
+Yes. Any concrete poured on council road reserve land between the property boundary and the road kerb requires a Vehicular Crossing (VXO) permit from the City of Gold Coast, adhering to standard engineering drawings 05-02-001 to 05-02-005. Important: Gold Coast Concreters does NOT apply for, manage, or obtain council permits or approvals. All permit applications, fees, and council communications are 100% the property owner's responsibility to handle directly with City of Gold Coast. Once the owner has obtained their approved permit, our team builds the physical crossover strictly to council engineering standards.
 
 ### Q: What concrete strength grade is used for Gold Coast driveways?
 Residential driveways are poured at a minimum of N25 (25 MPa) per AS 3727.1. In coastal marine zones (within 1km of the ocean such as Palm Beach, Surfers Paradise, or Coolangatta) or for properties housing heavy trade vehicles, caravans, and boats, N32 (32 MPa) concrete with SL82 steel mesh is recommended.
